@@ -17,6 +17,34 @@
     </Appenders>
 
     <Loggers>
+
+        <!-- Ограничиваем Spark, Hadoop и Netty до WARN -->
+        <Logger name="org.apache.spark" level="warn" additivity="false">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="File"/>
+        </Logger>
+
+        <Logger name="org.spark_project" level="warn" additivity="false">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="File"/>
+        </Logger>
+
+        <Logger name="org.apache.hadoop" level="warn" additivity="false">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="File"/>
+        </Logger>
+
+        <Logger name="io.netty" level="warn" additivity="false">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="File"/>
+        </Logger>
+
+        <!-- Твои собственные классы оставляем на INFO -->
+        <Logger name="sfedu.danil" level="info" additivity="false">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="File"/>
+        </Logger>
+
         <Root level="info">
             <AppenderRef ref="Console"/>
             <AppenderRef ref="File"/>

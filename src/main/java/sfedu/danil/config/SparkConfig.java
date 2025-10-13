@@ -20,6 +20,8 @@ public class SparkConfig {
                     .appName("SpaceX-Spark-App")
                     .master("local[*]")
                     .config("spark.sql.shuffle.partitions", "4")
+                    .config("spark.local.dir", "spark-temp")
+                    .config("spark.sql.warehouse.dir", "spark-warehouse")
                     .getOrCreate();
 
             logger.info("SparkSession успешно создан!");
