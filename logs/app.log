@@ -244,3 +244,9 @@
 2025-10-13 19:26:08 INFO  SparkConfig:39 - SparkSession остановлен.
 2025-10-13 19:26:08 INFO  ShutdownHookManager:184 - Shutdown hook called
 2025-10-13 19:26:08 INFO  ShutdownHookManager:190 - Deleting directory C:\Users\User\AppData\Local\Temp\spark-ca5aafe1-e2d4-436f-9b79-37ad100d3598
+2025-10-13 19:53:19 INFO  SpaceXService:33 - Отправка запроса к SpaceX API: https://api.spacexdata.com/v3/launches
+2025-10-13 19:55:11 INFO  SpaceXService:33 - Отправка запроса к SpaceX API: https://api.spacexdata.com/v3/launches
+2025-10-13 19:55:53 INFO  SpaceXService:33 - Отправка запроса к SpaceX API: https://api.spacexdata.com/v3/launches
+2025-10-13 19:55:55 INFO  SpaceXService:49 - Получено 111 запусков
+2025-10-13 20:03:33 INFO  SpaceXService:33 - Отправка запроса к SpaceX API: https://api.spacexdata.com/v3/launches
+2025-10-13 20:03:47 INFO  SpaceXService:49 - Получено 111 запусков
