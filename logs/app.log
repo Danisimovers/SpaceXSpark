@@ -1,0 +1,246 @@
+2025-10-13 19:10:35 INFO  SparkConfig:17 - Инициализация SparkSession...
+2025-10-13 19:10:36 INFO  SparkContext:60 - Running Spark version 3.5.1
+2025-10-13 19:10:36 INFO  SparkContext:60 - OS info Windows 10, 10.0, amd64
+2025-10-13 19:10:36 INFO  SparkContext:60 - Java version 21.0.6
+2025-10-13 19:10:36 WARN  Shell:692 - Did not find winutils.exe: java.io.FileNotFoundException: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset. -see https://wiki.apache.org/hadoop/WindowsProblems
+2025-10-13 19:10:36 WARN  NativeCodeLoader:60 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2025-10-13 19:10:36 INFO  ResourceUtils:60 - ==============================================================
+2025-10-13 19:10:36 INFO  ResourceUtils:60 - No custom resources configured for spark.driver.
+2025-10-13 19:10:36 INFO  ResourceUtils:60 - ==============================================================
+2025-10-13 19:10:36 INFO  SparkContext:60 - Submitted application: SpaceX-Spark-App
+2025-10-13 19:10:36 INFO  ResourceProfile:60 - Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+2025-10-13 19:10:36 INFO  ResourceProfile:60 - Limiting resource is cpu
+2025-10-13 19:10:36 INFO  ResourceProfileManager:60 - Added ResourceProfile id: 0
+2025-10-13 19:10:36 INFO  SecurityManager:60 - Changing view acls to: User
+2025-10-13 19:10:36 INFO  SecurityManager:60 - Changing modify acls to: User
+2025-10-13 19:10:36 INFO  SecurityManager:60 - Changing view acls groups to: 
+2025-10-13 19:10:36 INFO  SecurityManager:60 - Changing modify acls groups to: 
+2025-10-13 19:10:36 INFO  SecurityManager:60 - SecurityManager: authentication disabled; ui acls disabled; users with view permissions: User; groups with view permissions: EMPTY; users with modify permissions: User; groups with modify permissions: EMPTY
+2025-10-13 19:10:36 INFO  Utils:60 - Successfully started service 'sparkDriver' on port 56471.
+2025-10-13 19:10:36 INFO  SparkEnv:60 - Registering MapOutputTracker
+2025-10-13 19:10:36 INFO  SparkEnv:60 - Registering BlockManagerMaster
+2025-10-13 19:10:36 INFO  BlockManagerMasterEndpoint:60 - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2025-10-13 19:10:36 INFO  BlockManagerMasterEndpoint:60 - BlockManagerMasterEndpoint up
+2025-10-13 19:11:34 INFO  SparkConfig:17 - Инициализация SparkSession...
+2025-10-13 19:11:34 INFO  SparkContext:60 - Running Spark version 3.5.1
+2025-10-13 19:11:34 INFO  SparkContext:60 - OS info Windows 10, 10.0, amd64
+2025-10-13 19:11:34 INFO  SparkContext:60 - Java version 21.0.6
+2025-10-13 19:11:34 WARN  Shell:692 - Did not find winutils.exe: java.io.FileNotFoundException: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset. -see https://wiki.apache.org/hadoop/WindowsProblems
+2025-10-13 19:11:34 WARN  NativeCodeLoader:60 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2025-10-13 19:11:34 INFO  ResourceUtils:60 - ==============================================================
+2025-10-13 19:11:34 INFO  ResourceUtils:60 - No custom resources configured for spark.driver.
+2025-10-13 19:11:34 INFO  ResourceUtils:60 - ==============================================================
+2025-10-13 19:11:34 INFO  SparkContext:60 - Submitted application: SpaceX-Spark-App
+2025-10-13 19:11:34 INFO  ResourceProfile:60 - Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+2025-10-13 19:11:34 INFO  ResourceProfile:60 - Limiting resource is cpu
+2025-10-13 19:11:34 INFO  ResourceProfileManager:60 - Added ResourceProfile id: 0
+2025-10-13 19:11:34 INFO  SecurityManager:60 - Changing view acls to: User
+2025-10-13 19:11:34 INFO  SecurityManager:60 - Changing modify acls to: User
+2025-10-13 19:11:34 INFO  SecurityManager:60 - Changing view acls groups to: 
+2025-10-13 19:11:34 INFO  SecurityManager:60 - Changing modify acls groups to: 
+2025-10-13 19:11:34 INFO  SecurityManager:60 - SecurityManager: authentication disabled; ui acls disabled; users with view permissions: User; groups with view permissions: EMPTY; users with modify permissions: User; groups with modify permissions: EMPTY
+2025-10-13 19:11:35 INFO  Utils:60 - Successfully started service 'sparkDriver' on port 56502.
+2025-10-13 19:11:35 INFO  SparkEnv:60 - Registering MapOutputTracker
+2025-10-13 19:11:35 INFO  SparkEnv:60 - Registering BlockManagerMaster
+2025-10-13 19:11:35 INFO  BlockManagerMasterEndpoint:60 - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2025-10-13 19:11:35 INFO  BlockManagerMasterEndpoint:60 - BlockManagerMasterEndpoint up
+2025-10-13 19:23:19 INFO  SparkConfig:17 - Инициализация SparkSession...
+2025-10-13 19:23:20 INFO  SparkContext:190 - Running Spark version 4.0.1
+2025-10-13 19:23:20 INFO  SparkContext:190 - OS info Windows 10, 10.0, amd64
+2025-10-13 19:23:20 INFO  SparkContext:190 - Java version 21.0.6
+2025-10-13 19:23:21 WARN  Shell:746 - Did not find winutils.exe: java.io.FileNotFoundException: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset. -see https://cwiki.apache.org/confluence/display/HADOOP2/WindowsProblems
+2025-10-13 19:23:21 WARN  NativeCodeLoader:60 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2025-10-13 19:23:21 INFO  ResourceUtils:184 - ==============================================================
+2025-10-13 19:23:21 INFO  ResourceUtils:184 - No custom resources configured for spark.driver.
+2025-10-13 19:23:21 INFO  ResourceUtils:184 - ==============================================================
+2025-10-13 19:23:21 INFO  SparkContext:190 - Submitted application: SpaceX-Spark-App
+2025-10-13 19:23:21 INFO  ResourceProfile:190 - Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+2025-10-13 19:23:21 INFO  ResourceProfile:190 - Limiting resource is cpu
+2025-10-13 19:23:21 INFO  ResourceProfileManager:190 - Added ResourceProfile id: 0
+2025-10-13 19:23:21 INFO  SecurityManager:190 - Changing view acls to: User
+2025-10-13 19:23:21 INFO  SecurityManager:190 - Changing modify acls to: User
+2025-10-13 19:23:21 INFO  SecurityManager:190 - Changing view acls groups to: User
+2025-10-13 19:23:21 INFO  SecurityManager:190 - Changing modify acls groups to: User
+2025-10-13 19:23:21 INFO  SecurityManager:190 - SecurityManager: authentication disabled; ui acls disabled; users with view permissions: User groups with view permissions: EMPTY; users with modify permissions: User; groups with modify permissions: EMPTY; RPC SSL disabled
+2025-10-13 19:23:21 INFO  Utils:190 - Successfully started service 'sparkDriver' on port 62449.
+2025-10-13 19:23:21 INFO  SparkEnv:190 - Registering MapOutputTracker
+2025-10-13 19:23:21 INFO  SparkEnv:190 - Registering BlockManagerMaster
+2025-10-13 19:23:21 INFO  BlockManagerMasterEndpoint:190 - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2025-10-13 19:23:21 INFO  BlockManagerMasterEndpoint:184 - BlockManagerMasterEndpoint up
+2025-10-13 19:23:21 INFO  SparkEnv:190 - Registering BlockManagerMasterHeartbeat
+2025-10-13 19:23:21 INFO  DiskBlockManager:190 - Created local directory at C:\Users\User\AppData\Local\Temp\blockmgr-133a6400-444f-4b04-8412-bf08450b0577
+2025-10-13 19:23:21 INFO  SparkEnv:190 - Registering OutputCommitCoordinator
+2025-10-13 19:23:21 INFO  JettyUtils:190 - Start Jetty 0.0.0.0:4040 for SparkUI
+2025-10-13 19:23:21 INFO  Server:384 - jetty-11.0.24; built: 2024-08-26T18:11:22.448Z; git: 5dfc59a691b748796f922208956bd1f2794bcd16; jvm 21.0.6+7-LTS
+2025-10-13 19:23:21 INFO  Server:439 - Started Server@7ae590f6{STARTING}[11.0.24,sto=30000] @3130ms
+2025-10-13 19:23:21 INFO  AbstractConnector:376 - Started ServerConnector@1c1daba5{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2025-10-13 19:23:21 INFO  Utils:190 - Successfully started service 'SparkUI' on port 4040.
+2025-10-13 19:23:21 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3070f3e6{/,null,AVAILABLE,@Spark}
+2025-10-13 19:23:21 INFO  SecurityManager:190 - Changing view acls to: User
+2025-10-13 19:23:21 INFO  SecurityManager:190 - Changing modify acls to: User
+2025-10-13 19:23:21 INFO  SecurityManager:190 - Changing view acls groups to: User
+2025-10-13 19:23:21 INFO  SecurityManager:190 - Changing modify acls groups to: User
+2025-10-13 19:23:21 INFO  SecurityManager:190 - SecurityManager: authentication disabled; ui acls disabled; users with view permissions: User groups with view permissions: EMPTY; users with modify permissions: User; groups with modify permissions: EMPTY; RPC SSL disabled
+2025-10-13 19:23:21 INFO  Executor:190 - Starting executor ID driver on host WIN-MEVLBK3C0D0
+2025-10-13 19:23:21 INFO  Executor:190 - OS info Windows 10, 10.0, amd64
+2025-10-13 19:23:21 INFO  Executor:190 - Java version 21.0.6
+2025-10-13 19:23:21 INFO  Executor:190 - Starting executor with user classpath (userClassPathFirst = false): ''
+2025-10-13 19:23:21 INFO  Executor:190 - Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@5a4c98d7 for default.
+2025-10-13 19:23:22 INFO  Utils:190 - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 62450.
+2025-10-13 19:23:22 INFO  NettyBlockTransferService:155 - Server created on WIN-MEVLBK3C0D0:62450
+2025-10-13 19:23:22 INFO  BlockManager:190 - Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2025-10-13 19:23:22 INFO  BlockManagerMaster:190 - Registering BlockManager BlockManagerId(driver, WIN-MEVLBK3C0D0, 62450, None)
+2025-10-13 19:23:22 INFO  BlockManagerMasterEndpoint:190 - Registering block manager WIN-MEVLBK3C0D0:62450 with 1004.4 MiB RAM, BlockManagerId(driver, WIN-MEVLBK3C0D0, 62450, None)
+2025-10-13 19:23:22 INFO  BlockManagerMaster:190 - Registered BlockManager BlockManagerId(driver, WIN-MEVLBK3C0D0, 62450, None)
+2025-10-13 19:23:22 INFO  BlockManager:190 - Initialized BlockManager: BlockManagerId(driver, WIN-MEVLBK3C0D0, 62450, None)
+2025-10-13 19:23:22 INFO  ContextHandler:1123 - Stopped o.s.j.s.ServletContextHandler@3070f3e6{/,null,STOPPED,@Spark}
+2025-10-13 19:23:22 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@68f776ee{/jobs,null,AVAILABLE,@Spark}
+2025-10-13 19:23:22 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@8af1c49{/jobs/json,null,AVAILABLE,@Spark}
+2025-10-13 19:23:22 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@23469199{/jobs/job,null,AVAILABLE,@Spark}
+2025-10-13 19:23:22 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5611bba{/jobs/job/json,null,AVAILABLE,@Spark}
+2025-10-13 19:23:22 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@4cfc0c48{/stages,null,AVAILABLE,@Spark}
+2025-10-13 19:23:22 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5464b97c{/stages/json,null,AVAILABLE,@Spark}
+2025-10-13 19:23:22 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2f07930a{/stages/stage,null,AVAILABLE,@Spark}
+2025-10-13 19:23:22 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@29d2fa84{/stages/stage/json,null,AVAILABLE,@Spark}
+2025-10-13 19:23:22 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@13c90c06{/stages/pool,null,AVAILABLE,@Spark}
+2025-10-13 19:23:22 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@15f861ee{/stages/pool/json,null,AVAILABLE,@Spark}
+2025-10-13 19:23:22 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@6463da36{/stages/taskThreadDump,null,AVAILABLE,@Spark}
+2025-10-13 19:23:22 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@1c6ac73c{/stages/taskThreadDump/json,null,AVAILABLE,@Spark}
+2025-10-13 19:23:22 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5341e71a{/storage,null,AVAILABLE,@Spark}
+2025-10-13 19:23:22 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@ac4e690{/storage/json,null,AVAILABLE,@Spark}
+2025-10-13 19:23:22 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@365bfc5f{/storage/rdd,null,AVAILABLE,@Spark}
+2025-10-13 19:23:22 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@37a3ec27{/storage/rdd/json,null,AVAILABLE,@Spark}
+2025-10-13 19:23:22 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@416b1265{/environment,null,AVAILABLE,@Spark}
+2025-10-13 19:23:22 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@da22aa{/environment/json,null,AVAILABLE,@Spark}
+2025-10-13 19:23:22 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@6c24f61d{/executors,null,AVAILABLE,@Spark}
+2025-10-13 19:23:22 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@14292d71{/executors/json,null,AVAILABLE,@Spark}
+2025-10-13 19:23:22 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@338d47b{/executors/threadDump,null,AVAILABLE,@Spark}
+2025-10-13 19:23:22 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2729bb71{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2025-10-13 19:23:22 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@10d98940{/executors/heapHistogram,null,AVAILABLE,@Spark}
+2025-10-13 19:23:22 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@32a033b6{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+2025-10-13 19:23:22 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3212bfd{/static,null,AVAILABLE,@Spark}
+2025-10-13 19:23:22 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2c815fdc{/,null,AVAILABLE,@Spark}
+2025-10-13 19:23:22 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@dae5e0{/api,null,AVAILABLE,@Spark}
+2025-10-13 19:23:22 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5a6f6cac{/metrics,null,AVAILABLE,@Spark}
+2025-10-13 19:23:22 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@553ce348{/jobs/job/kill,null,AVAILABLE,@Spark}
+2025-10-13 19:23:22 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5c0e2ec{/stages/stage/kill,null,AVAILABLE,@Spark}
+2025-10-13 19:23:22 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@56f9de3b{/metrics/json,null,AVAILABLE,@Spark}
+2025-10-13 19:23:22 INFO  SparkConfig:25 - SparkSession успешно создан!
+2025-10-13 19:23:22 INFO  SparkConfig:26 - Имя приложения: SpaceX-Spark-App
+2025-10-13 19:23:22 INFO  SparkConfig:27 - Режим выполнения (master): local[*]
+2025-10-13 19:23:22 INFO  SparkConfig:28 - Версия Spark: 4.0.1
+2025-10-13 19:23:22 INFO  SparkContext:190 - SparkContext is stopping with exitCode 0 from stop at SparkConfig.java:38.
+2025-10-13 19:23:22 INFO  Server:479 - Stopped Server@7ae590f6{STOPPING}[11.0.24,sto=30000]
+2025-10-13 19:23:22 INFO  Server:135 - Shutdown Server@7ae590f6{STOPPING}[11.0.24,sto=30000]
+2025-10-13 19:23:22 INFO  AbstractConnector:431 - Stopped Spark@1c1daba5{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2025-10-13 19:23:22 INFO  SparkUI:190 - Stopped Spark web UI at http://WIN-MEVLBK3C0D0:4040
+2025-10-13 19:23:22 INFO  MapOutputTrackerMasterEndpoint:184 - MapOutputTrackerMasterEndpoint stopped!
+2025-10-13 19:23:22 INFO  MemoryStore:190 - MemoryStore started with capacity 1004.4 MiB
+2025-10-13 19:23:22 INFO  MemoryStore:184 - MemoryStore cleared
+2025-10-13 19:23:22 INFO  BlockManager:184 - BlockManager stopped
+2025-10-13 19:23:22 INFO  BlockManagerMaster:184 - BlockManagerMaster stopped
+2025-10-13 19:23:22 INFO  OutputCommitCoordinator$OutputCommitCoordinatorEndpoint:184 - OutputCommitCoordinator stopped!
+2025-10-13 19:23:22 INFO  SparkContext:184 - Successfully stopped SparkContext
+2025-10-13 19:23:22 INFO  SparkConfig:39 - SparkSession остановлен.
+2025-10-13 19:23:22 INFO  ShutdownHookManager:184 - Shutdown hook called
+2025-10-13 19:23:22 INFO  ShutdownHookManager:190 - Deleting directory C:\Users\User\AppData\Local\Temp\spark-e4a9c22d-943c-414c-8fcf-64838c85d907
+2025-10-13 19:26:05 INFO  SparkConfig:17 - Инициализация SparkSession...
+2025-10-13 19:26:06 INFO  SparkContext:190 - Running Spark version 4.0.1
+2025-10-13 19:26:06 INFO  SparkContext:190 - OS info Windows 10, 10.0, amd64
+2025-10-13 19:26:06 INFO  SparkContext:190 - Java version 21.0.6
+2025-10-13 19:26:06 WARN  Shell:746 - Did not find winutils.exe: java.io.FileNotFoundException: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset. -see https://cwiki.apache.org/confluence/display/HADOOP2/WindowsProblems
+2025-10-13 19:26:06 WARN  NativeCodeLoader:60 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2025-10-13 19:26:06 INFO  ResourceUtils:184 - ==============================================================
+2025-10-13 19:26:06 INFO  ResourceUtils:184 - No custom resources configured for spark.driver.
+2025-10-13 19:26:06 INFO  ResourceUtils:184 - ==============================================================
+2025-10-13 19:26:06 INFO  SparkContext:190 - Submitted application: SpaceX-Spark-App
+2025-10-13 19:26:06 INFO  ResourceProfile:190 - Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+2025-10-13 19:26:06 INFO  ResourceProfile:190 - Limiting resource is cpu
+2025-10-13 19:26:06 INFO  ResourceProfileManager:190 - Added ResourceProfile id: 0
+2025-10-13 19:26:06 INFO  SecurityManager:190 - Changing view acls to: User
+2025-10-13 19:26:06 INFO  SecurityManager:190 - Changing modify acls to: User
+2025-10-13 19:26:06 INFO  SecurityManager:190 - Changing view acls groups to: User
+2025-10-13 19:26:06 INFO  SecurityManager:190 - Changing modify acls groups to: User
+2025-10-13 19:26:06 INFO  SecurityManager:190 - SecurityManager: authentication disabled; ui acls disabled; users with view permissions: User groups with view permissions: EMPTY; users with modify permissions: User; groups with modify permissions: EMPTY; RPC SSL disabled
+2025-10-13 19:26:06 INFO  Utils:190 - Successfully started service 'sparkDriver' on port 59269.
+2025-10-13 19:26:06 INFO  SparkEnv:190 - Registering MapOutputTracker
+2025-10-13 19:26:06 INFO  SparkEnv:190 - Registering BlockManagerMaster
+2025-10-13 19:26:06 INFO  BlockManagerMasterEndpoint:190 - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2025-10-13 19:26:07 INFO  BlockManagerMasterEndpoint:184 - BlockManagerMasterEndpoint up
+2025-10-13 19:26:07 INFO  SparkEnv:190 - Registering BlockManagerMasterHeartbeat
+2025-10-13 19:26:07 INFO  DiskBlockManager:190 - Created local directory at C:\Users\User\AppData\Local\Temp\blockmgr-1733c467-15ef-46ab-9990-6fe0889c6ff1
+2025-10-13 19:26:07 INFO  SparkEnv:190 - Registering OutputCommitCoordinator
+2025-10-13 19:26:07 INFO  JettyUtils:190 - Start Jetty 0.0.0.0:4040 for SparkUI
+2025-10-13 19:26:07 INFO  Server:384 - jetty-11.0.24; built: 2024-08-26T18:11:22.448Z; git: 5dfc59a691b748796f922208956bd1f2794bcd16; jvm 21.0.6+7-LTS
+2025-10-13 19:26:07 INFO  Server:439 - Started Server@72af90e8{STARTING}[11.0.24,sto=30000] @3056ms
+2025-10-13 19:26:07 INFO  AbstractConnector:376 - Started ServerConnector@4ebc3b91{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2025-10-13 19:26:07 INFO  Utils:190 - Successfully started service 'SparkUI' on port 4040.
+2025-10-13 19:26:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@687eb455{/,null,AVAILABLE,@Spark}
+2025-10-13 19:26:07 INFO  SecurityManager:190 - Changing view acls to: User
+2025-10-13 19:26:07 INFO  SecurityManager:190 - Changing modify acls to: User
+2025-10-13 19:26:07 INFO  SecurityManager:190 - Changing view acls groups to: User
+2025-10-13 19:26:07 INFO  SecurityManager:190 - Changing modify acls groups to: User
+2025-10-13 19:26:07 INFO  SecurityManager:190 - SecurityManager: authentication disabled; ui acls disabled; users with view permissions: User groups with view permissions: EMPTY; users with modify permissions: User; groups with modify permissions: EMPTY; RPC SSL disabled
+2025-10-13 19:26:07 INFO  Executor:190 - Starting executor ID driver on host WIN-MEVLBK3C0D0
+2025-10-13 19:26:07 INFO  Executor:190 - OS info Windows 10, 10.0, amd64
+2025-10-13 19:26:07 INFO  Executor:190 - Java version 21.0.6
+2025-10-13 19:26:07 INFO  Executor:190 - Starting executor with user classpath (userClassPathFirst = false): ''
+2025-10-13 19:26:07 INFO  Executor:190 - Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@8f39224 for default.
+2025-10-13 19:26:07 INFO  Utils:190 - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 59270.
+2025-10-13 19:26:07 INFO  NettyBlockTransferService:155 - Server created on WIN-MEVLBK3C0D0:59270
+2025-10-13 19:26:07 INFO  BlockManager:190 - Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2025-10-13 19:26:07 INFO  BlockManagerMaster:190 - Registering BlockManager BlockManagerId(driver, WIN-MEVLBK3C0D0, 59270, None)
+2025-10-13 19:26:07 INFO  BlockManagerMasterEndpoint:190 - Registering block manager WIN-MEVLBK3C0D0:59270 with 1004.4 MiB RAM, BlockManagerId(driver, WIN-MEVLBK3C0D0, 59270, None)
+2025-10-13 19:26:07 INFO  BlockManagerMaster:190 - Registered BlockManager BlockManagerId(driver, WIN-MEVLBK3C0D0, 59270, None)
+2025-10-13 19:26:07 INFO  BlockManager:190 - Initialized BlockManager: BlockManagerId(driver, WIN-MEVLBK3C0D0, 59270, None)
+2025-10-13 19:26:07 INFO  ContextHandler:1123 - Stopped o.s.j.s.ServletContextHandler@687eb455{/,null,STOPPED,@Spark}
+2025-10-13 19:26:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@59313495{/jobs,null,AVAILABLE,@Spark}
+2025-10-13 19:26:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@455cbf18{/jobs/json,null,AVAILABLE,@Spark}
+2025-10-13 19:26:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@74ebd159{/jobs/job,null,AVAILABLE,@Spark}
+2025-10-13 19:26:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@38d42ab7{/jobs/job/json,null,AVAILABLE,@Spark}
+2025-10-13 19:26:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@4005e485{/stages,null,AVAILABLE,@Spark}
+2025-10-13 19:26:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@464400b3{/stages/json,null,AVAILABLE,@Spark}
+2025-10-13 19:26:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@37d6dddc{/stages/stage,null,AVAILABLE,@Spark}
+2025-10-13 19:26:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@6e517c9e{/stages/stage/json,null,AVAILABLE,@Spark}
+2025-10-13 19:26:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@76b5a559{/stages/pool,null,AVAILABLE,@Spark}
+2025-10-13 19:26:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2e8b24a1{/stages/pool/json,null,AVAILABLE,@Spark}
+2025-10-13 19:26:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@6723cce7{/stages/taskThreadDump,null,AVAILABLE,@Spark}
+2025-10-13 19:26:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@314f59b{/stages/taskThreadDump/json,null,AVAILABLE,@Spark}
+2025-10-13 19:26:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7f012923{/storage,null,AVAILABLE,@Spark}
+2025-10-13 19:26:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@4403bff8{/storage/json,null,AVAILABLE,@Spark}
+2025-10-13 19:26:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@502c087e{/storage/rdd,null,AVAILABLE,@Spark}
+2025-10-13 19:26:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@10bdfbcc{/storage/rdd/json,null,AVAILABLE,@Spark}
+2025-10-13 19:26:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@15e8c040{/environment,null,AVAILABLE,@Spark}
+2025-10-13 19:26:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@60ed0b9d{/environment/json,null,AVAILABLE,@Spark}
+2025-10-13 19:26:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2c674d58{/executors,null,AVAILABLE,@Spark}
+2025-10-13 19:26:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@34beadce{/executors/json,null,AVAILABLE,@Spark}
+2025-10-13 19:26:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2eb6d34a{/executors/threadDump,null,AVAILABLE,@Spark}
+2025-10-13 19:26:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@6ce2e079{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2025-10-13 19:26:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@260d48f5{/executors/heapHistogram,null,AVAILABLE,@Spark}
+2025-10-13 19:26:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@6f106af8{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+2025-10-13 19:26:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@52d9d817{/static,null,AVAILABLE,@Spark}
+2025-10-13 19:26:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@27438750{/,null,AVAILABLE,@Spark}
+2025-10-13 19:26:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2c7ad4f3{/api,null,AVAILABLE,@Spark}
+2025-10-13 19:26:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7bf65e0f{/metrics,null,AVAILABLE,@Spark}
+2025-10-13 19:26:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7c421952{/jobs/job/kill,null,AVAILABLE,@Spark}
+2025-10-13 19:26:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@c6a692e{/stages/stage/kill,null,AVAILABLE,@Spark}
+2025-10-13 19:26:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@42ff9a77{/metrics/json,null,AVAILABLE,@Spark}
+2025-10-13 19:26:07 INFO  SparkConfig:25 - SparkSession успешно создан!
+2025-10-13 19:26:07 INFO  SparkConfig:26 - Имя приложения: SpaceX-Spark-App
+2025-10-13 19:26:07 INFO  SparkConfig:27 - Режим выполнения (master): local[*]
+2025-10-13 19:26:07 INFO  SparkConfig:28 - Версия Spark: 4.0.1
+2025-10-13 19:26:07 INFO  SparkContext:190 - SparkContext is stopping with exitCode 0 from stop at SparkConfig.java:38.
+2025-10-13 19:26:07 INFO  Server:479 - Stopped Server@72af90e8{STOPPING}[11.0.24,sto=30000]
+2025-10-13 19:26:07 INFO  Server:135 - Shutdown Server@72af90e8{STOPPING}[11.0.24,sto=30000]
+2025-10-13 19:26:07 INFO  AbstractConnector:431 - Stopped Spark@4ebc3b91{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2025-10-13 19:26:07 INFO  SparkUI:190 - Stopped Spark web UI at http://WIN-MEVLBK3C0D0:4040
+2025-10-13 19:26:07 INFO  MapOutputTrackerMasterEndpoint:184 - MapOutputTrackerMasterEndpoint stopped!
+2025-10-13 19:26:08 INFO  MemoryStore:190 - MemoryStore started with capacity 1004.4 MiB
+2025-10-13 19:26:08 INFO  MemoryStore:184 - MemoryStore cleared
+2025-10-13 19:26:08 INFO  BlockManager:184 - BlockManager stopped
+2025-10-13 19:26:08 INFO  BlockManagerMaster:184 - BlockManagerMaster stopped
+2025-10-13 19:26:08 INFO  OutputCommitCoordinator$OutputCommitCoordinatorEndpoint:184 - OutputCommitCoordinator stopped!
+2025-10-13 19:26:08 INFO  SparkContext:184 - Successfully stopped SparkContext
+2025-10-13 19:26:08 INFO  SparkConfig:39 - SparkSession остановлен.
+2025-10-13 19:26:08 INFO  ShutdownHookManager:184 - Shutdown hook called
+2025-10-13 19:26:08 INFO  ShutdownHookManager:190 - Deleting directory C:\Users\User\AppData\Local\Temp\spark-ca5aafe1-e2d4-436f-9b79-37ad100d3598
