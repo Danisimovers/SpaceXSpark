@@ -5,6 +5,7 @@ import org.apache.logging.log4j.Logger;
 import org.apache.spark.sql.*;
 import sfedu.danil.config.SparkConfig;
 import sfedu.danil.model.Launch;
+import sfedu.danil.model.Rocket;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,10 +17,12 @@ public class LaunchRepository implements LaunchRepositoryInterface {
 
     private final SparkSession spark;
     private Dataset<Launch> launchDS;
+    private Dataset<Rocket> rocketDS;
 
     public LaunchRepository() {
         this.spark = SparkConfig.getSparkSession();
         this.launchDS = spark.createDataset(List.of(), Encoders.bean(Launch.class));
+        this.rocketDS = spark.createDataset(List.of(), Encoders.bean(Rocket.class));
         logger.info("LaunchRepository инициализирован. Пустой Dataset создан.");
     }
 
@@ -84,6 +87,20 @@ public class LaunchRepository implements LaunchRepositoryInterface {
     }
 
     @Override
+    public boolean existsByRocketNumber(String rocketNumber) {
+        logger.info("Проверяем существование запуска с rocket_id: {}", rocketNumber);
+        boolean exists = false;
+        for (Rocket r : rocketDS.collectAsList()) {
+            if (r.getRocket_id() == rocketNumber) {
+                exists = true;
+                break;
+            }
+        }
+        logger.info("Запуск с rocket_id {} существует: {}", rocketNumber, exists);
+        return exists;
+    }
+
+    @Override
     public void updateLaunch(int flightNumber, Launch updatedLaunch) {
         logger.info("Обновляем запуск с flight_number: {}", flightNumber);
         List<Launch> updatedList = new ArrayList<>();
@@ -117,4 +134,52 @@ public class LaunchRepository implements LaunchRepositoryInterface {
         launchDS = spark.createDataset(List.of(), Encoders.bean(Launch.class));
         logger.info("Все запуски удалены. Текущее количество: {}", launchDS.count());
     }
+
+    @Override
+    public void exportToCsv() {
+        String path = System.getProperty("user.dir") + "/data/launches_csv";
+
+        try {
+            long count = launchDS.count();
+            if (count == 0) {
+                logger.warn("launchDS пуст — нечего сохранять.");
+                System.out.println("Нет данных для экспорта.");
+                return;
+            }
+
+            java.io.File dir = new java.io.File(path);
+            if (!dir.exists()) dir.mkdirs();
+
+            Dataset<Row> df = launchDS.toDF();
+
+            df = df
+                    // из Rocket
+                    .withColumn("rocket_id", functions.col("rocket.rocket_id"))
+                    .withColumn("rocket_name", functions.col("rocket.rocket_name"))
+                    .withColumn("rocket_type", functions.col("rocket.rocket_type"))
+                    .withColumn("second_stage_block", functions.col("rocket.second_stage.block"))
+                    .withColumn("payloads_str", functions.expr("CAST(rocket.second_stage.payloads AS STRING)"))
+                    .drop("rocket")
+                    .drop("payloads")
+                    .drop("launch_site")
+            ;
+
+            df.coalesce(1)
+                    .write()
+                    .mode(SaveMode.Overwrite)
+                    .option("header", "true")
+                    .csv(path);
+
+            logger.info("CSV сохранён по пути: {}", path);
+            System.out.println("Данные сохранены в CSV (папка " + path + ")");
+
+        } catch (Exception e) {
+            logger.error("Ошибка при сохранении CSV: {}", e.getMessage(), e);
+            System.out.println("Ошибка при сохранении CSV: " + e.getMessage());
+        }
+    }
+
+
+
+
 }

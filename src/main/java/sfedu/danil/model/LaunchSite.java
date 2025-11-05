@@ -9,9 +9,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Payload {
-    private String payload_id;
-    private String nationality;
-    private String payload_type;
-    private String orbit;
+public class LaunchSite {
+    private String site_id;
+    private String site_name;
+    private String site_name_long;
 }

@@ -4,14 +4,13 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import java.util.List;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Payload {
-    private String payload_id;
-    private String nationality;
-    private String payload_type;
-    private String orbit;
+public class SecondStage {
+    private Integer block;
+    private List<Payload> payloads;
 }

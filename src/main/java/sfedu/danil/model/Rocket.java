@@ -13,4 +13,5 @@ public class Rocket {
     private String rocket_id;
     private String rocket_name;
     private String rocket_type;
+    private SecondStage second_stage;
 }

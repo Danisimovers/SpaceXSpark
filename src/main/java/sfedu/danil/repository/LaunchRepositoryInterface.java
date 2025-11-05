@@ -14,8 +14,11 @@ public interface LaunchRepositoryInterface {
     Optional<Launch> readByFlightNumber(int flightNumber);
     List<Launch> readAll();
     boolean existsByFlightNumber(int flightNumber);
+    boolean existsByRocketNumber(String rocketNumber);
+
 
     void updateLaunch(int flightNumber, Launch updatedLaunch);
     void deleteLaunch(int flightNumber);
     void deleteAll();
+    void exportToCsv();
 }

@@ -16,12 +16,12 @@ public class SparkConfig {
         if (sparkSession.isEmpty()) {
             logger.info("Инициализация SparkSession...");
 
+
+
             SparkSession spark = SparkSession.builder()
                     .appName("SpaceX-Spark-App")
                     .master("local[*]")
                     .config("spark.sql.shuffle.partitions", "4")
-                    .config("spark.local.dir", "spark-temp")
-                    .config("spark.sql.warehouse.dir", "spark-warehouse")
                     .getOrCreate();
 
             logger.info("SparkSession успешно создан!");
