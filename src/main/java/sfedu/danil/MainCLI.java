@@ -1,5 +1,6 @@
 package sfedu.danil;
 
+import sfedu.danil.entity.*;
 import sfedu.danil.model.Payload;
 import sfedu.danil.model.LaunchSite;
 import sfedu.danil.model.SecondStage;
@@ -14,6 +15,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.Scanner;
+
+import sfedu.danil.utils.HibernateUtil;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 
 
 public class MainCLI {
@@ -71,7 +77,8 @@ public class MainCLI {
             System.out.println("4. Удалить запуск");
             System.out.println("5. Посмотреть все запуски");
             System.out.println("6. Сохранить данные в CSV");
-            System.out.println("7. Выйти");
+            System.out.println("7. Сохранить данные в PostgreSQL");
+            System.out.println("8. Выйти");
             System.out.print("Выберите опцию: ");
 
             String choice = scanner.nextLine();
@@ -83,7 +90,8 @@ public class MainCLI {
                 case "4" -> deleteLaunch(scanner);
                 case "5" -> listAllLaunches();
                 case "6" -> exportToCsv();
-                case "7" -> running = false;
+                case "7" -> saveToPostgreSQL(scanner);
+                case "8" -> running = false;
                 default -> System.out.println("Неверный выбор. Попробуйте снова.");
             }
         }
@@ -91,6 +99,109 @@ public class MainCLI {
         scanner.close();
         SparkConfig.stopSparkSession();
         System.out.println("Программа завершена.");
+    }
+
+
+    private static void saveToPostgreSQL(Scanner scanner) {
+        System.out.println("\n=== Сохранение в PostgreSQL ===");
+
+        try {
+            List<Launch> launches = launchRepo.readAll();
+
+            if (launches.isEmpty()) {
+                System.out.println("Нет данных для сохранения в PostgreSQL.");
+                return;
+            }
+
+            System.out.println("Найдено " + launches.size() + " записей для сохранения.");
+            System.out.print("Сохранить все записи? (y/n): ");
+            String choice = scanner.nextLine();
+
+            if (choice.equalsIgnoreCase("y")) {
+                SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
+                int savedCount = 0;
+
+                for (Launch launch : launches) {
+                    Session session = sessionFactory.openSession();
+                    Transaction transaction = null;
+
+                    try {
+                        transaction = session.beginTransaction();
+
+                        // Конвертируем Launch в LaunchEntity
+                        LaunchEntity launchEntity = new LaunchEntity();
+                        launchEntity.setFlight_number(launch.getFlight_number());
+                        launchEntity.setLaunch_date_utc(launch.getLaunch_date_utc());
+                        launchEntity.setLaunch_success(launch.isLaunch_success());
+
+                        // Конвертируем LaunchSite
+                        if (launch.getLaunch_site() != null) {
+                            LaunchSiteEntity siteEntity = new LaunchSiteEntity();
+                            siteEntity.setSite_id(launch.getLaunch_site().getSite_id());
+                            siteEntity.setSite_name(launch.getLaunch_site().getSite_name());
+                            siteEntity.setSite_name_long(launch.getLaunch_site().getSite_name_long());
+                            launchEntity.setLaunch_site(siteEntity);
+                        }
+
+                        // Конвертируем Rocket
+                        if (launch.getRocket() != null) {
+                            RocketEntity rocketEntity = new RocketEntity();
+                            rocketEntity.setRocket_id(launch.getRocket().getRocket_id());
+                            rocketEntity.setRocket_name(launch.getRocket().getRocket_name());
+                            rocketEntity.setRocket_type(launch.getRocket().getRocket_type());
+
+                            // Конвертируем SecondStage если есть
+                            if (launch.getRocket().getSecond_stage() != null) {
+                                SecondStageEntity stageEntity = new SecondStageEntity();
+                                stageEntity.setBlock(launch.getRocket().getSecond_stage().getBlock());
+
+                                // СОХРАНЯЕМ PAYLOADS
+                                if (launch.getRocket().getSecond_stage().getPayloads() != null) {
+                                    List<PayloadEntity> payloadEntities = new ArrayList<>();
+
+                                    for (Payload payload : launch.getRocket().getSecond_stage().getPayloads()) {
+                                        PayloadEntity payloadEntity = new PayloadEntity();
+                                        payloadEntity.setPayload_id(payload.getPayload_id());
+                                        payloadEntity.setNationality(payload.getNationality());
+                                        payloadEntity.setPayload_type(payload.getPayload_type());
+                                        payloadEntity.setOrbit(payload.getOrbit());
+                                        payloadEntity.setSecond_stage(stageEntity);
+
+                                        payloadEntities.add(payloadEntity);
+                                    }
+
+                                    stageEntity.setPayloads(payloadEntities);
+                                }
+
+                                rocketEntity.setSecond_stage(stageEntity);
+                            }
+
+                            launchEntity.setRocket(rocketEntity);
+                        }
+
+                        session.merge(launchEntity);
+                        transaction.commit();
+                        savedCount++;
+                        System.out.println("Сохранен запуск #" + launch.getFlight_number());
+
+                    } catch (Exception e) {
+                        if (transaction != null) transaction.rollback();
+                        System.err.println("Ошибка при сохранении запуска #" + launch.getFlight_number());
+                        e.printStackTrace();
+                    } finally {
+                        session.close();
+                    }
+                }
+
+                System.out.println("Успешно сохранено записей в PostgreSQL: " + savedCount + "/" + launches.size());
+            } else {
+                System.out.println("Сохранение отменено.");
+            }
+
+        } catch (Exception e) {
+            System.err.println("Ошибка при сохранении в PostgreSQL: " + e.getMessage());
+            e.printStackTrace();
+        }
     }
 
     private static void exportToCsv() {

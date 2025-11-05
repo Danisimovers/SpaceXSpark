@@ -14,4 +14,10 @@ public class Payload {
     private String nationality;
     private String payload_type;
     private String orbit;
+
+    public Payload(String payload_id, String payload_type, String orbit) {
+        this.payload_id = payload_id;
+        this.payload_type = payload_type;
+        this.orbit = orbit;
+    }
 }

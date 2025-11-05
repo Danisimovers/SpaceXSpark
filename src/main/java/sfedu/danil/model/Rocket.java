@@ -14,4 +14,10 @@ public class Rocket {
     private String rocket_name;
     private String rocket_type;
     private SecondStage second_stage;
+
+    public Rocket(String rocket_id, String rocket_name, String rocket_type) {
+        this.rocket_id = rocket_id;
+        this.rocket_name = rocket_name;
+        this.rocket_type = rocket_type;
+    }
 }
