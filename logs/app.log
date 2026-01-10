@@ -1664,3 +1664,1495 @@ Caused by: java.io.FileNotFoundException: Hadoop bin directory does not exist: D
 2025-11-05 19:06:12 INFO  Server:479 - Stopped Server@5b5f9003{STOPPING}[11.0.24,sto=30000]
 2025-11-05 19:06:12 INFO  Server:135 - Shutdown Server@5b5f9003{STOPPING}[11.0.24,sto=30000]
 2025-11-05 19:06:12 INFO  AbstractConnector:431 - Stopped Spark@53cc08c9{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2025-11-05 19:25:53 INFO  SparkConfig:17 - Инициализация SparkSession...
+2025-11-05 19:25:54 WARN  Shell:746 - Did not find winutils.exe: java.io.FileNotFoundException: Hadoop bin directory does not exist: D:\SpaceXSpark\bin -see https://cwiki.apache.org/confluence/display/HADOOP2/WindowsProblems
+2025-11-05 19:25:54 WARN  NativeCodeLoader:60 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2025-11-05 19:25:54 INFO  Server:384 - jetty-11.0.24; built: 2024-08-26T18:11:22.448Z; git: 5dfc59a691b748796f922208956bd1f2794bcd16; jvm 21.0.6+7-LTS
+2025-11-05 19:25:54 INFO  Server:439 - Started Server@6282b9f5{STARTING}[11.0.24,sto=30000] @2143ms
+2025-11-05 19:25:54 INFO  AbstractConnector:376 - Started ServerConnector@7134fdc7{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2025-11-05 19:25:54 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@435e416c{/,null,AVAILABLE,@Spark}
+2025-11-05 19:25:55 INFO  ContextHandler:1123 - Stopped o.s.j.s.ServletContextHandler@435e416c{/,null,STOPPED,@Spark}
+2025-11-05 19:25:55 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@1a785fd5{/jobs,null,AVAILABLE,@Spark}
+2025-11-05 19:25:55 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@362a561e{/jobs/json,null,AVAILABLE,@Spark}
+2025-11-05 19:25:55 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@75ad30c1{/jobs/job,null,AVAILABLE,@Spark}
+2025-11-05 19:25:55 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@6b9697ae{/jobs/job/json,null,AVAILABLE,@Spark}
+2025-11-05 19:25:55 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@40c76f5a{/stages,null,AVAILABLE,@Spark}
+2025-11-05 19:25:55 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5546e754{/stages/json,null,AVAILABLE,@Spark}
+2025-11-05 19:25:55 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7196a8f1{/stages/stage,null,AVAILABLE,@Spark}
+2025-11-05 19:25:55 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@8f39224{/stages/stage/json,null,AVAILABLE,@Spark}
+2025-11-05 19:25:55 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@43e3a390{/stages/pool,null,AVAILABLE,@Spark}
+2025-11-05 19:25:55 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@50dc49e1{/stages/pool/json,null,AVAILABLE,@Spark}
+2025-11-05 19:25:55 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3babcaed{/stages/taskThreadDump,null,AVAILABLE,@Spark}
+2025-11-05 19:25:55 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@19bfbe28{/stages/taskThreadDump/json,null,AVAILABLE,@Spark}
+2025-11-05 19:25:55 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@49ced9c7{/storage,null,AVAILABLE,@Spark}
+2025-11-05 19:25:55 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@75ed125a{/storage/json,null,AVAILABLE,@Spark}
+2025-11-05 19:25:55 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5a85b4e6{/storage/rdd,null,AVAILABLE,@Spark}
+2025-11-05 19:25:55 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@6b09ce57{/storage/rdd/json,null,AVAILABLE,@Spark}
+2025-11-05 19:25:55 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2b9aeedb{/environment,null,AVAILABLE,@Spark}
+2025-11-05 19:25:55 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@23ea8830{/environment/json,null,AVAILABLE,@Spark}
+2025-11-05 19:25:55 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@790ac3e0{/executors,null,AVAILABLE,@Spark}
+2025-11-05 19:25:55 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2cee5365{/executors/json,null,AVAILABLE,@Spark}
+2025-11-05 19:25:55 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@56d6a1b1{/executors/threadDump,null,AVAILABLE,@Spark}
+2025-11-05 19:25:55 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@44da7eb3{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2025-11-05 19:25:55 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3d512652{/executors/heapHistogram,null,AVAILABLE,@Spark}
+2025-11-05 19:25:55 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3b96f8b0{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+2025-11-05 19:25:55 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@1fc0d9b4{/static,null,AVAILABLE,@Spark}
+2025-11-05 19:25:55 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7f1f60a0{/,null,AVAILABLE,@Spark}
+2025-11-05 19:25:55 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@71b26880{/api,null,AVAILABLE,@Spark}
+2025-11-05 19:25:55 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@70d3cdbf{/metrics,null,AVAILABLE,@Spark}
+2025-11-05 19:25:55 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5b322873{/jobs/job/kill,null,AVAILABLE,@Spark}
+2025-11-05 19:25:55 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7ad889be{/stages/stage/kill,null,AVAILABLE,@Spark}
+2025-11-05 19:25:55 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7be38eba{/metrics/json,null,AVAILABLE,@Spark}
+2025-11-05 19:25:55 INFO  SparkConfig:27 - SparkSession успешно создан!
+2025-11-05 19:25:55 INFO  SparkConfig:28 - Имя приложения: SpaceX-Spark-App
+2025-11-05 19:25:55 INFO  SparkConfig:29 - Режим выполнения (master): local[*]
+2025-11-05 19:25:55 INFO  SparkConfig:30 - Версия Spark: 4.0.1
+2025-11-05 19:25:55 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@38fb151a{/SQL,null,AVAILABLE,@Spark}
+2025-11-05 19:25:55 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@1b60d324{/SQL/json,null,AVAILABLE,@Spark}
+2025-11-05 19:25:55 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@69d667a5{/SQL/execution,null,AVAILABLE,@Spark}
+2025-11-05 19:25:55 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@8f4b803{/SQL/execution/json,null,AVAILABLE,@Spark}
+2025-11-05 19:25:55 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@1bbb42b4{/static/sql,null,AVAILABLE,@Spark}
+2025-11-05 19:25:56 INFO  LaunchRepository:26 - LaunchRepository инициализирован. Пустой Dataset создан.
+2025-11-05 19:25:59 INFO  SpaceXService:31 - Отправка запроса к SpaceX API: https://api.spacexdata.com/v3/launches
+2025-11-05 19:32:51 INFO  Server:479 - Stopped Server@6282b9f5{STOPPING}[11.0.24,sto=30000]
+2025-11-05 19:32:51 INFO  Server:135 - Shutdown Server@6282b9f5{STOPPING}[11.0.24,sto=30000]
+2025-11-05 19:32:51 INFO  AbstractConnector:431 - Stopped Spark@7134fdc7{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2025-11-09 15:20:50 INFO  SparkConfig:17 - Инициализация SparkSession...
+2025-11-09 15:20:52 WARN  Shell:746 - Did not find winutils.exe: java.io.FileNotFoundException: Hadoop bin directory does not exist: D:\SpaceXSpark\bin -see https://cwiki.apache.org/confluence/display/HADOOP2/WindowsProblems
+2025-11-09 15:20:52 WARN  NativeCodeLoader:60 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2025-11-09 15:20:52 INFO  Server:384 - jetty-11.0.24; built: 2024-08-26T18:11:22.448Z; git: 5dfc59a691b748796f922208956bd1f2794bcd16; jvm 21.0.6+7-LTS
+2025-11-09 15:20:52 INFO  Server:439 - Started Server@4962b41e{STARTING}[11.0.24,sto=30000] @3647ms
+2025-11-09 15:20:52 INFO  AbstractConnector:376 - Started ServerConnector@12ea55dc{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2025-11-09 15:20:52 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@75eaba95{/,null,AVAILABLE,@Spark}
+2025-11-09 15:20:53 INFO  ContextHandler:1123 - Stopped o.s.j.s.ServletContextHandler@75eaba95{/,null,STOPPED,@Spark}
+2025-11-09 15:20:53 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@1182413a{/jobs,null,AVAILABLE,@Spark}
+2025-11-09 15:20:53 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5b14f482{/jobs/json,null,AVAILABLE,@Spark}
+2025-11-09 15:20:53 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@1a785fd5{/jobs/job,null,AVAILABLE,@Spark}
+2025-11-09 15:20:53 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@362a561e{/jobs/job/json,null,AVAILABLE,@Spark}
+2025-11-09 15:20:53 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@75ad30c1{/stages,null,AVAILABLE,@Spark}
+2025-11-09 15:20:53 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@6b9697ae{/stages/json,null,AVAILABLE,@Spark}
+2025-11-09 15:20:53 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@40c76f5a{/stages/stage,null,AVAILABLE,@Spark}
+2025-11-09 15:20:53 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5546e754{/stages/stage/json,null,AVAILABLE,@Spark}
+2025-11-09 15:20:53 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7196a8f1{/stages/pool,null,AVAILABLE,@Spark}
+2025-11-09 15:20:53 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@8f39224{/stages/pool/json,null,AVAILABLE,@Spark}
+2025-11-09 15:20:53 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@43e3a390{/stages/taskThreadDump,null,AVAILABLE,@Spark}
+2025-11-09 15:20:53 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@50dc49e1{/stages/taskThreadDump/json,null,AVAILABLE,@Spark}
+2025-11-09 15:20:53 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3babcaed{/storage,null,AVAILABLE,@Spark}
+2025-11-09 15:20:53 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@19bfbe28{/storage/json,null,AVAILABLE,@Spark}
+2025-11-09 15:20:53 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@49ced9c7{/storage/rdd,null,AVAILABLE,@Spark}
+2025-11-09 15:20:53 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@75ed125a{/storage/rdd/json,null,AVAILABLE,@Spark}
+2025-11-09 15:20:53 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5a85b4e6{/environment,null,AVAILABLE,@Spark}
+2025-11-09 15:20:53 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@6b09ce57{/environment/json,null,AVAILABLE,@Spark}
+2025-11-09 15:20:53 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2b9aeedb{/executors,null,AVAILABLE,@Spark}
+2025-11-09 15:20:53 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@23ea8830{/executors/json,null,AVAILABLE,@Spark}
+2025-11-09 15:20:53 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@790ac3e0{/executors/threadDump,null,AVAILABLE,@Spark}
+2025-11-09 15:20:53 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2cee5365{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2025-11-09 15:20:53 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@56d6a1b1{/executors/heapHistogram,null,AVAILABLE,@Spark}
+2025-11-09 15:20:53 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@44da7eb3{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+2025-11-09 15:20:53 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3d512652{/static,null,AVAILABLE,@Spark}
+2025-11-09 15:20:53 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5e98032e{/,null,AVAILABLE,@Spark}
+2025-11-09 15:20:53 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@591be8aa{/api,null,AVAILABLE,@Spark}
+2025-11-09 15:20:53 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@afee63{/metrics,null,AVAILABLE,@Spark}
+2025-11-09 15:20:53 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@ff0e6d4{/jobs/job/kill,null,AVAILABLE,@Spark}
+2025-11-09 15:20:53 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@72a7aa4f{/stages/stage/kill,null,AVAILABLE,@Spark}
+2025-11-09 15:20:53 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2fba0dac{/metrics/json,null,AVAILABLE,@Spark}
+2025-11-09 15:20:53 INFO  SparkConfig:27 - SparkSession успешно создан!
+2025-11-09 15:20:53 INFO  SparkConfig:28 - Имя приложения: SpaceX-Spark-App
+2025-11-09 15:20:53 INFO  SparkConfig:29 - Режим выполнения (master): local[*]
+2025-11-09 15:20:53 INFO  SparkConfig:30 - Версия Spark: 4.0.1
+2025-11-09 15:20:53 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@51a719e7{/SQL,null,AVAILABLE,@Spark}
+2025-11-09 15:20:53 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@1073c664{/SQL/json,null,AVAILABLE,@Spark}
+2025-11-09 15:20:53 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@182e4365{/SQL/execution,null,AVAILABLE,@Spark}
+2025-11-09 15:20:53 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@1e6d30c0{/SQL/execution/json,null,AVAILABLE,@Spark}
+2025-11-09 15:20:53 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@24fc2c80{/static/sql,null,AVAILABLE,@Spark}
+2025-11-09 15:20:54 INFO  LaunchRepository:26 - LaunchRepository инициализирован. Пустой Dataset создан.
+2025-11-09 15:20:58 INFO  SpaceXService:31 - Отправка запроса к SpaceX API: https://api.spacexdata.com/v3/launches
+2025-11-09 15:21:28 INFO  Server:479 - Stopped Server@4962b41e{STOPPING}[11.0.24,sto=30000]
+2025-11-09 15:21:28 INFO  Server:135 - Shutdown Server@4962b41e{STOPPING}[11.0.24,sto=30000]
+2025-11-09 15:21:28 INFO  AbstractConnector:431 - Stopped Spark@12ea55dc{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2025-11-09 15:38:48 INFO  SparkConfig:17 - Инициализация SparkSession...
+2025-11-09 15:38:49 WARN  Shell:746 - Did not find winutils.exe: java.io.FileNotFoundException: Hadoop bin directory does not exist: D:\SpaceXSpark\bin -see https://cwiki.apache.org/confluence/display/HADOOP2/WindowsProblems
+2025-11-09 15:38:49 WARN  NativeCodeLoader:60 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2025-11-09 15:38:50 INFO  Server:384 - jetty-11.0.24; built: 2024-08-26T18:11:22.448Z; git: 5dfc59a691b748796f922208956bd1f2794bcd16; jvm 21.0.6+7-LTS
+2025-11-09 15:38:50 INFO  Server:439 - Started Server@4962b41e{STARTING}[11.0.24,sto=30000] @9271ms
+2025-11-09 15:38:50 INFO  AbstractConnector:376 - Started ServerConnector@1419aced{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2025-11-09 15:38:50 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@75eaba95{/,null,AVAILABLE,@Spark}
+2025-11-09 15:38:50 INFO  ContextHandler:1123 - Stopped o.s.j.s.ServletContextHandler@75eaba95{/,null,STOPPED,@Spark}
+2025-11-09 15:38:50 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@1182413a{/jobs,null,AVAILABLE,@Spark}
+2025-11-09 15:38:50 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5b14f482{/jobs/json,null,AVAILABLE,@Spark}
+2025-11-09 15:38:50 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@1a785fd5{/jobs/job,null,AVAILABLE,@Spark}
+2025-11-09 15:38:50 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@362a561e{/jobs/job/json,null,AVAILABLE,@Spark}
+2025-11-09 15:38:50 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@75ad30c1{/stages,null,AVAILABLE,@Spark}
+2025-11-09 15:38:50 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@6b9697ae{/stages/json,null,AVAILABLE,@Spark}
+2025-11-09 15:38:50 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@40c76f5a{/stages/stage,null,AVAILABLE,@Spark}
+2025-11-09 15:38:50 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5546e754{/stages/stage/json,null,AVAILABLE,@Spark}
+2025-11-09 15:38:50 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7196a8f1{/stages/pool,null,AVAILABLE,@Spark}
+2025-11-09 15:38:50 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@8f39224{/stages/pool/json,null,AVAILABLE,@Spark}
+2025-11-09 15:38:50 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@43e3a390{/stages/taskThreadDump,null,AVAILABLE,@Spark}
+2025-11-09 15:38:50 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@50dc49e1{/stages/taskThreadDump/json,null,AVAILABLE,@Spark}
+2025-11-09 15:38:50 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3babcaed{/storage,null,AVAILABLE,@Spark}
+2025-11-09 15:38:50 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@19bfbe28{/storage/json,null,AVAILABLE,@Spark}
+2025-11-09 15:38:50 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@49ced9c7{/storage/rdd,null,AVAILABLE,@Spark}
+2025-11-09 15:38:50 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@75ed125a{/storage/rdd/json,null,AVAILABLE,@Spark}
+2025-11-09 15:38:50 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5a85b4e6{/environment,null,AVAILABLE,@Spark}
+2025-11-09 15:38:50 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@6b09ce57{/environment/json,null,AVAILABLE,@Spark}
+2025-11-09 15:38:50 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2b9aeedb{/executors,null,AVAILABLE,@Spark}
+2025-11-09 15:38:50 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@23ea8830{/executors/json,null,AVAILABLE,@Spark}
+2025-11-09 15:38:50 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@790ac3e0{/executors/threadDump,null,AVAILABLE,@Spark}
+2025-11-09 15:38:50 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2cee5365{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2025-11-09 15:38:50 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@56d6a1b1{/executors/heapHistogram,null,AVAILABLE,@Spark}
+2025-11-09 15:38:50 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@44da7eb3{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+2025-11-09 15:38:50 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3d512652{/static,null,AVAILABLE,@Spark}
+2025-11-09 15:38:50 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5e98032e{/,null,AVAILABLE,@Spark}
+2025-11-09 15:38:50 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@591be8aa{/api,null,AVAILABLE,@Spark}
+2025-11-09 15:38:50 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@afee63{/metrics,null,AVAILABLE,@Spark}
+2025-11-09 15:38:50 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@ff0e6d4{/jobs/job/kill,null,AVAILABLE,@Spark}
+2025-11-09 15:38:50 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@72a7aa4f{/stages/stage/kill,null,AVAILABLE,@Spark}
+2025-11-09 15:38:50 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2fba0dac{/metrics/json,null,AVAILABLE,@Spark}
+2025-11-09 15:38:50 INFO  SparkConfig:27 - SparkSession успешно создан!
+2025-11-09 15:38:50 INFO  SparkConfig:28 - Имя приложения: SpaceX-Spark-App
+2025-11-09 15:38:50 INFO  SparkConfig:29 - Режим выполнения (master): local[*]
+2025-11-09 15:38:50 INFO  SparkConfig:30 - Версия Spark: 4.0.1
+2025-11-09 15:38:51 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@51a719e7{/SQL,null,AVAILABLE,@Spark}
+2025-11-09 15:38:51 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@1073c664{/SQL/json,null,AVAILABLE,@Spark}
+2025-11-09 15:38:51 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@182e4365{/SQL/execution,null,AVAILABLE,@Spark}
+2025-11-09 15:38:51 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@1e6d30c0{/SQL/execution/json,null,AVAILABLE,@Spark}
+2025-11-09 15:38:51 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@24fc2c80{/static/sql,null,AVAILABLE,@Spark}
+2025-11-09 15:38:52 INFO  LaunchRepository:26 - LaunchRepository инициализирован. Пустой Dataset создан.
+2025-11-09 15:38:55 INFO  SpaceXService:31 - Отправка запроса к SpaceX API: https://api.spacexdata.com/v3/launches
+2025-11-09 15:38:57 INFO  SpaceXService:47 - Получено 111 запусков
+2025-11-09 15:38:57 INFO  LaunchRepository:31 - Сохраняем список запусков, размер: 111
+2025-11-09 15:38:59 INFO  LaunchRepository:34 - Список запусков добавлен. Текущее количество запусков: 111
+2025-11-09 15:39:04 INFO  LaunchRepository:71 - Читаем все запуски. Всего: 111
+2025-11-09 15:39:13 INFO  LaunchRepository:71 - Читаем все запуски. Всего: 111
+2025-11-09 15:39:20 INFO  LaunchRepository:71 - Читаем все запуски. Всего: 111
+2025-11-09 15:39:22 INFO  Version:44 - HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-11-09 15:39:23 INFO  RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2025-11-09 15:39:23 WARN  pooling:80 - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-11-09 15:39:23 INFO  pooling:135 - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2025-11-09 15:39:23 INFO  pooling:157 - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/spacex]
+2025-11-09 15:39:23 INFO  pooling:166 - HHH10001001: Connection properties: {password=****, user=postgres}
+2025-11-09 15:39:23 INFO  pooling:170 - HHH10001003: Autocommit mode: false
+2025-11-09 15:39:23 INFO  pooling:366 - HHH10001115: Connection pool size: 5 (min=1)
+2025-11-09 15:39:23 WARN  deprecation:152 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-09 15:39:24 INFO  JtaPlatformInitiator:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-09 15:39:24 INFO  access:52 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@746169cd] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-11-09 15:39:37 INFO  Server:479 - Stopped Server@4962b41e{STOPPING}[11.0.24,sto=30000]
+2025-11-09 15:39:37 INFO  Server:135 - Shutdown Server@4962b41e{STOPPING}[11.0.24,sto=30000]
+2025-11-09 15:39:37 INFO  AbstractConnector:431 - Stopped Spark@1419aced{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2026-01-10 11:43:40 INFO  SparkConfig:17 - Инициализация SparkSession...
+2026-01-10 11:43:41 WARN  Shell:746 - Did not find winutils.exe: java.io.FileNotFoundException: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset. -see https://cwiki.apache.org/confluence/display/HADOOP2/WindowsProblems
+2026-01-10 11:43:41 WARN  NativeCodeLoader:60 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-01-10 11:43:42 INFO  Server:384 - jetty-11.0.24; built: 2024-08-26T18:11:22.448Z; git: 5dfc59a691b748796f922208956bd1f2794bcd16; jvm 21.0.6+7-LTS
+2026-01-10 11:43:42 INFO  Server:439 - Started Server@7e050be1{STARTING}[11.0.24,sto=30000] @2979ms
+2026-01-10 11:43:42 INFO  AbstractConnector:376 - Started ServerConnector@679cc33d{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2026-01-10 11:43:42 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5b665a30{/,null,AVAILABLE,@Spark}
+2026-01-10 11:43:42 INFO  ContextHandler:1123 - Stopped o.s.j.s.ServletContextHandler@5b665a30{/,null,STOPPED,@Spark}
+2026-01-10 11:43:42 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3514ac7d{/jobs,null,AVAILABLE,@Spark}
+2026-01-10 11:43:42 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@160c7c42{/jobs/json,null,AVAILABLE,@Spark}
+2026-01-10 11:43:42 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5503c7d{/jobs/job,null,AVAILABLE,@Spark}
+2026-01-10 11:43:42 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2ec0ca83{/jobs/job/json,null,AVAILABLE,@Spark}
+2026-01-10 11:43:42 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7827d7b{/stages,null,AVAILABLE,@Spark}
+2026-01-10 11:43:42 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2e7a9db7{/stages/json,null,AVAILABLE,@Spark}
+2026-01-10 11:43:42 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@11cc9e1e{/stages/stage,null,AVAILABLE,@Spark}
+2026-01-10 11:43:42 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5b0e9e0c{/stages/stage/json,null,AVAILABLE,@Spark}
+2026-01-10 11:43:42 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@21ea1d9d{/stages/pool,null,AVAILABLE,@Spark}
+2026-01-10 11:43:42 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@36a58466{/stages/pool/json,null,AVAILABLE,@Spark}
+2026-01-10 11:43:42 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@9147ba2{/stages/taskThreadDump,null,AVAILABLE,@Spark}
+2026-01-10 11:43:42 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2efcc0b3{/stages/taskThreadDump/json,null,AVAILABLE,@Spark}
+2026-01-10 11:43:42 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@60a6840c{/storage,null,AVAILABLE,@Spark}
+2026-01-10 11:43:42 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@1be3f8f8{/storage/json,null,AVAILABLE,@Spark}
+2026-01-10 11:43:42 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2ceb68a1{/storage/rdd,null,AVAILABLE,@Spark}
+2026-01-10 11:43:42 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@69c33ea2{/storage/rdd/json,null,AVAILABLE,@Spark}
+2026-01-10 11:43:42 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2e3900dc{/environment,null,AVAILABLE,@Spark}
+2026-01-10 11:43:42 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2a16d4dc{/environment/json,null,AVAILABLE,@Spark}
+2026-01-10 11:43:42 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@13d984ee{/executors,null,AVAILABLE,@Spark}
+2026-01-10 11:43:42 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5341641d{/executors/json,null,AVAILABLE,@Spark}
+2026-01-10 11:43:42 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7b3c0ecb{/executors/threadDump,null,AVAILABLE,@Spark}
+2026-01-10 11:43:42 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3006bfb{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2026-01-10 11:43:42 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5402612e{/executors/heapHistogram,null,AVAILABLE,@Spark}
+2026-01-10 11:43:42 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@431babe6{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+2026-01-10 11:43:42 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5072e638{/static,null,AVAILABLE,@Spark}
+2026-01-10 11:43:42 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@4345fd45{/,null,AVAILABLE,@Spark}
+2026-01-10 11:43:42 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@10d905c1{/api,null,AVAILABLE,@Spark}
+2026-01-10 11:43:42 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7a62d697{/metrics,null,AVAILABLE,@Spark}
+2026-01-10 11:43:42 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@62ab5e63{/jobs/job/kill,null,AVAILABLE,@Spark}
+2026-01-10 11:43:42 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5e8f0f98{/stages/stage/kill,null,AVAILABLE,@Spark}
+2026-01-10 11:43:42 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@62158991{/metrics/json,null,AVAILABLE,@Spark}
+2026-01-10 11:43:42 INFO  SparkConfig:27 - SparkSession успешно создан!
+2026-01-10 11:43:42 INFO  SparkConfig:28 - Имя приложения: SpaceX-Spark-App
+2026-01-10 11:43:42 INFO  SparkConfig:29 - Режим выполнения (master): local[*]
+2026-01-10 11:43:42 INFO  SparkConfig:30 - Версия Spark: 4.0.1
+2026-01-10 11:43:43 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@4888d1ea{/SQL,null,AVAILABLE,@Spark}
+2026-01-10 11:43:43 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3fd9e01c{/SQL/json,null,AVAILABLE,@Spark}
+2026-01-10 11:43:43 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@1f19d423{/SQL/execution,null,AVAILABLE,@Spark}
+2026-01-10 11:43:43 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@23933031{/SQL/execution/json,null,AVAILABLE,@Spark}
+2026-01-10 11:43:43 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@68360fb9{/static/sql,null,AVAILABLE,@Spark}
+2026-01-10 11:43:44 INFO  LaunchRepository:26 - LaunchRepository инициализирован. Пустой Dataset создан.
+2026-01-10 11:43:44 INFO  LaunchRepository:31 - Сохраняем список запусков, размер: 2
+2026-01-10 11:43:45 INFO  LaunchRepository:34 - Список запусков добавлен. Текущее количество запусков: 2
+2026-01-10 11:43:46 INFO  LaunchRepository:71 - Читаем все запуски. Всего: 2
+2026-01-10 11:43:46 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 1
+2026-01-10 11:43:46 INFO  LaunchRepository:64 - Запуск с flight_number 1 найден
+2026-01-10 11:43:46 INFO  LaunchRepository:77 - Проверяем существование запуска с flight_number: 1
+2026-01-10 11:43:46 INFO  LaunchRepository:85 - Запуск с flight_number 1 существует: true
+2026-01-10 11:43:46 INFO  LaunchRepository:77 - Проверяем существование запуска с flight_number: 999
+2026-01-10 11:43:46 INFO  LaunchRepository:85 - Запуск с flight_number 999 существует: false
+2026-01-10 11:43:46 INFO  LaunchRepository:39 - Сохраняем запуск с flight_number: 3
+2026-01-10 11:43:46 INFO  LaunchRepository:77 - Проверяем существование запуска с flight_number: 3
+2026-01-10 11:43:46 INFO  LaunchRepository:85 - Запуск с flight_number 3 существует: false
+2026-01-10 11:43:46 INFO  LaunchRepository:46 - Запуск добавлен. Текущее количество запусков: 3
+2026-01-10 11:43:46 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 3
+2026-01-10 11:43:46 INFO  LaunchRepository:64 - Запуск с flight_number 3 найден
+2026-01-10 11:43:46 INFO  LaunchRepository:39 - Сохраняем запуск с flight_number: 1
+2026-01-10 11:43:46 INFO  LaunchRepository:77 - Проверяем существование запуска с flight_number: 1
+2026-01-10 11:43:46 INFO  LaunchRepository:85 - Запуск с flight_number 1 существует: true
+2026-01-10 11:43:46 INFO  LaunchRepository:41 - Запуск с flight_number 1 уже существует. Обновляем его.
+2026-01-10 11:43:46 INFO  LaunchRepository:105 - Обновляем запуск с flight_number: 1
+2026-01-10 11:43:46 INFO  LaunchRepository:110 - Запуск с flight_number 1 обновлен
+2026-01-10 11:43:46 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 1
+2026-01-10 11:43:46 INFO  LaunchRepository:64 - Запуск с flight_number 1 найден
+2026-01-10 11:43:46 INFO  LaunchRepository:105 - Обновляем запуск с flight_number: 2
+2026-01-10 11:43:46 INFO  LaunchRepository:110 - Запуск с flight_number 2 обновлен
+2026-01-10 11:43:46 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 2
+2026-01-10 11:43:46 INFO  LaunchRepository:64 - Запуск с flight_number 2 найден
+2026-01-10 11:43:46 INFO  LaunchRepository:120 - Удаляем запуск с flight_number: 1
+2026-01-10 11:43:46 INFO  LaunchRepository:128 - Удаление выполнено. Текущее количество запусков: 2
+2026-01-10 11:43:46 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 1
+2026-01-10 11:43:46 WARN  LaunchRepository:61 - Запуск с flight_number 1 не найден
+2026-01-10 11:43:46 INFO  LaunchRepository:71 - Читаем все запуски. Всего: 2
+2026-01-10 11:43:46 INFO  LaunchRepository:133 - Удаляем все запуски
+2026-01-10 11:43:46 INFO  LaunchRepository:135 - Все запуски удалены. Текущее количество: 0
+2026-01-10 11:43:46 INFO  LaunchRepository:71 - Читаем все запуски. Всего: 0
+2026-01-10 11:43:47 INFO  SpaceXService:31 - Отправка запроса к SpaceX API: https://api.spacexdata.com/v3/launches
+2026-01-10 11:43:52 INFO  SpaceXService:47 - Получено 111 запусков
+2026-01-10 11:43:52 INFO  Server:479 - Stopped Server@7e050be1{STOPPING}[11.0.24,sto=30000]
+2026-01-10 11:43:52 INFO  Server:135 - Shutdown Server@7e050be1{STOPPING}[11.0.24,sto=30000]
+2026-01-10 11:43:52 INFO  AbstractConnector:431 - Stopped Spark@679cc33d{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2026-01-10 11:43:52 INFO  SparkConfig:41 - SparkSession остановлен.
+2026-01-10 11:47:45 INFO  SparkConfig:17 - Инициализация SparkSession...
+2026-01-10 11:47:46 WARN  Shell:746 - Did not find winutils.exe: java.io.FileNotFoundException: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset. -see https://cwiki.apache.org/confluence/display/HADOOP2/WindowsProblems
+2026-01-10 11:47:46 WARN  NativeCodeLoader:60 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-01-10 11:47:47 INFO  Server:384 - jetty-11.0.24; built: 2024-08-26T18:11:22.448Z; git: 5dfc59a691b748796f922208956bd1f2794bcd16; jvm 21.0.6+7-LTS
+2026-01-10 11:47:47 INFO  Server:439 - Started Server@7e050be1{STARTING}[11.0.24,sto=30000] @2460ms
+2026-01-10 11:47:47 INFO  AbstractConnector:376 - Started ServerConnector@1dd7801d{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2026-01-10 11:47:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5b665a30{/,null,AVAILABLE,@Spark}
+2026-01-10 11:47:47 INFO  ContextHandler:1123 - Stopped o.s.j.s.ServletContextHandler@5b665a30{/,null,STOPPED,@Spark}
+2026-01-10 11:47:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3514ac7d{/jobs,null,AVAILABLE,@Spark}
+2026-01-10 11:47:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@160c7c42{/jobs/json,null,AVAILABLE,@Spark}
+2026-01-10 11:47:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5503c7d{/jobs/job,null,AVAILABLE,@Spark}
+2026-01-10 11:47:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2ec0ca83{/jobs/job/json,null,AVAILABLE,@Spark}
+2026-01-10 11:47:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7827d7b{/stages,null,AVAILABLE,@Spark}
+2026-01-10 11:47:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2e7a9db7{/stages/json,null,AVAILABLE,@Spark}
+2026-01-10 11:47:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@11cc9e1e{/stages/stage,null,AVAILABLE,@Spark}
+2026-01-10 11:47:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5b0e9e0c{/stages/stage/json,null,AVAILABLE,@Spark}
+2026-01-10 11:47:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@21ea1d9d{/stages/pool,null,AVAILABLE,@Spark}
+2026-01-10 11:47:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@36a58466{/stages/pool/json,null,AVAILABLE,@Spark}
+2026-01-10 11:47:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@9147ba2{/stages/taskThreadDump,null,AVAILABLE,@Spark}
+2026-01-10 11:47:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2efcc0b3{/stages/taskThreadDump/json,null,AVAILABLE,@Spark}
+2026-01-10 11:47:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@60a6840c{/storage,null,AVAILABLE,@Spark}
+2026-01-10 11:47:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@1be3f8f8{/storage/json,null,AVAILABLE,@Spark}
+2026-01-10 11:47:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2ceb68a1{/storage/rdd,null,AVAILABLE,@Spark}
+2026-01-10 11:47:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@69c33ea2{/storage/rdd/json,null,AVAILABLE,@Spark}
+2026-01-10 11:47:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2e3900dc{/environment,null,AVAILABLE,@Spark}
+2026-01-10 11:47:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2a16d4dc{/environment/json,null,AVAILABLE,@Spark}
+2026-01-10 11:47:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@13d984ee{/executors,null,AVAILABLE,@Spark}
+2026-01-10 11:47:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5341641d{/executors/json,null,AVAILABLE,@Spark}
+2026-01-10 11:47:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7b3c0ecb{/executors/threadDump,null,AVAILABLE,@Spark}
+2026-01-10 11:47:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3006bfb{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2026-01-10 11:47:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5402612e{/executors/heapHistogram,null,AVAILABLE,@Spark}
+2026-01-10 11:47:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@431babe6{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+2026-01-10 11:47:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5072e638{/static,null,AVAILABLE,@Spark}
+2026-01-10 11:47:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@4345fd45{/,null,AVAILABLE,@Spark}
+2026-01-10 11:47:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@10d905c1{/api,null,AVAILABLE,@Spark}
+2026-01-10 11:47:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7a62d697{/metrics,null,AVAILABLE,@Spark}
+2026-01-10 11:47:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@62ab5e63{/jobs/job/kill,null,AVAILABLE,@Spark}
+2026-01-10 11:47:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5e8f0f98{/stages/stage/kill,null,AVAILABLE,@Spark}
+2026-01-10 11:47:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@62158991{/metrics/json,null,AVAILABLE,@Spark}
+2026-01-10 11:47:47 INFO  SparkConfig:27 - SparkSession успешно создан!
+2026-01-10 11:47:47 INFO  SparkConfig:28 - Имя приложения: SpaceX-Spark-App
+2026-01-10 11:47:47 INFO  SparkConfig:29 - Режим выполнения (master): local[*]
+2026-01-10 11:47:47 INFO  SparkConfig:30 - Версия Spark: 4.0.1
+2026-01-10 11:47:48 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@4888d1ea{/SQL,null,AVAILABLE,@Spark}
+2026-01-10 11:47:48 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3fd9e01c{/SQL/json,null,AVAILABLE,@Spark}
+2026-01-10 11:47:48 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@1f19d423{/SQL/execution,null,AVAILABLE,@Spark}
+2026-01-10 11:47:48 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@23933031{/SQL/execution/json,null,AVAILABLE,@Spark}
+2026-01-10 11:47:48 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@68360fb9{/static/sql,null,AVAILABLE,@Spark}
+2026-01-10 11:47:49 INFO  LaunchRepository:26 - LaunchRepository инициализирован. Пустой Dataset создан.
+2026-01-10 11:47:49 INFO  LaunchRepository:31 - Сохраняем список запусков, размер: 2
+2026-01-10 11:47:51 INFO  LaunchRepository:34 - Список запусков добавлен. Текущее количество запусков: 2
+2026-01-10 11:47:51 INFO  LaunchRepository:71 - Читаем все запуски. Всего: 2
+2026-01-10 11:47:51 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 1
+2026-01-10 11:47:51 INFO  LaunchRepository:64 - Запуск с flight_number 1 найден
+2026-01-10 11:47:51 INFO  LaunchRepository:77 - Проверяем существование запуска с flight_number: 1
+2026-01-10 11:47:51 INFO  LaunchRepository:85 - Запуск с flight_number 1 существует: true
+2026-01-10 11:47:51 INFO  LaunchRepository:77 - Проверяем существование запуска с flight_number: 999
+2026-01-10 11:47:51 INFO  LaunchRepository:85 - Запуск с flight_number 999 существует: false
+2026-01-10 11:47:51 INFO  LaunchRepository:39 - Сохраняем запуск с flight_number: 3
+2026-01-10 11:47:51 INFO  LaunchRepository:77 - Проверяем существование запуска с flight_number: 3
+2026-01-10 11:47:51 INFO  LaunchRepository:85 - Запуск с flight_number 3 существует: false
+2026-01-10 11:47:51 INFO  LaunchRepository:46 - Запуск добавлен. Текущее количество запусков: 3
+2026-01-10 11:47:51 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 3
+2026-01-10 11:47:51 INFO  LaunchRepository:64 - Запуск с flight_number 3 найден
+2026-01-10 11:47:51 INFO  LaunchRepository:39 - Сохраняем запуск с flight_number: 1
+2026-01-10 11:47:51 INFO  LaunchRepository:77 - Проверяем существование запуска с flight_number: 1
+2026-01-10 11:47:51 INFO  LaunchRepository:85 - Запуск с flight_number 1 существует: true
+2026-01-10 11:47:51 INFO  LaunchRepository:41 - Запуск с flight_number 1 уже существует. Обновляем его.
+2026-01-10 11:47:51 INFO  LaunchRepository:105 - Обновляем запуск с flight_number: 1
+2026-01-10 11:47:51 INFO  LaunchRepository:110 - Запуск с flight_number 1 обновлен
+2026-01-10 11:47:51 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 1
+2026-01-10 11:47:51 INFO  LaunchRepository:64 - Запуск с flight_number 1 найден
+2026-01-10 11:47:51 INFO  LaunchRepository:105 - Обновляем запуск с flight_number: 2
+2026-01-10 11:47:51 INFO  LaunchRepository:110 - Запуск с flight_number 2 обновлен
+2026-01-10 11:47:51 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 2
+2026-01-10 11:47:51 INFO  LaunchRepository:64 - Запуск с flight_number 2 найден
+2026-01-10 11:47:51 INFO  LaunchRepository:120 - Удаляем запуск с flight_number: 1
+2026-01-10 11:47:51 INFO  LaunchRepository:128 - Удаление выполнено. Текущее количество запусков: 2
+2026-01-10 11:47:51 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 1
+2026-01-10 11:47:51 WARN  LaunchRepository:61 - Запуск с flight_number 1 не найден
+2026-01-10 11:47:51 INFO  LaunchRepository:71 - Читаем все запуски. Всего: 2
+2026-01-10 11:47:51 INFO  LaunchRepository:133 - Удаляем все запуски
+2026-01-10 11:47:51 INFO  LaunchRepository:135 - Все запуски удалены. Текущее количество: 0
+2026-01-10 11:47:52 INFO  LaunchRepository:71 - Читаем все запуски. Всего: 0
+2026-01-10 11:47:52 INFO  SpaceXService:31 - Отправка запроса к SpaceX API: https://api.spacexdata.com/v3/launches
+2026-01-10 11:48:16 INFO  SpaceXService:47 - Получено 111 запусков
+2026-01-10 11:48:16 INFO  Server:479 - Stopped Server@7e050be1{STOPPING}[11.0.24,sto=30000]
+2026-01-10 11:48:16 INFO  Server:135 - Shutdown Server@7e050be1{STOPPING}[11.0.24,sto=30000]
+2026-01-10 11:48:16 INFO  AbstractConnector:431 - Stopped Spark@1dd7801d{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2026-01-10 11:48:16 INFO  SparkConfig:41 - SparkSession остановлен.
+2026-01-10 12:17:43 INFO  SparkConfig:17 - Инициализация SparkSession...
+2026-01-10 12:17:44 WARN  Shell:746 - Did not find winutils.exe: java.io.FileNotFoundException: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset. -see https://cwiki.apache.org/confluence/display/HADOOP2/WindowsProblems
+2026-01-10 12:17:44 WARN  NativeCodeLoader:60 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-01-10 12:17:45 INFO  Server:384 - jetty-11.0.24; built: 2024-08-26T18:11:22.448Z; git: 5dfc59a691b748796f922208956bd1f2794bcd16; jvm 21.0.6+7-LTS
+2026-01-10 12:17:45 INFO  Server:439 - Started Server@7e050be1{STARTING}[11.0.24,sto=30000] @2761ms
+2026-01-10 12:17:45 INFO  AbstractConnector:376 - Started ServerConnector@3c0e622b{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2026-01-10 12:17:45 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5b665a30{/,null,AVAILABLE,@Spark}
+2026-01-10 12:17:45 INFO  ContextHandler:1123 - Stopped o.s.j.s.ServletContextHandler@5b665a30{/,null,STOPPED,@Spark}
+2026-01-10 12:17:45 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3514ac7d{/jobs,null,AVAILABLE,@Spark}
+2026-01-10 12:17:45 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@160c7c42{/jobs/json,null,AVAILABLE,@Spark}
+2026-01-10 12:17:45 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5503c7d{/jobs/job,null,AVAILABLE,@Spark}
+2026-01-10 12:17:45 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2ec0ca83{/jobs/job/json,null,AVAILABLE,@Spark}
+2026-01-10 12:17:45 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7827d7b{/stages,null,AVAILABLE,@Spark}
+2026-01-10 12:17:45 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2e7a9db7{/stages/json,null,AVAILABLE,@Spark}
+2026-01-10 12:17:45 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@11cc9e1e{/stages/stage,null,AVAILABLE,@Spark}
+2026-01-10 12:17:45 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5b0e9e0c{/stages/stage/json,null,AVAILABLE,@Spark}
+2026-01-10 12:17:45 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@21ea1d9d{/stages/pool,null,AVAILABLE,@Spark}
+2026-01-10 12:17:45 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@36a58466{/stages/pool/json,null,AVAILABLE,@Spark}
+2026-01-10 12:17:45 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@9147ba2{/stages/taskThreadDump,null,AVAILABLE,@Spark}
+2026-01-10 12:17:45 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2efcc0b3{/stages/taskThreadDump/json,null,AVAILABLE,@Spark}
+2026-01-10 12:17:45 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@60a6840c{/storage,null,AVAILABLE,@Spark}
+2026-01-10 12:17:45 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@1be3f8f8{/storage/json,null,AVAILABLE,@Spark}
+2026-01-10 12:17:45 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2ceb68a1{/storage/rdd,null,AVAILABLE,@Spark}
+2026-01-10 12:17:45 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@69c33ea2{/storage/rdd/json,null,AVAILABLE,@Spark}
+2026-01-10 12:17:45 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2e3900dc{/environment,null,AVAILABLE,@Spark}
+2026-01-10 12:17:45 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2a16d4dc{/environment/json,null,AVAILABLE,@Spark}
+2026-01-10 12:17:45 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@13d984ee{/executors,null,AVAILABLE,@Spark}
+2026-01-10 12:17:45 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5341641d{/executors/json,null,AVAILABLE,@Spark}
+2026-01-10 12:17:45 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7b3c0ecb{/executors/threadDump,null,AVAILABLE,@Spark}
+2026-01-10 12:17:45 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3006bfb{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2026-01-10 12:17:45 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5402612e{/executors/heapHistogram,null,AVAILABLE,@Spark}
+2026-01-10 12:17:45 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@431babe6{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+2026-01-10 12:17:45 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5072e638{/static,null,AVAILABLE,@Spark}
+2026-01-10 12:17:45 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@4345fd45{/,null,AVAILABLE,@Spark}
+2026-01-10 12:17:45 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@10d905c1{/api,null,AVAILABLE,@Spark}
+2026-01-10 12:17:45 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7a62d697{/metrics,null,AVAILABLE,@Spark}
+2026-01-10 12:17:45 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@62ab5e63{/jobs/job/kill,null,AVAILABLE,@Spark}
+2026-01-10 12:17:45 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5e8f0f98{/stages/stage/kill,null,AVAILABLE,@Spark}
+2026-01-10 12:17:45 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@62158991{/metrics/json,null,AVAILABLE,@Spark}
+2026-01-10 12:17:45 INFO  SparkConfig:27 - SparkSession успешно создан!
+2026-01-10 12:17:45 INFO  SparkConfig:28 - Имя приложения: SpaceX-Spark-App
+2026-01-10 12:17:45 INFO  SparkConfig:29 - Режим выполнения (master): local[*]
+2026-01-10 12:17:45 INFO  SparkConfig:30 - Версия Spark: 4.0.1
+2026-01-10 12:17:46 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@4888d1ea{/SQL,null,AVAILABLE,@Spark}
+2026-01-10 12:17:46 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3fd9e01c{/SQL/json,null,AVAILABLE,@Spark}
+2026-01-10 12:17:46 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@1f19d423{/SQL/execution,null,AVAILABLE,@Spark}
+2026-01-10 12:17:46 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@23933031{/SQL/execution/json,null,AVAILABLE,@Spark}
+2026-01-10 12:17:46 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@68360fb9{/static/sql,null,AVAILABLE,@Spark}
+2026-01-10 12:17:47 INFO  LaunchRepository:26 - LaunchRepository инициализирован. Пустой Dataset создан.
+2026-01-10 12:17:47 INFO  LaunchRepository:31 - Сохраняем список запусков, размер: 2
+2026-01-10 12:17:49 INFO  LaunchRepository:34 - Список запусков добавлен. Текущее количество запусков: 2
+2026-01-10 12:17:49 INFO  LaunchRepository:71 - Читаем все запуски. Всего: 2
+2026-01-10 12:17:49 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 1
+2026-01-10 12:17:49 INFO  LaunchRepository:64 - Запуск с flight_number 1 найден
+2026-01-10 12:17:49 INFO  LaunchRepository:77 - Проверяем существование запуска с flight_number: 1
+2026-01-10 12:17:49 INFO  LaunchRepository:85 - Запуск с flight_number 1 существует: true
+2026-01-10 12:17:49 INFO  LaunchRepository:77 - Проверяем существование запуска с flight_number: 999
+2026-01-10 12:17:49 INFO  LaunchRepository:85 - Запуск с flight_number 999 существует: false
+2026-01-10 12:17:49 INFO  LaunchRepository:39 - Сохраняем запуск с flight_number: 3
+2026-01-10 12:17:49 INFO  LaunchRepository:77 - Проверяем существование запуска с flight_number: 3
+2026-01-10 12:17:49 INFO  LaunchRepository:85 - Запуск с flight_number 3 существует: false
+2026-01-10 12:17:49 INFO  LaunchRepository:46 - Запуск добавлен. Текущее количество запусков: 3
+2026-01-10 12:17:49 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 3
+2026-01-10 12:17:49 INFO  LaunchRepository:64 - Запуск с flight_number 3 найден
+2026-01-10 12:17:49 INFO  LaunchRepository:39 - Сохраняем запуск с flight_number: 1
+2026-01-10 12:17:49 INFO  LaunchRepository:77 - Проверяем существование запуска с flight_number: 1
+2026-01-10 12:17:49 INFO  LaunchRepository:85 - Запуск с flight_number 1 существует: true
+2026-01-10 12:17:49 INFO  LaunchRepository:41 - Запуск с flight_number 1 уже существует. Обновляем его.
+2026-01-10 12:17:49 INFO  LaunchRepository:105 - Обновляем запуск с flight_number: 1
+2026-01-10 12:17:49 INFO  LaunchRepository:110 - Запуск с flight_number 1 обновлен
+2026-01-10 12:17:49 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 1
+2026-01-10 12:17:49 INFO  LaunchRepository:64 - Запуск с flight_number 1 найден
+2026-01-10 12:17:49 INFO  LaunchRepository:105 - Обновляем запуск с flight_number: 2
+2026-01-10 12:17:49 INFO  LaunchRepository:110 - Запуск с flight_number 2 обновлен
+2026-01-10 12:17:49 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 2
+2026-01-10 12:17:49 INFO  LaunchRepository:64 - Запуск с flight_number 2 найден
+2026-01-10 12:17:49 INFO  LaunchRepository:120 - Удаляем запуск с flight_number: 1
+2026-01-10 12:17:49 INFO  LaunchRepository:128 - Удаление выполнено. Текущее количество запусков: 2
+2026-01-10 12:17:49 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 1
+2026-01-10 12:17:49 WARN  LaunchRepository:61 - Запуск с flight_number 1 не найден
+2026-01-10 12:17:49 INFO  LaunchRepository:71 - Читаем все запуски. Всего: 2
+2026-01-10 12:17:49 INFO  LaunchRepository:133 - Удаляем все запуски
+2026-01-10 12:17:50 INFO  LaunchRepository:135 - Все запуски удалены. Текущее количество: 0
+2026-01-10 12:17:50 INFO  LaunchRepository:71 - Читаем все запуски. Всего: 0
+2026-01-10 12:17:50 INFO  SpaceXService:31 - Отправка запроса к SpaceX API: https://api.spacexdata.com/v3/launches
+2026-01-10 12:17:58 INFO  SpaceXService:47 - Получено 111 запусков
+2026-01-10 12:17:58 INFO  Server:479 - Stopped Server@7e050be1{STOPPING}[11.0.24,sto=30000]
+2026-01-10 12:17:58 INFO  Server:135 - Shutdown Server@7e050be1{STOPPING}[11.0.24,sto=30000]
+2026-01-10 12:17:58 INFO  AbstractConnector:431 - Stopped Spark@3c0e622b{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2026-01-10 12:17:58 INFO  SparkConfig:41 - SparkSession остановлен.
+2026-01-10 12:24:45 INFO  SparkConfig:17 - Инициализация SparkSession...
+2026-01-10 12:24:46 WARN  Shell:746 - Did not find winutils.exe: java.io.FileNotFoundException: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset. -see https://cwiki.apache.org/confluence/display/HADOOP2/WindowsProblems
+2026-01-10 12:24:46 WARN  NativeCodeLoader:60 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-01-10 12:24:46 INFO  Server:384 - jetty-11.0.24; built: 2024-08-26T18:11:22.448Z; git: 5dfc59a691b748796f922208956bd1f2794bcd16; jvm 21.0.6+7-LTS
+2026-01-10 12:24:46 INFO  Server:439 - Started Server@7e050be1{STARTING}[11.0.24,sto=30000] @2307ms
+2026-01-10 12:24:46 INFO  AbstractConnector:376 - Started ServerConnector@22e7616f{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2026-01-10 12:24:46 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5b665a30{/,null,AVAILABLE,@Spark}
+2026-01-10 12:24:47 INFO  ContextHandler:1123 - Stopped o.s.j.s.ServletContextHandler@5b665a30{/,null,STOPPED,@Spark}
+2026-01-10 12:24:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3514ac7d{/jobs,null,AVAILABLE,@Spark}
+2026-01-10 12:24:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@160c7c42{/jobs/json,null,AVAILABLE,@Spark}
+2026-01-10 12:24:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5503c7d{/jobs/job,null,AVAILABLE,@Spark}
+2026-01-10 12:24:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2ec0ca83{/jobs/job/json,null,AVAILABLE,@Spark}
+2026-01-10 12:24:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7827d7b{/stages,null,AVAILABLE,@Spark}
+2026-01-10 12:24:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2e7a9db7{/stages/json,null,AVAILABLE,@Spark}
+2026-01-10 12:24:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@11cc9e1e{/stages/stage,null,AVAILABLE,@Spark}
+2026-01-10 12:24:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5b0e9e0c{/stages/stage/json,null,AVAILABLE,@Spark}
+2026-01-10 12:24:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@21ea1d9d{/stages/pool,null,AVAILABLE,@Spark}
+2026-01-10 12:24:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@36a58466{/stages/pool/json,null,AVAILABLE,@Spark}
+2026-01-10 12:24:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@9147ba2{/stages/taskThreadDump,null,AVAILABLE,@Spark}
+2026-01-10 12:24:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2efcc0b3{/stages/taskThreadDump/json,null,AVAILABLE,@Spark}
+2026-01-10 12:24:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@60a6840c{/storage,null,AVAILABLE,@Spark}
+2026-01-10 12:24:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@1be3f8f8{/storage/json,null,AVAILABLE,@Spark}
+2026-01-10 12:24:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2ceb68a1{/storage/rdd,null,AVAILABLE,@Spark}
+2026-01-10 12:24:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@69c33ea2{/storage/rdd/json,null,AVAILABLE,@Spark}
+2026-01-10 12:24:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2e3900dc{/environment,null,AVAILABLE,@Spark}
+2026-01-10 12:24:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2a16d4dc{/environment/json,null,AVAILABLE,@Spark}
+2026-01-10 12:24:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@13d984ee{/executors,null,AVAILABLE,@Spark}
+2026-01-10 12:24:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5341641d{/executors/json,null,AVAILABLE,@Spark}
+2026-01-10 12:24:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7b3c0ecb{/executors/threadDump,null,AVAILABLE,@Spark}
+2026-01-10 12:24:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3006bfb{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2026-01-10 12:24:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5402612e{/executors/heapHistogram,null,AVAILABLE,@Spark}
+2026-01-10 12:24:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@431babe6{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+2026-01-10 12:24:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5072e638{/static,null,AVAILABLE,@Spark}
+2026-01-10 12:24:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@4345fd45{/,null,AVAILABLE,@Spark}
+2026-01-10 12:24:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@10d905c1{/api,null,AVAILABLE,@Spark}
+2026-01-10 12:24:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7a62d697{/metrics,null,AVAILABLE,@Spark}
+2026-01-10 12:24:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@62ab5e63{/jobs/job/kill,null,AVAILABLE,@Spark}
+2026-01-10 12:24:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5e8f0f98{/stages/stage/kill,null,AVAILABLE,@Spark}
+2026-01-10 12:24:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@62158991{/metrics/json,null,AVAILABLE,@Spark}
+2026-01-10 12:24:47 INFO  SparkConfig:27 - SparkSession успешно создан!
+2026-01-10 12:24:47 INFO  SparkConfig:28 - Имя приложения: SpaceX-Spark-App
+2026-01-10 12:24:47 INFO  SparkConfig:29 - Режим выполнения (master): local[*]
+2026-01-10 12:24:47 INFO  SparkConfig:30 - Версия Spark: 4.0.1
+2026-01-10 12:24:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@4888d1ea{/SQL,null,AVAILABLE,@Spark}
+2026-01-10 12:24:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3fd9e01c{/SQL/json,null,AVAILABLE,@Spark}
+2026-01-10 12:24:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@1f19d423{/SQL/execution,null,AVAILABLE,@Spark}
+2026-01-10 12:24:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@23933031{/SQL/execution/json,null,AVAILABLE,@Spark}
+2026-01-10 12:24:47 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@68360fb9{/static/sql,null,AVAILABLE,@Spark}
+2026-01-10 12:24:48 INFO  LaunchRepository:26 - LaunchRepository инициализирован. Пустой Dataset создан.
+2026-01-10 12:24:48 INFO  LaunchRepository:31 - Сохраняем список запусков, размер: 2
+2026-01-10 12:24:50 INFO  LaunchRepository:34 - Список запусков добавлен. Текущее количество запусков: 2
+2026-01-10 12:24:50 INFO  LaunchRepository:71 - Читаем все запуски. Всего: 2
+2026-01-10 12:24:50 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 1
+2026-01-10 12:24:50 INFO  LaunchRepository:64 - Запуск с flight_number 1 найден
+2026-01-10 12:24:50 INFO  LaunchRepository:77 - Проверяем существование запуска с flight_number: 1
+2026-01-10 12:24:50 INFO  LaunchRepository:85 - Запуск с flight_number 1 существует: true
+2026-01-10 12:24:50 INFO  LaunchRepository:77 - Проверяем существование запуска с flight_number: 999
+2026-01-10 12:24:50 INFO  LaunchRepository:85 - Запуск с flight_number 999 существует: false
+2026-01-10 12:24:50 INFO  LaunchRepository:39 - Сохраняем запуск с flight_number: 3
+2026-01-10 12:24:50 INFO  LaunchRepository:77 - Проверяем существование запуска с flight_number: 3
+2026-01-10 12:24:50 INFO  LaunchRepository:85 - Запуск с flight_number 3 существует: false
+2026-01-10 12:24:50 INFO  LaunchRepository:46 - Запуск добавлен. Текущее количество запусков: 3
+2026-01-10 12:24:50 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 3
+2026-01-10 12:24:50 INFO  LaunchRepository:64 - Запуск с flight_number 3 найден
+2026-01-10 12:24:50 INFO  LaunchRepository:39 - Сохраняем запуск с flight_number: 1
+2026-01-10 12:24:50 INFO  LaunchRepository:77 - Проверяем существование запуска с flight_number: 1
+2026-01-10 12:24:50 INFO  LaunchRepository:85 - Запуск с flight_number 1 существует: true
+2026-01-10 12:24:50 INFO  LaunchRepository:41 - Запуск с flight_number 1 уже существует. Обновляем его.
+2026-01-10 12:24:50 INFO  LaunchRepository:105 - Обновляем запуск с flight_number: 1
+2026-01-10 12:24:50 INFO  LaunchRepository:110 - Запуск с flight_number 1 обновлен
+2026-01-10 12:24:50 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 1
+2026-01-10 12:24:50 INFO  LaunchRepository:64 - Запуск с flight_number 1 найден
+2026-01-10 12:24:50 INFO  LaunchRepository:105 - Обновляем запуск с flight_number: 2
+2026-01-10 12:24:50 INFO  LaunchRepository:110 - Запуск с flight_number 2 обновлен
+2026-01-10 12:24:50 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 2
+2026-01-10 12:24:50 INFO  LaunchRepository:64 - Запуск с flight_number 2 найден
+2026-01-10 12:24:50 INFO  LaunchRepository:120 - Удаляем запуск с flight_number: 1
+2026-01-10 12:24:50 INFO  LaunchRepository:128 - Удаление выполнено. Текущее количество запусков: 2
+2026-01-10 12:24:50 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 1
+2026-01-10 12:24:50 WARN  LaunchRepository:61 - Запуск с flight_number 1 не найден
+2026-01-10 12:24:50 INFO  LaunchRepository:71 - Читаем все запуски. Всего: 2
+2026-01-10 12:24:50 INFO  LaunchRepository:133 - Удаляем все запуски
+2026-01-10 12:24:50 INFO  LaunchRepository:135 - Все запуски удалены. Текущее количество: 0
+2026-01-10 12:24:50 INFO  LaunchRepository:71 - Читаем все запуски. Всего: 0
+2026-01-10 12:24:51 INFO  SpaceXService:31 - Отправка запроса к SpaceX API: https://api.spacexdata.com/v3/launches
+2026-01-10 12:25:06 INFO  SpaceXService:47 - Получено 111 запусков
+2026-01-10 12:25:06 INFO  Server:479 - Stopped Server@7e050be1{STOPPING}[11.0.24,sto=30000]
+2026-01-10 12:25:06 INFO  Server:135 - Shutdown Server@7e050be1{STOPPING}[11.0.24,sto=30000]
+2026-01-10 12:25:06 INFO  AbstractConnector:431 - Stopped Spark@22e7616f{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2026-01-10 12:25:06 INFO  SparkConfig:41 - SparkSession остановлен.
+2026-01-10 12:31:42 INFO  SparkConfig:17 - Инициализация SparkSession...
+2026-01-10 12:31:43 WARN  Shell:746 - Did not find winutils.exe: java.io.FileNotFoundException: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset. -see https://cwiki.apache.org/confluence/display/HADOOP2/WindowsProblems
+2026-01-10 12:31:43 WARN  NativeCodeLoader:60 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-01-10 12:31:44 INFO  Server:384 - jetty-11.0.24; built: 2024-08-26T18:11:22.448Z; git: 5dfc59a691b748796f922208956bd1f2794bcd16; jvm 21.0.6+7-LTS
+2026-01-10 12:31:44 INFO  Server:439 - Started Server@1b47b7f5{STARTING}[11.0.24,sto=30000] @3079ms
+2026-01-10 12:31:44 INFO  AbstractConnector:376 - Started ServerConnector@1fe527b7{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2026-01-10 12:31:44 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@26a45089{/,null,AVAILABLE,@Spark}
+2026-01-10 12:31:44 INFO  ContextHandler:1123 - Stopped o.s.j.s.ServletContextHandler@26a45089{/,null,STOPPED,@Spark}
+2026-01-10 12:31:44 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@79c4f23b{/jobs,null,AVAILABLE,@Spark}
+2026-01-10 12:31:44 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@15371de2{/jobs/json,null,AVAILABLE,@Spark}
+2026-01-10 12:31:44 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5b5b53c6{/jobs/job,null,AVAILABLE,@Spark}
+2026-01-10 12:31:44 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3350ab4{/jobs/job/json,null,AVAILABLE,@Spark}
+2026-01-10 12:31:44 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@646cb2e{/stages,null,AVAILABLE,@Spark}
+2026-01-10 12:31:44 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5315266{/stages/json,null,AVAILABLE,@Spark}
+2026-01-10 12:31:44 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@216328b2{/stages/stage,null,AVAILABLE,@Spark}
+2026-01-10 12:31:44 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@54234569{/stages/stage/json,null,AVAILABLE,@Spark}
+2026-01-10 12:31:44 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@19f497aa{/stages/pool,null,AVAILABLE,@Spark}
+2026-01-10 12:31:44 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@78e387d6{/stages/pool/json,null,AVAILABLE,@Spark}
+2026-01-10 12:31:44 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3460e4ed{/stages/taskThreadDump,null,AVAILABLE,@Spark}
+2026-01-10 12:31:44 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@4a453f8d{/stages/taskThreadDump/json,null,AVAILABLE,@Spark}
+2026-01-10 12:31:44 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@53525379{/storage,null,AVAILABLE,@Spark}
+2026-01-10 12:31:44 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@78b9155e{/storage/json,null,AVAILABLE,@Spark}
+2026-01-10 12:31:44 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@6de33fde{/storage/rdd,null,AVAILABLE,@Spark}
+2026-01-10 12:31:44 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@59e0d521{/storage/rdd/json,null,AVAILABLE,@Spark}
+2026-01-10 12:31:44 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5ad0c70a{/environment,null,AVAILABLE,@Spark}
+2026-01-10 12:31:44 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@75805562{/environment/json,null,AVAILABLE,@Spark}
+2026-01-10 12:31:44 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@4fedf908{/executors,null,AVAILABLE,@Spark}
+2026-01-10 12:31:44 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@241d1052{/executors/json,null,AVAILABLE,@Spark}
+2026-01-10 12:31:44 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5bb99d1d{/executors/threadDump,null,AVAILABLE,@Spark}
+2026-01-10 12:31:44 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@4fd37449{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2026-01-10 12:31:44 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@43445fc6{/executors/heapHistogram,null,AVAILABLE,@Spark}
+2026-01-10 12:31:44 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@17befef0{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+2026-01-10 12:31:44 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3129299f{/static,null,AVAILABLE,@Spark}
+2026-01-10 12:31:44 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@4152bd0f{/,null,AVAILABLE,@Spark}
+2026-01-10 12:31:44 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@e4b54d3{/api,null,AVAILABLE,@Spark}
+2026-01-10 12:31:44 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@edbc2bf{/metrics,null,AVAILABLE,@Spark}
+2026-01-10 12:31:44 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@e91facf{/jobs/job/kill,null,AVAILABLE,@Spark}
+2026-01-10 12:31:44 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@6bf0f70a{/stages/stage/kill,null,AVAILABLE,@Spark}
+2026-01-10 12:31:44 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@40738846{/metrics/json,null,AVAILABLE,@Spark}
+2026-01-10 12:31:44 INFO  SparkConfig:27 - SparkSession успешно создан!
+2026-01-10 12:31:44 INFO  SparkConfig:28 - Имя приложения: SpaceX-Spark-App
+2026-01-10 12:31:44 INFO  SparkConfig:29 - Режим выполнения (master): local[*]
+2026-01-10 12:31:44 INFO  SparkConfig:30 - Версия Spark: 4.0.1
+2026-01-10 12:31:44 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@217b0952{/SQL,null,AVAILABLE,@Spark}
+2026-01-10 12:31:44 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@36330be8{/SQL/json,null,AVAILABLE,@Spark}
+2026-01-10 12:31:44 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@73958426{/SQL/execution,null,AVAILABLE,@Spark}
+2026-01-10 12:31:44 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@4d0b7fd5{/SQL/execution/json,null,AVAILABLE,@Spark}
+2026-01-10 12:31:44 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@1c787389{/static/sql,null,AVAILABLE,@Spark}
+2026-01-10 12:31:46 INFO  LaunchRepository:26 - LaunchRepository инициализирован. Пустой Dataset создан.
+2026-01-10 12:31:46 INFO  LaunchRepository:31 - Сохраняем список запусков, размер: 2
+2026-01-10 12:31:47 INFO  LaunchRepository:34 - Список запусков добавлен. Текущее количество запусков: 2
+2026-01-10 12:31:47 INFO  LaunchRepository:71 - Читаем все запуски. Всего: 2
+2026-01-10 12:31:48 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 1
+2026-01-10 12:31:48 INFO  LaunchRepository:64 - Запуск с flight_number 1 найден
+2026-01-10 12:31:48 INFO  LaunchRepository:77 - Проверяем существование запуска с flight_number: 1
+2026-01-10 12:31:48 INFO  LaunchRepository:85 - Запуск с flight_number 1 существует: true
+2026-01-10 12:31:48 INFO  LaunchRepository:77 - Проверяем существование запуска с flight_number: 999
+2026-01-10 12:31:48 INFO  LaunchRepository:85 - Запуск с flight_number 999 существует: false
+2026-01-10 12:31:48 INFO  LaunchRepository:39 - Сохраняем запуск с flight_number: 3
+2026-01-10 12:31:48 INFO  LaunchRepository:77 - Проверяем существование запуска с flight_number: 3
+2026-01-10 12:31:48 INFO  LaunchRepository:85 - Запуск с flight_number 3 существует: false
+2026-01-10 12:31:48 INFO  LaunchRepository:46 - Запуск добавлен. Текущее количество запусков: 3
+2026-01-10 12:31:48 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 3
+2026-01-10 12:31:48 INFO  LaunchRepository:64 - Запуск с flight_number 3 найден
+2026-01-10 12:31:48 INFO  LaunchRepository:39 - Сохраняем запуск с flight_number: 1
+2026-01-10 12:31:48 INFO  LaunchRepository:77 - Проверяем существование запуска с flight_number: 1
+2026-01-10 12:31:48 INFO  LaunchRepository:85 - Запуск с flight_number 1 существует: true
+2026-01-10 12:31:48 INFO  LaunchRepository:41 - Запуск с flight_number 1 уже существует. Обновляем его.
+2026-01-10 12:31:48 INFO  LaunchRepository:105 - Обновляем запуск с flight_number: 1
+2026-01-10 12:31:48 INFO  LaunchRepository:110 - Запуск с flight_number 1 обновлен
+2026-01-10 12:31:48 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 1
+2026-01-10 12:31:48 INFO  LaunchRepository:64 - Запуск с flight_number 1 найден
+2026-01-10 12:31:48 INFO  LaunchRepository:105 - Обновляем запуск с flight_number: 2
+2026-01-10 12:31:48 INFO  LaunchRepository:110 - Запуск с flight_number 2 обновлен
+2026-01-10 12:31:48 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 2
+2026-01-10 12:31:48 INFO  LaunchRepository:64 - Запуск с flight_number 2 найден
+2026-01-10 12:31:48 INFO  LaunchRepository:120 - Удаляем запуск с flight_number: 1
+2026-01-10 12:31:48 INFO  LaunchRepository:128 - Удаление выполнено. Текущее количество запусков: 2
+2026-01-10 12:31:48 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 1
+2026-01-10 12:31:48 WARN  LaunchRepository:61 - Запуск с flight_number 1 не найден
+2026-01-10 12:31:48 INFO  LaunchRepository:71 - Читаем все запуски. Всего: 2
+2026-01-10 12:31:48 INFO  LaunchRepository:133 - Удаляем все запуски
+2026-01-10 12:31:48 INFO  LaunchRepository:135 - Все запуски удалены. Текущее количество: 0
+2026-01-10 12:31:48 INFO  LaunchRepository:71 - Читаем все запуски. Всего: 0
+2026-01-10 12:31:49 INFO  SpaceXService:31 - Отправка запроса к SpaceX API: https://api.spacexdata.com/v3/launches
+2026-01-10 12:31:50 INFO  SpaceXService:47 - Получено 111 запусков
+2026-01-10 12:31:50 INFO  Server:479 - Stopped Server@1b47b7f5{STOPPING}[11.0.24,sto=30000]
+2026-01-10 12:31:50 INFO  Server:135 - Shutdown Server@1b47b7f5{STOPPING}[11.0.24,sto=30000]
+2026-01-10 12:31:50 INFO  AbstractConnector:431 - Stopped Spark@1fe527b7{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2026-01-10 12:31:50 INFO  SparkConfig:41 - SparkSession остановлен.
+2026-01-10 12:38:54 INFO  SparkConfig:17 - Инициализация SparkSession...
+2026-01-10 12:38:55 WARN  Shell:746 - Did not find winutils.exe: java.io.FileNotFoundException: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset. -see https://cwiki.apache.org/confluence/display/HADOOP2/WindowsProblems
+2026-01-10 12:38:55 WARN  NativeCodeLoader:60 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-01-10 12:38:55 INFO  Server:384 - jetty-11.0.24; built: 2024-08-26T18:11:22.448Z; git: 5dfc59a691b748796f922208956bd1f2794bcd16; jvm 21.0.6+7-LTS
+2026-01-10 12:38:55 INFO  Server:439 - Started Server@7e050be1{STARTING}[11.0.24,sto=30000] @2250ms
+2026-01-10 12:38:55 INFO  AbstractConnector:376 - Started ServerConnector@1cb59c81{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2026-01-10 12:38:55 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5b665a30{/,null,AVAILABLE,@Spark}
+2026-01-10 12:38:56 INFO  ContextHandler:1123 - Stopped o.s.j.s.ServletContextHandler@5b665a30{/,null,STOPPED,@Spark}
+2026-01-10 12:38:56 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3514ac7d{/jobs,null,AVAILABLE,@Spark}
+2026-01-10 12:38:56 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@160c7c42{/jobs/json,null,AVAILABLE,@Spark}
+2026-01-10 12:38:56 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5503c7d{/jobs/job,null,AVAILABLE,@Spark}
+2026-01-10 12:38:56 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2ec0ca83{/jobs/job/json,null,AVAILABLE,@Spark}
+2026-01-10 12:38:56 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7827d7b{/stages,null,AVAILABLE,@Spark}
+2026-01-10 12:38:56 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2e7a9db7{/stages/json,null,AVAILABLE,@Spark}
+2026-01-10 12:38:56 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@11cc9e1e{/stages/stage,null,AVAILABLE,@Spark}
+2026-01-10 12:38:56 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5b0e9e0c{/stages/stage/json,null,AVAILABLE,@Spark}
+2026-01-10 12:38:56 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@21ea1d9d{/stages/pool,null,AVAILABLE,@Spark}
+2026-01-10 12:38:56 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@36a58466{/stages/pool/json,null,AVAILABLE,@Spark}
+2026-01-10 12:38:56 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@9147ba2{/stages/taskThreadDump,null,AVAILABLE,@Spark}
+2026-01-10 12:38:56 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2efcc0b3{/stages/taskThreadDump/json,null,AVAILABLE,@Spark}
+2026-01-10 12:38:56 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@60a6840c{/storage,null,AVAILABLE,@Spark}
+2026-01-10 12:38:56 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@1be3f8f8{/storage/json,null,AVAILABLE,@Spark}
+2026-01-10 12:38:56 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2ceb68a1{/storage/rdd,null,AVAILABLE,@Spark}
+2026-01-10 12:38:56 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@69c33ea2{/storage/rdd/json,null,AVAILABLE,@Spark}
+2026-01-10 12:38:56 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2e3900dc{/environment,null,AVAILABLE,@Spark}
+2026-01-10 12:38:56 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2a16d4dc{/environment/json,null,AVAILABLE,@Spark}
+2026-01-10 12:38:56 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@13d984ee{/executors,null,AVAILABLE,@Spark}
+2026-01-10 12:38:56 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5341641d{/executors/json,null,AVAILABLE,@Spark}
+2026-01-10 12:38:56 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7b3c0ecb{/executors/threadDump,null,AVAILABLE,@Spark}
+2026-01-10 12:38:56 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3006bfb{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2026-01-10 12:38:56 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5402612e{/executors/heapHistogram,null,AVAILABLE,@Spark}
+2026-01-10 12:38:56 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@431babe6{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+2026-01-10 12:38:56 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5072e638{/static,null,AVAILABLE,@Spark}
+2026-01-10 12:38:56 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@4345fd45{/,null,AVAILABLE,@Spark}
+2026-01-10 12:38:56 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@10d905c1{/api,null,AVAILABLE,@Spark}
+2026-01-10 12:38:56 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7a62d697{/metrics,null,AVAILABLE,@Spark}
+2026-01-10 12:38:56 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@62ab5e63{/jobs/job/kill,null,AVAILABLE,@Spark}
+2026-01-10 12:38:56 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5e8f0f98{/stages/stage/kill,null,AVAILABLE,@Spark}
+2026-01-10 12:38:56 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@62158991{/metrics/json,null,AVAILABLE,@Spark}
+2026-01-10 12:38:56 INFO  SparkConfig:27 - SparkSession успешно создан!
+2026-01-10 12:38:56 INFO  SparkConfig:28 - Имя приложения: SpaceX-Spark-App
+2026-01-10 12:38:56 INFO  SparkConfig:29 - Режим выполнения (master): local[*]
+2026-01-10 12:38:56 INFO  SparkConfig:30 - Версия Spark: 4.0.1
+2026-01-10 12:38:56 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@4888d1ea{/SQL,null,AVAILABLE,@Spark}
+2026-01-10 12:38:56 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3fd9e01c{/SQL/json,null,AVAILABLE,@Spark}
+2026-01-10 12:38:56 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@1f19d423{/SQL/execution,null,AVAILABLE,@Spark}
+2026-01-10 12:38:56 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@23933031{/SQL/execution/json,null,AVAILABLE,@Spark}
+2026-01-10 12:38:56 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@68360fb9{/static/sql,null,AVAILABLE,@Spark}
+2026-01-10 12:38:57 INFO  LaunchRepository:26 - LaunchRepository инициализирован. Пустой Dataset создан.
+2026-01-10 12:38:57 INFO  LaunchRepository:31 - Сохраняем список запусков, размер: 2
+2026-01-10 12:38:58 INFO  LaunchRepository:34 - Список запусков добавлен. Текущее количество запусков: 2
+2026-01-10 12:38:59 INFO  LaunchRepository:71 - Читаем все запуски. Всего: 2
+2026-01-10 12:38:59 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 1
+2026-01-10 12:38:59 INFO  LaunchRepository:64 - Запуск с flight_number 1 найден
+2026-01-10 12:38:59 INFO  LaunchRepository:77 - Проверяем существование запуска с flight_number: 1
+2026-01-10 12:38:59 INFO  LaunchRepository:85 - Запуск с flight_number 1 существует: true
+2026-01-10 12:38:59 INFO  LaunchRepository:77 - Проверяем существование запуска с flight_number: 999
+2026-01-10 12:38:59 INFO  LaunchRepository:85 - Запуск с flight_number 999 существует: false
+2026-01-10 12:38:59 INFO  LaunchRepository:39 - Сохраняем запуск с flight_number: 3
+2026-01-10 12:38:59 INFO  LaunchRepository:77 - Проверяем существование запуска с flight_number: 3
+2026-01-10 12:38:59 INFO  LaunchRepository:85 - Запуск с flight_number 3 существует: false
+2026-01-10 12:38:59 INFO  LaunchRepository:46 - Запуск добавлен. Текущее количество запусков: 3
+2026-01-10 12:38:59 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 3
+2026-01-10 12:38:59 INFO  LaunchRepository:64 - Запуск с flight_number 3 найден
+2026-01-10 12:38:59 INFO  LaunchRepository:39 - Сохраняем запуск с flight_number: 1
+2026-01-10 12:38:59 INFO  LaunchRepository:77 - Проверяем существование запуска с flight_number: 1
+2026-01-10 12:38:59 INFO  LaunchRepository:85 - Запуск с flight_number 1 существует: true
+2026-01-10 12:38:59 INFO  LaunchRepository:41 - Запуск с flight_number 1 уже существует. Обновляем его.
+2026-01-10 12:38:59 INFO  LaunchRepository:105 - Обновляем запуск с flight_number: 1
+2026-01-10 12:38:59 INFO  LaunchRepository:110 - Запуск с flight_number 1 обновлен
+2026-01-10 12:38:59 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 1
+2026-01-10 12:38:59 INFO  LaunchRepository:64 - Запуск с flight_number 1 найден
+2026-01-10 12:38:59 INFO  LaunchRepository:105 - Обновляем запуск с flight_number: 2
+2026-01-10 12:38:59 INFO  LaunchRepository:110 - Запуск с flight_number 2 обновлен
+2026-01-10 12:38:59 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 2
+2026-01-10 12:38:59 INFO  LaunchRepository:64 - Запуск с flight_number 2 найден
+2026-01-10 12:38:59 INFO  LaunchRepository:120 - Удаляем запуск с flight_number: 1
+2026-01-10 12:38:59 INFO  LaunchRepository:128 - Удаление выполнено. Текущее количество запусков: 2
+2026-01-10 12:38:59 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 1
+2026-01-10 12:38:59 WARN  LaunchRepository:61 - Запуск с flight_number 1 не найден
+2026-01-10 12:38:59 INFO  LaunchRepository:71 - Читаем все запуски. Всего: 2
+2026-01-10 12:38:59 INFO  LaunchRepository:133 - Удаляем все запуски
+2026-01-10 12:38:59 INFO  LaunchRepository:135 - Все запуски удалены. Текущее количество: 0
+2026-01-10 12:38:59 INFO  LaunchRepository:71 - Читаем все запуски. Всего: 0
+2026-01-10 12:39:00 INFO  SpaceXService:31 - Отправка запроса к SpaceX API: https://api.spacexdata.com/v3/launches
+2026-01-10 12:39:17 INFO  SpaceXService:47 - Получено 111 запусков
+2026-01-10 12:39:17 INFO  Server:479 - Stopped Server@7e050be1{STOPPING}[11.0.24,sto=30000]
+2026-01-10 12:39:17 INFO  Server:135 - Shutdown Server@7e050be1{STOPPING}[11.0.24,sto=30000]
+2026-01-10 12:39:17 INFO  AbstractConnector:431 - Stopped Spark@1cb59c81{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2026-01-10 12:39:17 INFO  SparkConfig:41 - SparkSession остановлен.
+2026-01-10 12:44:05 INFO  SparkConfig:17 - Инициализация SparkSession...
+2026-01-10 12:44:06 WARN  Shell:746 - Did not find winutils.exe: java.io.FileNotFoundException: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset. -see https://cwiki.apache.org/confluence/display/HADOOP2/WindowsProblems
+2026-01-10 12:44:06 WARN  NativeCodeLoader:60 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-01-10 12:44:07 INFO  Server:384 - jetty-11.0.24; built: 2024-08-26T18:11:22.448Z; git: 5dfc59a691b748796f922208956bd1f2794bcd16; jvm 21.0.6+7-LTS
+2026-01-10 12:44:07 INFO  Server:439 - Started Server@7e050be1{STARTING}[11.0.24,sto=30000] @2669ms
+2026-01-10 12:44:07 INFO  AbstractConnector:376 - Started ServerConnector@53e5bcfd{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2026-01-10 12:44:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5b665a30{/,null,AVAILABLE,@Spark}
+2026-01-10 12:44:07 INFO  ContextHandler:1123 - Stopped o.s.j.s.ServletContextHandler@5b665a30{/,null,STOPPED,@Spark}
+2026-01-10 12:44:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3514ac7d{/jobs,null,AVAILABLE,@Spark}
+2026-01-10 12:44:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@160c7c42{/jobs/json,null,AVAILABLE,@Spark}
+2026-01-10 12:44:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5503c7d{/jobs/job,null,AVAILABLE,@Spark}
+2026-01-10 12:44:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2ec0ca83{/jobs/job/json,null,AVAILABLE,@Spark}
+2026-01-10 12:44:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7827d7b{/stages,null,AVAILABLE,@Spark}
+2026-01-10 12:44:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2e7a9db7{/stages/json,null,AVAILABLE,@Spark}
+2026-01-10 12:44:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@11cc9e1e{/stages/stage,null,AVAILABLE,@Spark}
+2026-01-10 12:44:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5b0e9e0c{/stages/stage/json,null,AVAILABLE,@Spark}
+2026-01-10 12:44:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@21ea1d9d{/stages/pool,null,AVAILABLE,@Spark}
+2026-01-10 12:44:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@36a58466{/stages/pool/json,null,AVAILABLE,@Spark}
+2026-01-10 12:44:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@9147ba2{/stages/taskThreadDump,null,AVAILABLE,@Spark}
+2026-01-10 12:44:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2efcc0b3{/stages/taskThreadDump/json,null,AVAILABLE,@Spark}
+2026-01-10 12:44:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@60a6840c{/storage,null,AVAILABLE,@Spark}
+2026-01-10 12:44:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@1be3f8f8{/storage/json,null,AVAILABLE,@Spark}
+2026-01-10 12:44:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2ceb68a1{/storage/rdd,null,AVAILABLE,@Spark}
+2026-01-10 12:44:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@69c33ea2{/storage/rdd/json,null,AVAILABLE,@Spark}
+2026-01-10 12:44:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2e3900dc{/environment,null,AVAILABLE,@Spark}
+2026-01-10 12:44:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2a16d4dc{/environment/json,null,AVAILABLE,@Spark}
+2026-01-10 12:44:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@13d984ee{/executors,null,AVAILABLE,@Spark}
+2026-01-10 12:44:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5341641d{/executors/json,null,AVAILABLE,@Spark}
+2026-01-10 12:44:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7b3c0ecb{/executors/threadDump,null,AVAILABLE,@Spark}
+2026-01-10 12:44:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3006bfb{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2026-01-10 12:44:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5402612e{/executors/heapHistogram,null,AVAILABLE,@Spark}
+2026-01-10 12:44:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@431babe6{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+2026-01-10 12:44:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5072e638{/static,null,AVAILABLE,@Spark}
+2026-01-10 12:44:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@4345fd45{/,null,AVAILABLE,@Spark}
+2026-01-10 12:44:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@10d905c1{/api,null,AVAILABLE,@Spark}
+2026-01-10 12:44:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7a62d697{/metrics,null,AVAILABLE,@Spark}
+2026-01-10 12:44:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@62ab5e63{/jobs/job/kill,null,AVAILABLE,@Spark}
+2026-01-10 12:44:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5e8f0f98{/stages/stage/kill,null,AVAILABLE,@Spark}
+2026-01-10 12:44:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@62158991{/metrics/json,null,AVAILABLE,@Spark}
+2026-01-10 12:44:07 INFO  SparkConfig:27 - SparkSession успешно создан!
+2026-01-10 12:44:07 INFO  SparkConfig:28 - Имя приложения: SpaceX-Spark-App
+2026-01-10 12:44:07 INFO  SparkConfig:29 - Режим выполнения (master): local[*]
+2026-01-10 12:44:07 INFO  SparkConfig:30 - Версия Spark: 4.0.1
+2026-01-10 12:44:08 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@4888d1ea{/SQL,null,AVAILABLE,@Spark}
+2026-01-10 12:44:08 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3fd9e01c{/SQL/json,null,AVAILABLE,@Spark}
+2026-01-10 12:44:08 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@1f19d423{/SQL/execution,null,AVAILABLE,@Spark}
+2026-01-10 12:44:08 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@23933031{/SQL/execution/json,null,AVAILABLE,@Spark}
+2026-01-10 12:44:08 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@68360fb9{/static/sql,null,AVAILABLE,@Spark}
+2026-01-10 12:44:09 INFO  LaunchRepository:26 - LaunchRepository инициализирован. Пустой Dataset создан.
+2026-01-10 12:44:09 INFO  LaunchRepository:31 - Сохраняем список запусков, размер: 2
+2026-01-10 12:44:11 INFO  LaunchRepository:34 - Список запусков добавлен. Текущее количество запусков: 2
+2026-01-10 12:44:11 INFO  LaunchRepository:71 - Читаем все запуски. Всего: 2
+2026-01-10 12:44:11 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 1
+2026-01-10 12:44:11 INFO  LaunchRepository:64 - Запуск с flight_number 1 найден
+2026-01-10 12:44:11 INFO  LaunchRepository:77 - Проверяем существование запуска с flight_number: 1
+2026-01-10 12:44:11 INFO  LaunchRepository:85 - Запуск с flight_number 1 существует: true
+2026-01-10 12:44:11 INFO  LaunchRepository:77 - Проверяем существование запуска с flight_number: 999
+2026-01-10 12:44:11 INFO  LaunchRepository:85 - Запуск с flight_number 999 существует: false
+2026-01-10 12:44:11 INFO  LaunchRepository:39 - Сохраняем запуск с flight_number: 3
+2026-01-10 12:44:11 INFO  LaunchRepository:77 - Проверяем существование запуска с flight_number: 3
+2026-01-10 12:44:11 INFO  LaunchRepository:85 - Запуск с flight_number 3 существует: false
+2026-01-10 12:44:11 INFO  LaunchRepository:46 - Запуск добавлен. Текущее количество запусков: 3
+2026-01-10 12:44:11 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 3
+2026-01-10 12:44:11 INFO  LaunchRepository:64 - Запуск с flight_number 3 найден
+2026-01-10 12:44:11 INFO  LaunchRepository:39 - Сохраняем запуск с flight_number: 1
+2026-01-10 12:44:11 INFO  LaunchRepository:77 - Проверяем существование запуска с flight_number: 1
+2026-01-10 12:44:11 INFO  LaunchRepository:85 - Запуск с flight_number 1 существует: true
+2026-01-10 12:44:11 INFO  LaunchRepository:41 - Запуск с flight_number 1 уже существует. Обновляем его.
+2026-01-10 12:44:11 INFO  LaunchRepository:105 - Обновляем запуск с flight_number: 1
+2026-01-10 12:44:11 INFO  LaunchRepository:110 - Запуск с flight_number 1 обновлен
+2026-01-10 12:44:11 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 1
+2026-01-10 12:44:11 INFO  LaunchRepository:64 - Запуск с flight_number 1 найден
+2026-01-10 12:44:11 INFO  LaunchRepository:105 - Обновляем запуск с flight_number: 2
+2026-01-10 12:44:11 INFO  LaunchRepository:110 - Запуск с flight_number 2 обновлен
+2026-01-10 12:44:11 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 2
+2026-01-10 12:44:11 INFO  LaunchRepository:64 - Запуск с flight_number 2 найден
+2026-01-10 12:44:11 INFO  LaunchRepository:120 - Удаляем запуск с flight_number: 1
+2026-01-10 12:44:11 INFO  LaunchRepository:128 - Удаление выполнено. Текущее количество запусков: 2
+2026-01-10 12:44:11 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 1
+2026-01-10 12:44:11 WARN  LaunchRepository:61 - Запуск с flight_number 1 не найден
+2026-01-10 12:44:11 INFO  LaunchRepository:71 - Читаем все запуски. Всего: 2
+2026-01-10 12:44:11 INFO  LaunchRepository:133 - Удаляем все запуски
+2026-01-10 12:44:11 INFO  LaunchRepository:135 - Все запуски удалены. Текущее количество: 0
+2026-01-10 12:44:11 INFO  LaunchRepository:71 - Читаем все запуски. Всего: 0
+2026-01-10 12:44:12 INFO  SpaceXService:31 - Отправка запроса к SpaceX API: https://api.spacexdata.com/v3/launches
+2026-01-10 12:44:25 INFO  SpaceXService:47 - Получено 111 запусков
+2026-01-10 12:44:25 INFO  Server:479 - Stopped Server@7e050be1{STOPPING}[11.0.24,sto=30000]
+2026-01-10 12:44:25 INFO  Server:135 - Shutdown Server@7e050be1{STOPPING}[11.0.24,sto=30000]
+2026-01-10 12:44:25 INFO  AbstractConnector:431 - Stopped Spark@53e5bcfd{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2026-01-10 12:44:25 INFO  SparkConfig:41 - SparkSession остановлен.
+2026-01-10 12:47:58 INFO  SparkConfig:17 - Инициализация SparkSession...
+2026-01-10 12:47:59 WARN  Shell:746 - Did not find winutils.exe: java.io.FileNotFoundException: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset. -see https://cwiki.apache.org/confluence/display/HADOOP2/WindowsProblems
+2026-01-10 12:47:59 WARN  NativeCodeLoader:60 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-01-10 12:48:00 INFO  Server:384 - jetty-11.0.24; built: 2024-08-26T18:11:22.448Z; git: 5dfc59a691b748796f922208956bd1f2794bcd16; jvm 21.0.6+7-LTS
+2026-01-10 12:48:00 INFO  Server:439 - Started Server@6a6d1ff3{STARTING}[11.0.24,sto=30000] @2220ms
+2026-01-10 12:48:00 INFO  AbstractConnector:376 - Started ServerConnector@7282a369{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2026-01-10 12:48:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3c488b34{/,null,AVAILABLE,@Spark}
+2026-01-10 12:48:00 INFO  ContextHandler:1123 - Stopped o.s.j.s.ServletContextHandler@3c488b34{/,null,STOPPED,@Spark}
+2026-01-10 12:48:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2e3900dc{/jobs,null,AVAILABLE,@Spark}
+2026-01-10 12:48:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2a16d4dc{/jobs/json,null,AVAILABLE,@Spark}
+2026-01-10 12:48:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@13d984ee{/jobs/job,null,AVAILABLE,@Spark}
+2026-01-10 12:48:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5341641d{/jobs/job/json,null,AVAILABLE,@Spark}
+2026-01-10 12:48:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7b3c0ecb{/stages,null,AVAILABLE,@Spark}
+2026-01-10 12:48:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3006bfb{/stages/json,null,AVAILABLE,@Spark}
+2026-01-10 12:48:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5402612e{/stages/stage,null,AVAILABLE,@Spark}
+2026-01-10 12:48:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@431babe6{/stages/stage/json,null,AVAILABLE,@Spark}
+2026-01-10 12:48:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5072e638{/stages/pool,null,AVAILABLE,@Spark}
+2026-01-10 12:48:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2f73f0c7{/stages/pool/json,null,AVAILABLE,@Spark}
+2026-01-10 12:48:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@8debe42{/stages/taskThreadDump,null,AVAILABLE,@Spark}
+2026-01-10 12:48:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@40863800{/stages/taskThreadDump/json,null,AVAILABLE,@Spark}
+2026-01-10 12:48:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@24018c8b{/storage,null,AVAILABLE,@Spark}
+2026-01-10 12:48:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3dc55719{/storage/json,null,AVAILABLE,@Spark}
+2026-01-10 12:48:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@4c2bea52{/storage/rdd,null,AVAILABLE,@Spark}
+2026-01-10 12:48:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@6ebbc06{/storage/rdd/json,null,AVAILABLE,@Spark}
+2026-01-10 12:48:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@430d3021{/environment,null,AVAILABLE,@Spark}
+2026-01-10 12:48:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3220c28{/environment/json,null,AVAILABLE,@Spark}
+2026-01-10 12:48:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@40c28b0d{/executors,null,AVAILABLE,@Spark}
+2026-01-10 12:48:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@1fa98a22{/executors/json,null,AVAILABLE,@Spark}
+2026-01-10 12:48:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5a7e81{/executors/threadDump,null,AVAILABLE,@Spark}
+2026-01-10 12:48:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@13ee97af{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2026-01-10 12:48:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@341ccfd1{/executors/heapHistogram,null,AVAILABLE,@Spark}
+2026-01-10 12:48:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3cead673{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+2026-01-10 12:48:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@10a0a1e{/static,null,AVAILABLE,@Spark}
+2026-01-10 12:48:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@714bffd5{/,null,AVAILABLE,@Spark}
+2026-01-10 12:48:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@4491eaeb{/api,null,AVAILABLE,@Spark}
+2026-01-10 12:48:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@38e46765{/metrics,null,AVAILABLE,@Spark}
+2026-01-10 12:48:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2965dd88{/jobs/job/kill,null,AVAILABLE,@Spark}
+2026-01-10 12:48:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@51141f64{/stages/stage/kill,null,AVAILABLE,@Spark}
+2026-01-10 12:48:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@eb1d475{/metrics/json,null,AVAILABLE,@Spark}
+2026-01-10 12:48:00 INFO  SparkConfig:27 - SparkSession успешно создан!
+2026-01-10 12:48:00 INFO  SparkConfig:28 - Имя приложения: SpaceX-Spark-App
+2026-01-10 12:48:00 INFO  SparkConfig:29 - Режим выполнения (master): local[*]
+2026-01-10 12:48:00 INFO  SparkConfig:30 - Версия Spark: 4.0.1
+2026-01-10 12:48:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3f6906f4{/SQL,null,AVAILABLE,@Spark}
+2026-01-10 12:48:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@190bf8e4{/SQL/json,null,AVAILABLE,@Spark}
+2026-01-10 12:48:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3dd66ff5{/SQL/execution,null,AVAILABLE,@Spark}
+2026-01-10 12:48:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@493968a9{/SQL/execution/json,null,AVAILABLE,@Spark}
+2026-01-10 12:48:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2211e731{/static/sql,null,AVAILABLE,@Spark}
+2026-01-10 12:48:01 INFO  LaunchRepository:26 - LaunchRepository инициализирован. Пустой Dataset создан.
+2026-01-10 12:48:01 INFO  LaunchRepository:31 - Сохраняем список запусков, размер: 2
+2026-01-10 12:48:03 INFO  LaunchRepository:34 - Список запусков добавлен. Текущее количество запусков: 2
+2026-01-10 12:48:03 INFO  LaunchRepository:71 - Читаем все запуски. Всего: 2
+2026-01-10 12:48:03 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 1
+2026-01-10 12:48:03 INFO  LaunchRepository:64 - Запуск с flight_number 1 найден
+2026-01-10 12:48:03 INFO  LaunchRepository:77 - Проверяем существование запуска с flight_number: 1
+2026-01-10 12:48:03 INFO  LaunchRepository:85 - Запуск с flight_number 1 существует: true
+2026-01-10 12:48:03 INFO  LaunchRepository:77 - Проверяем существование запуска с flight_number: 999
+2026-01-10 12:48:03 INFO  LaunchRepository:85 - Запуск с flight_number 999 существует: false
+2026-01-10 12:48:03 INFO  LaunchRepository:39 - Сохраняем запуск с flight_number: 3
+2026-01-10 12:48:03 INFO  LaunchRepository:77 - Проверяем существование запуска с flight_number: 3
+2026-01-10 12:48:03 INFO  LaunchRepository:85 - Запуск с flight_number 3 существует: false
+2026-01-10 12:48:03 INFO  LaunchRepository:46 - Запуск добавлен. Текущее количество запусков: 3
+2026-01-10 12:48:03 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 3
+2026-01-10 12:48:03 INFO  LaunchRepository:64 - Запуск с flight_number 3 найден
+2026-01-10 12:48:03 INFO  LaunchRepository:39 - Сохраняем запуск с flight_number: 1
+2026-01-10 12:48:03 INFO  LaunchRepository:77 - Проверяем существование запуска с flight_number: 1
+2026-01-10 12:48:03 INFO  LaunchRepository:85 - Запуск с flight_number 1 существует: true
+2026-01-10 12:48:03 INFO  LaunchRepository:41 - Запуск с flight_number 1 уже существует. Обновляем его.
+2026-01-10 12:48:03 INFO  LaunchRepository:105 - Обновляем запуск с flight_number: 1
+2026-01-10 12:48:03 INFO  LaunchRepository:110 - Запуск с flight_number 1 обновлен
+2026-01-10 12:48:03 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 1
+2026-01-10 12:48:03 INFO  LaunchRepository:64 - Запуск с flight_number 1 найден
+2026-01-10 12:48:03 INFO  LaunchRepository:105 - Обновляем запуск с flight_number: 2
+2026-01-10 12:48:03 INFO  LaunchRepository:110 - Запуск с flight_number 2 обновлен
+2026-01-10 12:48:03 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 2
+2026-01-10 12:48:03 INFO  LaunchRepository:64 - Запуск с flight_number 2 найден
+2026-01-10 12:48:03 INFO  LaunchRepository:120 - Удаляем запуск с flight_number: 1
+2026-01-10 12:48:03 INFO  LaunchRepository:128 - Удаление выполнено. Текущее количество запусков: 2
+2026-01-10 12:48:03 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 1
+2026-01-10 12:48:03 WARN  LaunchRepository:61 - Запуск с flight_number 1 не найден
+2026-01-10 12:48:04 INFO  LaunchRepository:71 - Читаем все запуски. Всего: 2
+2026-01-10 12:48:04 INFO  LaunchRepository:133 - Удаляем все запуски
+2026-01-10 12:48:04 INFO  LaunchRepository:135 - Все запуски удалены. Текущее количество: 0
+2026-01-10 12:48:04 INFO  LaunchRepository:71 - Читаем все запуски. Всего: 0
+2026-01-10 12:48:04 INFO  SpaceXService:31 - Отправка запроса к SpaceX API: https://api.spacexdata.com/v3/launches
+2026-01-10 12:48:17 INFO  SpaceXService:47 - Получено 111 запусков
+2026-01-10 12:48:17 INFO  Server:479 - Stopped Server@6a6d1ff3{STOPPING}[11.0.24,sto=30000]
+2026-01-10 12:48:17 INFO  Server:135 - Shutdown Server@6a6d1ff3{STOPPING}[11.0.24,sto=30000]
+2026-01-10 12:48:17 INFO  AbstractConnector:431 - Stopped Spark@7282a369{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2026-01-10 12:48:17 INFO  SparkConfig:41 - SparkSession остановлен.
+2026-01-10 12:53:22 INFO  SparkConfig:17 - Инициализация SparkSession...
+2026-01-10 12:53:23 WARN  Shell:746 - Did not find winutils.exe: java.io.FileNotFoundException: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset. -see https://cwiki.apache.org/confluence/display/HADOOP2/WindowsProblems
+2026-01-10 12:53:23 WARN  NativeCodeLoader:60 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-01-10 12:53:23 INFO  Server:384 - jetty-11.0.24; built: 2024-08-26T18:11:22.448Z; git: 5dfc59a691b748796f922208956bd1f2794bcd16; jvm 21.0.6+7-LTS
+2026-01-10 12:53:23 INFO  Server:439 - Started Server@5ab63a04{STARTING}[11.0.24,sto=30000] @2193ms
+2026-01-10 12:53:23 INFO  AbstractConnector:376 - Started ServerConnector@2697d6f{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2026-01-10 12:53:23 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3e8b8f0{/,null,AVAILABLE,@Spark}
+2026-01-10 12:53:24 INFO  ContextHandler:1123 - Stopped o.s.j.s.ServletContextHandler@3e8b8f0{/,null,STOPPED,@Spark}
+2026-01-10 12:53:24 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@4a453f8d{/jobs,null,AVAILABLE,@Spark}
+2026-01-10 12:53:24 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@53525379{/jobs/json,null,AVAILABLE,@Spark}
+2026-01-10 12:53:24 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@78b9155e{/jobs/job,null,AVAILABLE,@Spark}
+2026-01-10 12:53:24 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@6de33fde{/jobs/job/json,null,AVAILABLE,@Spark}
+2026-01-10 12:53:24 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@59e0d521{/stages,null,AVAILABLE,@Spark}
+2026-01-10 12:53:24 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5ad0c70a{/stages/json,null,AVAILABLE,@Spark}
+2026-01-10 12:53:24 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@75805562{/stages/stage,null,AVAILABLE,@Spark}
+2026-01-10 12:53:24 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@4fedf908{/stages/stage/json,null,AVAILABLE,@Spark}
+2026-01-10 12:53:24 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@241d1052{/stages/pool,null,AVAILABLE,@Spark}
+2026-01-10 12:53:24 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5bb99d1d{/stages/pool/json,null,AVAILABLE,@Spark}
+2026-01-10 12:53:24 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@4fd37449{/stages/taskThreadDump,null,AVAILABLE,@Spark}
+2026-01-10 12:53:24 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@43445fc6{/stages/taskThreadDump/json,null,AVAILABLE,@Spark}
+2026-01-10 12:53:24 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@17befef0{/storage,null,AVAILABLE,@Spark}
+2026-01-10 12:53:24 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3129299f{/storage/json,null,AVAILABLE,@Spark}
+2026-01-10 12:53:24 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@4fdac2a7{/storage/rdd,null,AVAILABLE,@Spark}
+2026-01-10 12:53:24 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@70c31b17{/storage/rdd/json,null,AVAILABLE,@Spark}
+2026-01-10 12:53:24 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5950054d{/environment,null,AVAILABLE,@Spark}
+2026-01-10 12:53:24 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@4cf230bf{/environment/json,null,AVAILABLE,@Spark}
+2026-01-10 12:53:24 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@64665781{/executors,null,AVAILABLE,@Spark}
+2026-01-10 12:53:24 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@11015ca0{/executors/json,null,AVAILABLE,@Spark}
+2026-01-10 12:53:24 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@50672905{/executors/threadDump,null,AVAILABLE,@Spark}
+2026-01-10 12:53:24 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@58f290bc{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2026-01-10 12:53:24 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@6ae42248{/executors/heapHistogram,null,AVAILABLE,@Spark}
+2026-01-10 12:53:24 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@cf984d9{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+2026-01-10 12:53:24 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@54941dfd{/static,null,AVAILABLE,@Spark}
+2026-01-10 12:53:24 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5310e451{/,null,AVAILABLE,@Spark}
+2026-01-10 12:53:24 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@74830d73{/api,null,AVAILABLE,@Spark}
+2026-01-10 12:53:24 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@738a39cc{/metrics,null,AVAILABLE,@Spark}
+2026-01-10 12:53:24 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@62158991{/jobs/job/kill,null,AVAILABLE,@Spark}
+2026-01-10 12:53:24 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@1255de25{/stages/stage/kill,null,AVAILABLE,@Spark}
+2026-01-10 12:53:24 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@70697478{/metrics/json,null,AVAILABLE,@Spark}
+2026-01-10 12:53:24 INFO  SparkConfig:27 - SparkSession успешно создан!
+2026-01-10 12:53:24 INFO  SparkConfig:28 - Имя приложения: SpaceX-Spark-App
+2026-01-10 12:53:24 INFO  SparkConfig:29 - Режим выполнения (master): local[*]
+2026-01-10 12:53:24 INFO  SparkConfig:30 - Версия Spark: 4.0.1
+2026-01-10 12:53:24 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@6f17dd06{/SQL,null,AVAILABLE,@Spark}
+2026-01-10 12:53:24 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@6ec98ccc{/SQL/json,null,AVAILABLE,@Spark}
+2026-01-10 12:53:24 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@603c2dee{/SQL/execution,null,AVAILABLE,@Spark}
+2026-01-10 12:53:24 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3f6906f4{/SQL/execution/json,null,AVAILABLE,@Spark}
+2026-01-10 12:53:24 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3dd66ff5{/static/sql,null,AVAILABLE,@Spark}
+2026-01-10 12:53:25 INFO  LaunchRepository:26 - LaunchRepository инициализирован. Пустой Dataset создан.
+2026-01-10 12:53:25 INFO  LaunchRepository:31 - Сохраняем список запусков, размер: 2
+2026-01-10 12:53:26 INFO  LaunchRepository:34 - Список запусков добавлен. Текущее количество запусков: 2
+2026-01-10 12:53:26 INFO  LaunchRepository:71 - Читаем все запуски. Всего: 2
+2026-01-10 12:53:27 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 1
+2026-01-10 12:53:27 INFO  LaunchRepository:64 - Запуск с flight_number 1 найден
+2026-01-10 12:53:27 INFO  LaunchRepository:77 - Проверяем существование запуска с flight_number: 1
+2026-01-10 12:53:27 INFO  LaunchRepository:85 - Запуск с flight_number 1 существует: true
+2026-01-10 12:53:27 INFO  LaunchRepository:77 - Проверяем существование запуска с flight_number: 999
+2026-01-10 12:53:27 INFO  LaunchRepository:85 - Запуск с flight_number 999 существует: false
+2026-01-10 12:53:27 INFO  LaunchRepository:39 - Сохраняем запуск с flight_number: 3
+2026-01-10 12:53:27 INFO  LaunchRepository:77 - Проверяем существование запуска с flight_number: 3
+2026-01-10 12:53:27 INFO  LaunchRepository:85 - Запуск с flight_number 3 существует: false
+2026-01-10 12:53:27 INFO  LaunchRepository:46 - Запуск добавлен. Текущее количество запусков: 3
+2026-01-10 12:53:27 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 3
+2026-01-10 12:53:27 INFO  LaunchRepository:64 - Запуск с flight_number 3 найден
+2026-01-10 12:53:27 INFO  LaunchRepository:39 - Сохраняем запуск с flight_number: 1
+2026-01-10 12:53:27 INFO  LaunchRepository:77 - Проверяем существование запуска с flight_number: 1
+2026-01-10 12:53:27 INFO  LaunchRepository:85 - Запуск с flight_number 1 существует: true
+2026-01-10 12:53:27 INFO  LaunchRepository:41 - Запуск с flight_number 1 уже существует. Обновляем его.
+2026-01-10 12:53:27 INFO  LaunchRepository:105 - Обновляем запуск с flight_number: 1
+2026-01-10 12:53:27 INFO  LaunchRepository:110 - Запуск с flight_number 1 обновлен
+2026-01-10 12:53:27 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 1
+2026-01-10 12:53:27 INFO  LaunchRepository:64 - Запуск с flight_number 1 найден
+2026-01-10 12:53:27 INFO  LaunchRepository:105 - Обновляем запуск с flight_number: 2
+2026-01-10 12:53:27 INFO  LaunchRepository:110 - Запуск с flight_number 2 обновлен
+2026-01-10 12:53:27 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 2
+2026-01-10 12:53:27 INFO  LaunchRepository:64 - Запуск с flight_number 2 найден
+2026-01-10 12:53:27 INFO  LaunchRepository:120 - Удаляем запуск с flight_number: 1
+2026-01-10 12:53:27 INFO  LaunchRepository:128 - Удаление выполнено. Текущее количество запусков: 2
+2026-01-10 12:53:27 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 1
+2026-01-10 12:53:27 WARN  LaunchRepository:61 - Запуск с flight_number 1 не найден
+2026-01-10 12:53:27 INFO  LaunchRepository:71 - Читаем все запуски. Всего: 2
+2026-01-10 12:53:27 INFO  LaunchRepository:133 - Удаляем все запуски
+2026-01-10 12:53:27 INFO  LaunchRepository:135 - Все запуски удалены. Текущее количество: 0
+2026-01-10 12:53:27 INFO  LaunchRepository:71 - Читаем все запуски. Всего: 0
+2026-01-10 12:53:27 INFO  SpaceXService:31 - Отправка запроса к SpaceX API: https://api.spacexdata.com/v3/launches
+2026-01-10 12:53:39 INFO  SpaceXService:47 - Получено 111 запусков
+2026-01-10 12:53:39 INFO  Server:479 - Stopped Server@5ab63a04{STOPPING}[11.0.24,sto=30000]
+2026-01-10 12:53:39 INFO  Server:135 - Shutdown Server@5ab63a04{STOPPING}[11.0.24,sto=30000]
+2026-01-10 12:53:39 INFO  AbstractConnector:431 - Stopped Spark@2697d6f{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2026-01-10 12:53:39 INFO  SparkConfig:41 - SparkSession остановлен.
+2026-01-10 12:58:04 INFO  SparkConfig:17 - Инициализация SparkSession...
+2026-01-10 12:58:05 WARN  Shell:746 - Did not find winutils.exe: java.io.FileNotFoundException: Hadoop bin directory does not exist: D:\SpaceXSpark\bin -see https://cwiki.apache.org/confluence/display/HADOOP2/WindowsProblems
+2026-01-10 12:58:05 WARN  NativeCodeLoader:60 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-01-10 12:58:06 INFO  Server:384 - jetty-11.0.24; built: 2024-08-26T18:11:22.448Z; git: 5dfc59a691b748796f922208956bd1f2794bcd16; jvm 21.0.1+12-29
+2026-01-10 12:58:06 INFO  Server:439 - Started Server@68ea253b{STARTING}[11.0.24,sto=30000] @2250ms
+2026-01-10 12:58:06 INFO  AbstractConnector:376 - Started ServerConnector@783b3d84{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2026-01-10 12:58:06 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5d194314{/,null,AVAILABLE,@Spark}
+2026-01-10 12:58:06 INFO  ContextHandler:1123 - Stopped o.s.j.s.ServletContextHandler@5d194314{/,null,STOPPED,@Spark}
+2026-01-10 12:58:06 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2de3b052{/jobs,null,AVAILABLE,@Spark}
+2026-01-10 12:58:06 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@16bbaab3{/jobs/json,null,AVAILABLE,@Spark}
+2026-01-10 12:58:06 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@fe42a09{/jobs/job,null,AVAILABLE,@Spark}
+2026-01-10 12:58:06 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@1ffd0114{/jobs/job/json,null,AVAILABLE,@Spark}
+2026-01-10 12:58:06 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@25a290ee{/stages,null,AVAILABLE,@Spark}
+2026-01-10 12:58:06 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@4052913c{/stages/json,null,AVAILABLE,@Spark}
+2026-01-10 12:58:06 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@38089dae{/stages/stage,null,AVAILABLE,@Spark}
+2026-01-10 12:58:06 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5dfd31f4{/stages/stage/json,null,AVAILABLE,@Spark}
+2026-01-10 12:58:06 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@4adf3582{/stages/pool,null,AVAILABLE,@Spark}
+2026-01-10 12:58:06 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@632241f5{/stages/pool/json,null,AVAILABLE,@Spark}
+2026-01-10 12:58:06 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@577bfadb{/stages/taskThreadDump,null,AVAILABLE,@Spark}
+2026-01-10 12:58:06 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@54f2df29{/stages/taskThreadDump/json,null,AVAILABLE,@Spark}
+2026-01-10 12:58:06 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@655203e3{/storage,null,AVAILABLE,@Spark}
+2026-01-10 12:58:06 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@729cd862{/storage/json,null,AVAILABLE,@Spark}
+2026-01-10 12:58:06 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@568f4faa{/storage/rdd,null,AVAILABLE,@Spark}
+2026-01-10 12:58:06 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@589dfa6f{/storage/rdd/json,null,AVAILABLE,@Spark}
+2026-01-10 12:58:06 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@6f8667bb{/environment,null,AVAILABLE,@Spark}
+2026-01-10 12:58:06 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2774dcf4{/environment/json,null,AVAILABLE,@Spark}
+2026-01-10 12:58:06 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7c5f29c6{/executors,null,AVAILABLE,@Spark}
+2026-01-10 12:58:06 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5280688{/executors/json,null,AVAILABLE,@Spark}
+2026-01-10 12:58:06 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@61ab6521{/executors/threadDump,null,AVAILABLE,@Spark}
+2026-01-10 12:58:06 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7757025d{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2026-01-10 12:58:06 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@52c46334{/executors/heapHistogram,null,AVAILABLE,@Spark}
+2026-01-10 12:58:06 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5d767218{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+2026-01-10 12:58:06 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@20a1b3ae{/static,null,AVAILABLE,@Spark}
+2026-01-10 12:58:06 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@1eab8437{/,null,AVAILABLE,@Spark}
+2026-01-10 12:58:06 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@69ffdaa8{/api,null,AVAILABLE,@Spark}
+2026-01-10 12:58:06 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@6ce15112{/metrics,null,AVAILABLE,@Spark}
+2026-01-10 12:58:06 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7af0d91b{/jobs/job/kill,null,AVAILABLE,@Spark}
+2026-01-10 12:58:06 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@30ec211a{/stages/stage/kill,null,AVAILABLE,@Spark}
+2026-01-10 12:58:06 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@1187dc82{/metrics/json,null,AVAILABLE,@Spark}
+2026-01-10 12:58:06 INFO  SparkConfig:27 - SparkSession успешно создан!
+2026-01-10 12:58:06 INFO  SparkConfig:28 - Имя приложения: SpaceX-Spark-App
+2026-01-10 12:58:06 INFO  SparkConfig:29 - Режим выполнения (master): local[*]
+2026-01-10 12:58:06 INFO  SparkConfig:30 - Версия Spark: 4.0.1
+2026-01-10 12:58:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@6b2e9db2{/SQL,null,AVAILABLE,@Spark}
+2026-01-10 12:58:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@1a34a51e{/SQL/json,null,AVAILABLE,@Spark}
+2026-01-10 12:58:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@30228de7{/SQL/execution,null,AVAILABLE,@Spark}
+2026-01-10 12:58:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2e159116{/SQL/execution/json,null,AVAILABLE,@Spark}
+2026-01-10 12:58:07 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@21a5b599{/static/sql,null,AVAILABLE,@Spark}
+2026-01-10 12:58:08 INFO  LaunchRepository:26 - LaunchRepository инициализирован. Пустой Dataset создан.
+2026-01-10 12:58:11 INFO  Server:479 - Stopped Server@68ea253b{STOPPING}[11.0.24,sto=30000]
+2026-01-10 12:58:11 INFO  Server:135 - Shutdown Server@68ea253b{STOPPING}[11.0.24,sto=30000]
+2026-01-10 12:58:11 INFO  AbstractConnector:431 - Stopped Spark@783b3d84{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2026-01-10 13:01:19 INFO  SparkConfig:17 - Инициализация SparkSession...
+2026-01-10 13:01:20 WARN  Shell:746 - Did not find winutils.exe: java.io.FileNotFoundException: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset. -see https://cwiki.apache.org/confluence/display/HADOOP2/WindowsProblems
+2026-01-10 13:01:20 WARN  NativeCodeLoader:60 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-01-10 13:01:21 INFO  Server:384 - jetty-11.0.24; built: 2024-08-26T18:11:22.448Z; git: 5dfc59a691b748796f922208956bd1f2794bcd16; jvm 21.0.6+7-LTS
+2026-01-10 13:01:21 INFO  Server:439 - Started Server@7e050be1{STARTING}[11.0.24,sto=30000] @2442ms
+2026-01-10 13:01:21 INFO  AbstractConnector:376 - Started ServerConnector@1dd7801d{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2026-01-10 13:01:21 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5b665a30{/,null,AVAILABLE,@Spark}
+2026-01-10 13:01:21 INFO  ContextHandler:1123 - Stopped o.s.j.s.ServletContextHandler@5b665a30{/,null,STOPPED,@Spark}
+2026-01-10 13:01:21 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3514ac7d{/jobs,null,AVAILABLE,@Spark}
+2026-01-10 13:01:21 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@160c7c42{/jobs/json,null,AVAILABLE,@Spark}
+2026-01-10 13:01:21 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5503c7d{/jobs/job,null,AVAILABLE,@Spark}
+2026-01-10 13:01:21 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2ec0ca83{/jobs/job/json,null,AVAILABLE,@Spark}
+2026-01-10 13:01:21 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7827d7b{/stages,null,AVAILABLE,@Spark}
+2026-01-10 13:01:21 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2e7a9db7{/stages/json,null,AVAILABLE,@Spark}
+2026-01-10 13:01:21 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@11cc9e1e{/stages/stage,null,AVAILABLE,@Spark}
+2026-01-10 13:01:21 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5b0e9e0c{/stages/stage/json,null,AVAILABLE,@Spark}
+2026-01-10 13:01:21 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@21ea1d9d{/stages/pool,null,AVAILABLE,@Spark}
+2026-01-10 13:01:21 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@36a58466{/stages/pool/json,null,AVAILABLE,@Spark}
+2026-01-10 13:01:21 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@9147ba2{/stages/taskThreadDump,null,AVAILABLE,@Spark}
+2026-01-10 13:01:21 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2efcc0b3{/stages/taskThreadDump/json,null,AVAILABLE,@Spark}
+2026-01-10 13:01:21 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@60a6840c{/storage,null,AVAILABLE,@Spark}
+2026-01-10 13:01:21 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@1be3f8f8{/storage/json,null,AVAILABLE,@Spark}
+2026-01-10 13:01:21 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2ceb68a1{/storage/rdd,null,AVAILABLE,@Spark}
+2026-01-10 13:01:21 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@69c33ea2{/storage/rdd/json,null,AVAILABLE,@Spark}
+2026-01-10 13:01:21 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2e3900dc{/environment,null,AVAILABLE,@Spark}
+2026-01-10 13:01:21 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2a16d4dc{/environment/json,null,AVAILABLE,@Spark}
+2026-01-10 13:01:21 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@13d984ee{/executors,null,AVAILABLE,@Spark}
+2026-01-10 13:01:21 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5341641d{/executors/json,null,AVAILABLE,@Spark}
+2026-01-10 13:01:21 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7b3c0ecb{/executors/threadDump,null,AVAILABLE,@Spark}
+2026-01-10 13:01:21 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3006bfb{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2026-01-10 13:01:21 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5402612e{/executors/heapHistogram,null,AVAILABLE,@Spark}
+2026-01-10 13:01:21 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@431babe6{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+2026-01-10 13:01:21 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5072e638{/static,null,AVAILABLE,@Spark}
+2026-01-10 13:01:21 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@4345fd45{/,null,AVAILABLE,@Spark}
+2026-01-10 13:01:21 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@10d905c1{/api,null,AVAILABLE,@Spark}
+2026-01-10 13:01:21 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7a62d697{/metrics,null,AVAILABLE,@Spark}
+2026-01-10 13:01:21 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@62ab5e63{/jobs/job/kill,null,AVAILABLE,@Spark}
+2026-01-10 13:01:21 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5e8f0f98{/stages/stage/kill,null,AVAILABLE,@Spark}
+2026-01-10 13:01:21 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@62158991{/metrics/json,null,AVAILABLE,@Spark}
+2026-01-10 13:01:21 INFO  SparkConfig:27 - SparkSession успешно создан!
+2026-01-10 13:01:21 INFO  SparkConfig:28 - Имя приложения: SpaceX-Spark-App
+2026-01-10 13:01:21 INFO  SparkConfig:29 - Режим выполнения (master): local[*]
+2026-01-10 13:01:21 INFO  SparkConfig:30 - Версия Spark: 4.0.1
+2026-01-10 13:01:21 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@4888d1ea{/SQL,null,AVAILABLE,@Spark}
+2026-01-10 13:01:21 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3fd9e01c{/SQL/json,null,AVAILABLE,@Spark}
+2026-01-10 13:01:21 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@1f19d423{/SQL/execution,null,AVAILABLE,@Spark}
+2026-01-10 13:01:21 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@23933031{/SQL/execution/json,null,AVAILABLE,@Spark}
+2026-01-10 13:01:21 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@68360fb9{/static/sql,null,AVAILABLE,@Spark}
+2026-01-10 13:01:22 INFO  LaunchRepository:26 - LaunchRepository инициализирован. Пустой Dataset создан.
+2026-01-10 13:01:22 INFO  LaunchRepository:31 - Сохраняем список запусков, размер: 2
+2026-01-10 13:01:24 INFO  LaunchRepository:34 - Список запусков добавлен. Текущее количество запусков: 2
+2026-01-10 13:01:24 INFO  LaunchRepository:71 - Читаем все запуски. Всего: 2
+2026-01-10 13:01:24 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 1
+2026-01-10 13:01:24 INFO  LaunchRepository:64 - Запуск с flight_number 1 найден
+2026-01-10 13:01:24 INFO  LaunchRepository:77 - Проверяем существование запуска с flight_number: 1
+2026-01-10 13:01:24 INFO  LaunchRepository:85 - Запуск с flight_number 1 существует: true
+2026-01-10 13:01:24 INFO  LaunchRepository:77 - Проверяем существование запуска с flight_number: 999
+2026-01-10 13:01:24 INFO  LaunchRepository:85 - Запуск с flight_number 999 существует: false
+2026-01-10 13:01:24 INFO  LaunchRepository:39 - Сохраняем запуск с flight_number: 3
+2026-01-10 13:01:24 INFO  LaunchRepository:77 - Проверяем существование запуска с flight_number: 3
+2026-01-10 13:01:24 INFO  LaunchRepository:85 - Запуск с flight_number 3 существует: false
+2026-01-10 13:01:24 INFO  LaunchRepository:46 - Запуск добавлен. Текущее количество запусков: 3
+2026-01-10 13:01:24 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 3
+2026-01-10 13:01:24 INFO  LaunchRepository:64 - Запуск с flight_number 3 найден
+2026-01-10 13:01:24 INFO  LaunchRepository:39 - Сохраняем запуск с flight_number: 1
+2026-01-10 13:01:24 INFO  LaunchRepository:77 - Проверяем существование запуска с flight_number: 1
+2026-01-10 13:01:24 INFO  LaunchRepository:85 - Запуск с flight_number 1 существует: true
+2026-01-10 13:01:24 INFO  LaunchRepository:41 - Запуск с flight_number 1 уже существует. Обновляем его.
+2026-01-10 13:01:24 INFO  LaunchRepository:105 - Обновляем запуск с flight_number: 1
+2026-01-10 13:01:24 INFO  LaunchRepository:110 - Запуск с flight_number 1 обновлен
+2026-01-10 13:01:24 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 1
+2026-01-10 13:01:24 INFO  LaunchRepository:64 - Запуск с flight_number 1 найден
+2026-01-10 13:01:24 INFO  LaunchRepository:105 - Обновляем запуск с flight_number: 2
+2026-01-10 13:01:24 INFO  LaunchRepository:110 - Запуск с flight_number 2 обновлен
+2026-01-10 13:01:24 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 2
+2026-01-10 13:01:24 INFO  LaunchRepository:64 - Запуск с flight_number 2 найден
+2026-01-10 13:01:24 INFO  LaunchRepository:120 - Удаляем запуск с flight_number: 1
+2026-01-10 13:01:24 INFO  LaunchRepository:128 - Удаление выполнено. Текущее количество запусков: 2
+2026-01-10 13:01:24 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 1
+2026-01-10 13:01:24 WARN  LaunchRepository:61 - Запуск с flight_number 1 не найден
+2026-01-10 13:01:24 INFO  LaunchRepository:71 - Читаем все запуски. Всего: 2
+2026-01-10 13:01:24 INFO  LaunchRepository:133 - Удаляем все запуски
+2026-01-10 13:01:24 INFO  LaunchRepository:135 - Все запуски удалены. Текущее количество: 0
+2026-01-10 13:01:24 INFO  LaunchRepository:71 - Читаем все запуски. Всего: 0
+2026-01-10 13:01:25 INFO  SpaceXService:31 - Отправка запроса к SpaceX API: https://api.spacexdata.com/v3/launches
+2026-01-10 13:01:29 INFO  SpaceXService:47 - Получено 111 запусков
+2026-01-10 13:01:29 INFO  Server:479 - Stopped Server@7e050be1{STOPPING}[11.0.24,sto=30000]
+2026-01-10 13:01:29 INFO  Server:135 - Shutdown Server@7e050be1{STOPPING}[11.0.24,sto=30000]
+2026-01-10 13:01:29 INFO  AbstractConnector:431 - Stopped Spark@1dd7801d{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2026-01-10 13:01:29 INFO  SparkConfig:41 - SparkSession остановлен.
+2026-01-10 13:21:58 INFO  SparkConfig:17 - Инициализация SparkSession...
+2026-01-10 13:21:59 WARN  Shell:746 - Did not find winutils.exe: java.io.FileNotFoundException: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset. -see https://cwiki.apache.org/confluence/display/HADOOP2/WindowsProblems
+2026-01-10 13:21:59 WARN  NativeCodeLoader:60 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-01-10 13:22:00 INFO  Server:384 - jetty-11.0.24; built: 2024-08-26T18:11:22.448Z; git: 5dfc59a691b748796f922208956bd1f2794bcd16; jvm 21.0.6+7-LTS
+2026-01-10 13:22:00 INFO  Server:439 - Started Server@7e050be1{STARTING}[11.0.24,sto=30000] @2373ms
+2026-01-10 13:22:00 INFO  AbstractConnector:376 - Started ServerConnector@53e5bcfd{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2026-01-10 13:22:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5b665a30{/,null,AVAILABLE,@Spark}
+2026-01-10 13:22:00 INFO  ContextHandler:1123 - Stopped o.s.j.s.ServletContextHandler@5b665a30{/,null,STOPPED,@Spark}
+2026-01-10 13:22:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3514ac7d{/jobs,null,AVAILABLE,@Spark}
+2026-01-10 13:22:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@160c7c42{/jobs/json,null,AVAILABLE,@Spark}
+2026-01-10 13:22:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5503c7d{/jobs/job,null,AVAILABLE,@Spark}
+2026-01-10 13:22:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2ec0ca83{/jobs/job/json,null,AVAILABLE,@Spark}
+2026-01-10 13:22:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7827d7b{/stages,null,AVAILABLE,@Spark}
+2026-01-10 13:22:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2e7a9db7{/stages/json,null,AVAILABLE,@Spark}
+2026-01-10 13:22:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@11cc9e1e{/stages/stage,null,AVAILABLE,@Spark}
+2026-01-10 13:22:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5b0e9e0c{/stages/stage/json,null,AVAILABLE,@Spark}
+2026-01-10 13:22:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@21ea1d9d{/stages/pool,null,AVAILABLE,@Spark}
+2026-01-10 13:22:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@36a58466{/stages/pool/json,null,AVAILABLE,@Spark}
+2026-01-10 13:22:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@9147ba2{/stages/taskThreadDump,null,AVAILABLE,@Spark}
+2026-01-10 13:22:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2efcc0b3{/stages/taskThreadDump/json,null,AVAILABLE,@Spark}
+2026-01-10 13:22:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@60a6840c{/storage,null,AVAILABLE,@Spark}
+2026-01-10 13:22:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@1be3f8f8{/storage/json,null,AVAILABLE,@Spark}
+2026-01-10 13:22:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2ceb68a1{/storage/rdd,null,AVAILABLE,@Spark}
+2026-01-10 13:22:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@69c33ea2{/storage/rdd/json,null,AVAILABLE,@Spark}
+2026-01-10 13:22:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2e3900dc{/environment,null,AVAILABLE,@Spark}
+2026-01-10 13:22:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2a16d4dc{/environment/json,null,AVAILABLE,@Spark}
+2026-01-10 13:22:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@13d984ee{/executors,null,AVAILABLE,@Spark}
+2026-01-10 13:22:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5341641d{/executors/json,null,AVAILABLE,@Spark}
+2026-01-10 13:22:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7b3c0ecb{/executors/threadDump,null,AVAILABLE,@Spark}
+2026-01-10 13:22:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3006bfb{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2026-01-10 13:22:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5402612e{/executors/heapHistogram,null,AVAILABLE,@Spark}
+2026-01-10 13:22:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@431babe6{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+2026-01-10 13:22:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5072e638{/static,null,AVAILABLE,@Spark}
+2026-01-10 13:22:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@4345fd45{/,null,AVAILABLE,@Spark}
+2026-01-10 13:22:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@10d905c1{/api,null,AVAILABLE,@Spark}
+2026-01-10 13:22:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7a62d697{/metrics,null,AVAILABLE,@Spark}
+2026-01-10 13:22:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@62ab5e63{/jobs/job/kill,null,AVAILABLE,@Spark}
+2026-01-10 13:22:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5e8f0f98{/stages/stage/kill,null,AVAILABLE,@Spark}
+2026-01-10 13:22:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@62158991{/metrics/json,null,AVAILABLE,@Spark}
+2026-01-10 13:22:00 INFO  SparkConfig:27 - SparkSession успешно создан!
+2026-01-10 13:22:00 INFO  SparkConfig:28 - Имя приложения: SpaceX-Spark-App
+2026-01-10 13:22:00 INFO  SparkConfig:29 - Режим выполнения (master): local[*]
+2026-01-10 13:22:00 INFO  SparkConfig:30 - Версия Spark: 4.0.1
+2026-01-10 13:22:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@4888d1ea{/SQL,null,AVAILABLE,@Spark}
+2026-01-10 13:22:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3fd9e01c{/SQL/json,null,AVAILABLE,@Spark}
+2026-01-10 13:22:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@1f19d423{/SQL/execution,null,AVAILABLE,@Spark}
+2026-01-10 13:22:00 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@23933031{/SQL/execution/json,null,AVAILABLE,@Spark}
+2026-01-10 13:22:01 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@68360fb9{/static/sql,null,AVAILABLE,@Spark}
+2026-01-10 13:22:02 INFO  LaunchRepository:26 - LaunchRepository инициализирован. Пустой Dataset создан.
+2026-01-10 13:22:02 INFO  LaunchRepository:31 - Сохраняем список запусков, размер: 2
+2026-01-10 13:22:03 INFO  LaunchRepository:34 - Список запусков добавлен. Текущее количество запусков: 2
+2026-01-10 13:22:03 INFO  LaunchRepository:71 - Читаем все запуски. Всего: 2
+2026-01-10 13:22:03 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 1
+2026-01-10 13:22:03 INFO  LaunchRepository:64 - Запуск с flight_number 1 найден
+2026-01-10 13:22:03 INFO  LaunchRepository:77 - Проверяем существование запуска с flight_number: 1
+2026-01-10 13:22:03 INFO  LaunchRepository:85 - Запуск с flight_number 1 существует: true
+2026-01-10 13:22:03 INFO  LaunchRepository:77 - Проверяем существование запуска с flight_number: 999
+2026-01-10 13:22:03 INFO  LaunchRepository:85 - Запуск с flight_number 999 существует: false
+2026-01-10 13:22:03 INFO  LaunchRepository:39 - Сохраняем запуск с flight_number: 3
+2026-01-10 13:22:03 INFO  LaunchRepository:77 - Проверяем существование запуска с flight_number: 3
+2026-01-10 13:22:03 INFO  LaunchRepository:85 - Запуск с flight_number 3 существует: false
+2026-01-10 13:22:04 INFO  LaunchRepository:46 - Запуск добавлен. Текущее количество запусков: 3
+2026-01-10 13:22:04 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 3
+2026-01-10 13:22:04 INFO  LaunchRepository:64 - Запуск с flight_number 3 найден
+2026-01-10 13:22:04 INFO  LaunchRepository:39 - Сохраняем запуск с flight_number: 1
+2026-01-10 13:22:04 INFO  LaunchRepository:77 - Проверяем существование запуска с flight_number: 1
+2026-01-10 13:22:04 INFO  LaunchRepository:85 - Запуск с flight_number 1 существует: true
+2026-01-10 13:22:04 INFO  LaunchRepository:41 - Запуск с flight_number 1 уже существует. Обновляем его.
+2026-01-10 13:22:04 INFO  LaunchRepository:105 - Обновляем запуск с flight_number: 1
+2026-01-10 13:22:04 INFO  LaunchRepository:110 - Запуск с flight_number 1 обновлен
+2026-01-10 13:22:04 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 1
+2026-01-10 13:22:04 INFO  LaunchRepository:64 - Запуск с flight_number 1 найден
+2026-01-10 13:22:04 INFO  LaunchRepository:105 - Обновляем запуск с flight_number: 2
+2026-01-10 13:22:04 INFO  LaunchRepository:110 - Запуск с flight_number 2 обновлен
+2026-01-10 13:22:04 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 2
+2026-01-10 13:22:04 INFO  LaunchRepository:64 - Запуск с flight_number 2 найден
+2026-01-10 13:22:04 INFO  LaunchRepository:120 - Удаляем запуск с flight_number: 1
+2026-01-10 13:22:04 INFO  LaunchRepository:128 - Удаление выполнено. Текущее количество запусков: 2
+2026-01-10 13:22:04 INFO  LaunchRepository:52 - Читаем запуск с flight_number: 1
+2026-01-10 13:22:04 WARN  LaunchRepository:61 - Запуск с flight_number 1 не найден
+2026-01-10 13:22:04 INFO  LaunchRepository:71 - Читаем все запуски. Всего: 2
+2026-01-10 13:22:04 INFO  LaunchRepository:133 - Удаляем все запуски
+2026-01-10 13:22:04 INFO  LaunchRepository:135 - Все запуски удалены. Текущее количество: 0
+2026-01-10 13:22:04 INFO  LaunchRepository:71 - Читаем все запуски. Всего: 0
+2026-01-10 13:22:04 INFO  SpaceXService:31 - Отправка запроса к SpaceX API: https://api.spacexdata.com/v3/launches
+2026-01-10 13:22:13 INFO  SpaceXService:47 - Получено 111 запусков
+2026-01-10 13:22:13 INFO  Server:479 - Stopped Server@7e050be1{STOPPING}[11.0.24,sto=30000]
+2026-01-10 13:22:13 INFO  Server:135 - Shutdown Server@7e050be1{STOPPING}[11.0.24,sto=30000]
+2026-01-10 13:22:13 INFO  AbstractConnector:431 - Stopped Spark@53e5bcfd{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2026-01-10 13:22:13 INFO  SparkConfig:41 - SparkSession остановлен.
+2026-01-10 13:23:12 INFO  SparkConfig:17 - Инициализация SparkSession...
+2026-01-10 13:23:13 WARN  Shell:746 - Did not find winutils.exe: java.io.FileNotFoundException: Hadoop bin directory does not exist: D:\SpaceXSpark\bin -see https://cwiki.apache.org/confluence/display/HADOOP2/WindowsProblems
+2026-01-10 13:23:13 WARN  NativeCodeLoader:60 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-01-10 13:23:14 INFO  Server:384 - jetty-11.0.24; built: 2024-08-26T18:11:22.448Z; git: 5dfc59a691b748796f922208956bd1f2794bcd16; jvm 21.0.6+7-LTS
+2026-01-10 13:23:14 INFO  Server:439 - Started Server@6897a4a{STARTING}[11.0.24,sto=30000] @1782ms
+2026-01-10 13:23:14 INFO  AbstractConnector:376 - Started ServerConnector@5d0d88b1{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2026-01-10 13:23:14 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@539c4830{/,null,AVAILABLE,@Spark}
+2026-01-10 13:23:14 INFO  ContextHandler:1123 - Stopped o.s.j.s.ServletContextHandler@539c4830{/,null,STOPPED,@Spark}
+2026-01-10 13:23:14 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@32dcfeea{/jobs,null,AVAILABLE,@Spark}
+2026-01-10 13:23:14 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2565a7d0{/jobs/json,null,AVAILABLE,@Spark}
+2026-01-10 13:23:14 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5103eea2{/jobs/job,null,AVAILABLE,@Spark}
+2026-01-10 13:23:14 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7e77678c{/jobs/job/json,null,AVAILABLE,@Spark}
+2026-01-10 13:23:14 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5f0677f3{/stages,null,AVAILABLE,@Spark}
+2026-01-10 13:23:14 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@4cd7d5e1{/stages/json,null,AVAILABLE,@Spark}
+2026-01-10 13:23:14 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@46b6701e{/stages/stage,null,AVAILABLE,@Spark}
+2026-01-10 13:23:14 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@71e2c6d8{/stages/stage/json,null,AVAILABLE,@Spark}
+2026-01-10 13:23:14 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@376b5cb2{/stages/pool,null,AVAILABLE,@Spark}
+2026-01-10 13:23:14 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@106cd9c8{/stages/pool/json,null,AVAILABLE,@Spark}
+2026-01-10 13:23:14 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@78318ac2{/stages/taskThreadDump,null,AVAILABLE,@Spark}
+2026-01-10 13:23:14 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@11abd6c{/stages/taskThreadDump/json,null,AVAILABLE,@Spark}
+2026-01-10 13:23:14 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7608a838{/storage,null,AVAILABLE,@Spark}
+2026-01-10 13:23:14 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@21a6a494{/storage/json,null,AVAILABLE,@Spark}
+2026-01-10 13:23:14 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@4ab66127{/storage/rdd,null,AVAILABLE,@Spark}
+2026-01-10 13:23:14 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@37fef327{/storage/rdd/json,null,AVAILABLE,@Spark}
+2026-01-10 13:23:14 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@55951fcd{/environment,null,AVAILABLE,@Spark}
+2026-01-10 13:23:14 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7534785a{/environment/json,null,AVAILABLE,@Spark}
+2026-01-10 13:23:14 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3ba3f40d{/executors,null,AVAILABLE,@Spark}
+2026-01-10 13:23:14 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@46ab4efc{/executors/json,null,AVAILABLE,@Spark}
+2026-01-10 13:23:14 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@b5312df{/executors/threadDump,null,AVAILABLE,@Spark}
+2026-01-10 13:23:14 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5f409872{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2026-01-10 13:23:14 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@472c9f88{/executors/heapHistogram,null,AVAILABLE,@Spark}
+2026-01-10 13:23:14 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5822ecda{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+2026-01-10 13:23:14 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7afbf2a0{/static,null,AVAILABLE,@Spark}
+2026-01-10 13:23:14 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@506aa618{/,null,AVAILABLE,@Spark}
+2026-01-10 13:23:14 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@1d6713dd{/api,null,AVAILABLE,@Spark}
+2026-01-10 13:23:14 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@15c16f19{/metrics,null,AVAILABLE,@Spark}
+2026-01-10 13:23:14 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@60c96eb4{/jobs/job/kill,null,AVAILABLE,@Spark}
+2026-01-10 13:23:14 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5ab63a04{/stages/stage/kill,null,AVAILABLE,@Spark}
+2026-01-10 13:23:14 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@211a9647{/metrics/json,null,AVAILABLE,@Spark}
+2026-01-10 13:23:14 INFO  SparkConfig:27 - SparkSession успешно создан!
+2026-01-10 13:23:14 INFO  SparkConfig:28 - Имя приложения: SpaceX-Spark-App
+2026-01-10 13:23:14 INFO  SparkConfig:29 - Режим выполнения (master): local[*]
+2026-01-10 13:23:14 INFO  SparkConfig:30 - Версия Spark: 4.0.1
+2026-01-10 13:23:14 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7ac685ef{/SQL,null,AVAILABLE,@Spark}
+2026-01-10 13:23:14 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@4a4ff5ed{/SQL/json,null,AVAILABLE,@Spark}
+2026-01-10 13:23:14 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@51813065{/SQL/execution,null,AVAILABLE,@Spark}
+2026-01-10 13:23:14 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@e0847a9{/SQL/execution/json,null,AVAILABLE,@Spark}
+2026-01-10 13:23:14 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@f1d1463{/static/sql,null,AVAILABLE,@Spark}
+2026-01-10 13:23:15 INFO  LaunchRepository:26 - LaunchRepository инициализирован. Пустой Dataset создан.
+2026-01-10 13:26:30 INFO  SpaceXService:31 - Отправка запроса к SpaceX API: https://api.spacexdata.com/v3/launches
+2026-01-10 13:26:35 INFO  SpaceXService:47 - Получено 111 запусков
+2026-01-10 13:26:35 INFO  LaunchRepository:31 - Сохраняем список запусков, размер: 111
+2026-01-10 13:26:37 INFO  LaunchRepository:34 - Список запусков добавлен. Текущее количество запусков: 111
+2026-01-10 13:26:45 INFO  LaunchRepository:71 - Читаем все запуски. Всего: 111
+2026-01-10 13:26:53 INFO  Server:479 - Stopped Server@6897a4a{STOPPING}[11.0.24,sto=30000]
+2026-01-10 13:26:53 INFO  Server:135 - Shutdown Server@6897a4a{STOPPING}[11.0.24,sto=30000]
+2026-01-10 13:26:53 INFO  AbstractConnector:431 - Stopped Spark@5d0d88b1{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2026-01-10 13:26:53 INFO  SparkConfig:41 - SparkSession остановлен.
+2026-01-10 13:28:52 INFO  SparkConfig:17 - Инициализация SparkSession...
+2026-01-10 13:28:53 WARN  Shell:746 - Did not find winutils.exe: java.io.FileNotFoundException: Hadoop bin directory does not exist: D:\SpaceXSpark\bin -see https://cwiki.apache.org/confluence/display/HADOOP2/WindowsProblems
+2026-01-10 13:28:53 WARN  NativeCodeLoader:60 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-01-10 13:28:53 INFO  Server:384 - jetty-11.0.24; built: 2024-08-26T18:11:22.448Z; git: 5dfc59a691b748796f922208956bd1f2794bcd16; jvm 21.0.6+7-LTS
+2026-01-10 13:28:53 INFO  Server:439 - Started Server@6897a4a{STARTING}[11.0.24,sto=30000] @1817ms
+2026-01-10 13:28:53 INFO  AbstractConnector:376 - Started ServerConnector@5b5e435b{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2026-01-10 13:28:53 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@539c4830{/,null,AVAILABLE,@Spark}
+2026-01-10 13:28:54 INFO  ContextHandler:1123 - Stopped o.s.j.s.ServletContextHandler@539c4830{/,null,STOPPED,@Spark}
+2026-01-10 13:28:54 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@32dcfeea{/jobs,null,AVAILABLE,@Spark}
+2026-01-10 13:28:54 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2565a7d0{/jobs/json,null,AVAILABLE,@Spark}
+2026-01-10 13:28:54 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5103eea2{/jobs/job,null,AVAILABLE,@Spark}
+2026-01-10 13:28:54 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7e77678c{/jobs/job/json,null,AVAILABLE,@Spark}
+2026-01-10 13:28:54 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5f0677f3{/stages,null,AVAILABLE,@Spark}
+2026-01-10 13:28:54 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@4cd7d5e1{/stages/json,null,AVAILABLE,@Spark}
+2026-01-10 13:28:54 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@46b6701e{/stages/stage,null,AVAILABLE,@Spark}
+2026-01-10 13:28:54 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@71e2c6d8{/stages/stage/json,null,AVAILABLE,@Spark}
+2026-01-10 13:28:54 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@376b5cb2{/stages/pool,null,AVAILABLE,@Spark}
+2026-01-10 13:28:54 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@106cd9c8{/stages/pool/json,null,AVAILABLE,@Spark}
+2026-01-10 13:28:54 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@78318ac2{/stages/taskThreadDump,null,AVAILABLE,@Spark}
+2026-01-10 13:28:54 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@11abd6c{/stages/taskThreadDump/json,null,AVAILABLE,@Spark}
+2026-01-10 13:28:54 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7608a838{/storage,null,AVAILABLE,@Spark}
+2026-01-10 13:28:54 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@21a6a494{/storage/json,null,AVAILABLE,@Spark}
+2026-01-10 13:28:54 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@4ab66127{/storage/rdd,null,AVAILABLE,@Spark}
+2026-01-10 13:28:54 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@37fef327{/storage/rdd/json,null,AVAILABLE,@Spark}
+2026-01-10 13:28:54 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@55951fcd{/environment,null,AVAILABLE,@Spark}
+2026-01-10 13:28:54 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7534785a{/environment/json,null,AVAILABLE,@Spark}
+2026-01-10 13:28:54 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3ba3f40d{/executors,null,AVAILABLE,@Spark}
+2026-01-10 13:28:54 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@46ab4efc{/executors/json,null,AVAILABLE,@Spark}
+2026-01-10 13:28:54 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@b5312df{/executors/threadDump,null,AVAILABLE,@Spark}
+2026-01-10 13:28:54 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5f409872{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2026-01-10 13:28:54 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@472c9f88{/executors/heapHistogram,null,AVAILABLE,@Spark}
+2026-01-10 13:28:54 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5822ecda{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+2026-01-10 13:28:54 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7afbf2a0{/static,null,AVAILABLE,@Spark}
+2026-01-10 13:28:54 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@506aa618{/,null,AVAILABLE,@Spark}
+2026-01-10 13:28:54 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@1d6713dd{/api,null,AVAILABLE,@Spark}
+2026-01-10 13:28:54 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@15c16f19{/metrics,null,AVAILABLE,@Spark}
+2026-01-10 13:28:54 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@60c96eb4{/jobs/job/kill,null,AVAILABLE,@Spark}
+2026-01-10 13:28:54 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5ab63a04{/stages/stage/kill,null,AVAILABLE,@Spark}
+2026-01-10 13:28:54 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@211a9647{/metrics/json,null,AVAILABLE,@Spark}
+2026-01-10 13:28:54 INFO  SparkConfig:27 - SparkSession успешно создан!
+2026-01-10 13:28:54 INFO  SparkConfig:28 - Имя приложения: SpaceX-Spark-App
+2026-01-10 13:28:54 INFO  SparkConfig:29 - Режим выполнения (master): local[*]
+2026-01-10 13:28:54 INFO  SparkConfig:30 - Версия Spark: 4.0.1
+2026-01-10 13:28:54 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7ac685ef{/SQL,null,AVAILABLE,@Spark}
+2026-01-10 13:28:54 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@4a4ff5ed{/SQL/json,null,AVAILABLE,@Spark}
+2026-01-10 13:28:54 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@51813065{/SQL/execution,null,AVAILABLE,@Spark}
+2026-01-10 13:28:54 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@e0847a9{/SQL/execution/json,null,AVAILABLE,@Spark}
+2026-01-10 13:28:54 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@f1d1463{/static/sql,null,AVAILABLE,@Spark}
+2026-01-10 13:28:55 INFO  LaunchRepository:26 - LaunchRepository инициализирован. Пустой Dataset создан.
+2026-01-10 13:29:03 INFO  Server:479 - Stopped Server@6897a4a{STOPPING}[11.0.24,sto=30000]
+2026-01-10 13:29:03 INFO  Server:135 - Shutdown Server@6897a4a{STOPPING}[11.0.24,sto=30000]
+2026-01-10 13:29:03 INFO  AbstractConnector:431 - Stopped Spark@5b5e435b{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2026-01-10 13:29:03 INFO  SparkConfig:41 - SparkSession остановлен.
+2026-01-10 13:30:27 INFO  SparkConfig:17 - Инициализация SparkSession...
+2026-01-10 13:30:28 WARN  Shell:746 - Did not find winutils.exe: java.io.FileNotFoundException: Hadoop bin directory does not exist: D:\SpaceXSpark\bin -see https://cwiki.apache.org/confluence/display/HADOOP2/WindowsProblems
+2026-01-10 13:30:28 WARN  NativeCodeLoader:60 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-01-10 13:30:28 INFO  Server:384 - jetty-11.0.24; built: 2024-08-26T18:11:22.448Z; git: 5dfc59a691b748796f922208956bd1f2794bcd16; jvm 21.0.6+7-LTS
+2026-01-10 13:30:28 INFO  Server:439 - Started Server@6897a4a{STARTING}[11.0.24,sto=30000] @1830ms
+2026-01-10 13:30:28 INFO  AbstractConnector:376 - Started ServerConnector@5d0d88b1{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2026-01-10 13:30:28 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@539c4830{/,null,AVAILABLE,@Spark}
+2026-01-10 13:30:29 INFO  ContextHandler:1123 - Stopped o.s.j.s.ServletContextHandler@539c4830{/,null,STOPPED,@Spark}
+2026-01-10 13:30:29 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@32dcfeea{/jobs,null,AVAILABLE,@Spark}
+2026-01-10 13:30:29 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2565a7d0{/jobs/json,null,AVAILABLE,@Spark}
+2026-01-10 13:30:29 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5103eea2{/jobs/job,null,AVAILABLE,@Spark}
+2026-01-10 13:30:29 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7e77678c{/jobs/job/json,null,AVAILABLE,@Spark}
+2026-01-10 13:30:29 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5f0677f3{/stages,null,AVAILABLE,@Spark}
+2026-01-10 13:30:29 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@4cd7d5e1{/stages/json,null,AVAILABLE,@Spark}
+2026-01-10 13:30:29 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@46b6701e{/stages/stage,null,AVAILABLE,@Spark}
+2026-01-10 13:30:29 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@71e2c6d8{/stages/stage/json,null,AVAILABLE,@Spark}
+2026-01-10 13:30:29 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@376b5cb2{/stages/pool,null,AVAILABLE,@Spark}
+2026-01-10 13:30:29 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@106cd9c8{/stages/pool/json,null,AVAILABLE,@Spark}
+2026-01-10 13:30:29 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@78318ac2{/stages/taskThreadDump,null,AVAILABLE,@Spark}
+2026-01-10 13:30:29 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@11abd6c{/stages/taskThreadDump/json,null,AVAILABLE,@Spark}
+2026-01-10 13:30:29 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7608a838{/storage,null,AVAILABLE,@Spark}
+2026-01-10 13:30:29 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@21a6a494{/storage/json,null,AVAILABLE,@Spark}
+2026-01-10 13:30:29 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@4ab66127{/storage/rdd,null,AVAILABLE,@Spark}
+2026-01-10 13:30:29 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@37fef327{/storage/rdd/json,null,AVAILABLE,@Spark}
+2026-01-10 13:30:29 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@55951fcd{/environment,null,AVAILABLE,@Spark}
+2026-01-10 13:30:29 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7534785a{/environment/json,null,AVAILABLE,@Spark}
+2026-01-10 13:30:29 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3ba3f40d{/executors,null,AVAILABLE,@Spark}
+2026-01-10 13:30:29 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@46ab4efc{/executors/json,null,AVAILABLE,@Spark}
+2026-01-10 13:30:29 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@b5312df{/executors/threadDump,null,AVAILABLE,@Spark}
+2026-01-10 13:30:29 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5f409872{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2026-01-10 13:30:29 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@472c9f88{/executors/heapHistogram,null,AVAILABLE,@Spark}
+2026-01-10 13:30:29 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5822ecda{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+2026-01-10 13:30:29 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7afbf2a0{/static,null,AVAILABLE,@Spark}
+2026-01-10 13:30:29 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@506aa618{/,null,AVAILABLE,@Spark}
+2026-01-10 13:30:29 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@1d6713dd{/api,null,AVAILABLE,@Spark}
+2026-01-10 13:30:29 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@15c16f19{/metrics,null,AVAILABLE,@Spark}
+2026-01-10 13:30:29 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@60c96eb4{/jobs/job/kill,null,AVAILABLE,@Spark}
+2026-01-10 13:30:29 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5ab63a04{/stages/stage/kill,null,AVAILABLE,@Spark}
+2026-01-10 13:30:29 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@211a9647{/metrics/json,null,AVAILABLE,@Spark}
+2026-01-10 13:30:29 INFO  SparkConfig:27 - SparkSession успешно создан!
+2026-01-10 13:30:29 INFO  SparkConfig:28 - Имя приложения: SpaceX-Spark-App
+2026-01-10 13:30:29 INFO  SparkConfig:29 - Режим выполнения (master): local[*]
+2026-01-10 13:30:29 INFO  SparkConfig:30 - Версия Spark: 4.0.1
+2026-01-10 13:30:29 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7ac685ef{/SQL,null,AVAILABLE,@Spark}
+2026-01-10 13:30:29 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@4a4ff5ed{/SQL/json,null,AVAILABLE,@Spark}
+2026-01-10 13:30:29 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@51813065{/SQL/execution,null,AVAILABLE,@Spark}
+2026-01-10 13:30:29 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@e0847a9{/SQL/execution/json,null,AVAILABLE,@Spark}
+2026-01-10 13:30:29 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@f1d1463{/static/sql,null,AVAILABLE,@Spark}
+2026-01-10 13:30:30 INFO  LaunchRepository:26 - LaunchRepository инициализирован. Пустой Dataset создан.
+2026-01-10 13:30:32 INFO  SpaceXService:31 - Отправка запроса к SpaceX API: https://api.spacexdata.com/v3/launches
+2026-01-10 13:30:38 INFO  SpaceXService:47 - Получено 111 запусков
+2026-01-10 13:30:38 INFO  LaunchRepository:31 - Сохраняем список запусков, размер: 111
+2026-01-10 13:30:39 INFO  LaunchRepository:34 - Список запусков добавлен. Текущее количество запусков: 111
+2026-01-10 13:30:41 INFO  Server:479 - Stopped Server@6897a4a{STOPPING}[11.0.24,sto=30000]
+2026-01-10 13:30:41 INFO  Server:135 - Shutdown Server@6897a4a{STOPPING}[11.0.24,sto=30000]
+2026-01-10 13:30:41 INFO  AbstractConnector:431 - Stopped Spark@5d0d88b1{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2026-01-10 13:30:41 INFO  SparkConfig:41 - SparkSession остановлен.
+2026-01-10 13:31:18 INFO  SparkConfig:17 - Инициализация SparkSession...
+2026-01-10 13:31:19 WARN  Shell:746 - Did not find winutils.exe: java.io.FileNotFoundException: Hadoop bin directory does not exist: D:\SpaceXSpark\bin -see https://cwiki.apache.org/confluence/display/HADOOP2/WindowsProblems
+2026-01-10 13:31:19 WARN  NativeCodeLoader:60 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-01-10 13:31:20 INFO  Server:384 - jetty-11.0.24; built: 2024-08-26T18:11:22.448Z; git: 5dfc59a691b748796f922208956bd1f2794bcd16; jvm 21.0.6+7-LTS
+2026-01-10 13:31:20 INFO  Server:439 - Started Server@5287ba5f{STARTING}[11.0.24,sto=30000] @1964ms
+2026-01-10 13:31:20 INFO  AbstractConnector:376 - Started ServerConnector@3c6d2938{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2026-01-10 13:31:20 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@4645679e{/,null,AVAILABLE,@Spark}
+2026-01-10 13:31:20 INFO  ContextHandler:1123 - Stopped o.s.j.s.ServletContextHandler@4645679e{/,null,STOPPED,@Spark}
+2026-01-10 13:31:20 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@6136e1fc{/jobs,null,AVAILABLE,@Spark}
+2026-01-10 13:31:20 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@32dcfeea{/jobs/json,null,AVAILABLE,@Spark}
+2026-01-10 13:31:20 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2565a7d0{/jobs/job,null,AVAILABLE,@Spark}
+2026-01-10 13:31:20 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5103eea2{/jobs/job/json,null,AVAILABLE,@Spark}
+2026-01-10 13:31:20 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7e77678c{/stages,null,AVAILABLE,@Spark}
+2026-01-10 13:31:20 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5f0677f3{/stages/json,null,AVAILABLE,@Spark}
+2026-01-10 13:31:20 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@4cd7d5e1{/stages/stage,null,AVAILABLE,@Spark}
+2026-01-10 13:31:20 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@46b6701e{/stages/stage/json,null,AVAILABLE,@Spark}
+2026-01-10 13:31:20 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@71e2c6d8{/stages/pool,null,AVAILABLE,@Spark}
+2026-01-10 13:31:20 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@376b5cb2{/stages/pool/json,null,AVAILABLE,@Spark}
+2026-01-10 13:31:20 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@106cd9c8{/stages/taskThreadDump,null,AVAILABLE,@Spark}
+2026-01-10 13:31:20 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@78318ac2{/stages/taskThreadDump/json,null,AVAILABLE,@Spark}
+2026-01-10 13:31:20 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@11abd6c{/storage,null,AVAILABLE,@Spark}
+2026-01-10 13:31:20 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7608a838{/storage/json,null,AVAILABLE,@Spark}
+2026-01-10 13:31:20 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@21a6a494{/storage/rdd,null,AVAILABLE,@Spark}
+2026-01-10 13:31:20 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@4ab66127{/storage/rdd/json,null,AVAILABLE,@Spark}
+2026-01-10 13:31:20 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@37fef327{/environment,null,AVAILABLE,@Spark}
+2026-01-10 13:31:20 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@55951fcd{/environment/json,null,AVAILABLE,@Spark}
+2026-01-10 13:31:20 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7534785a{/executors,null,AVAILABLE,@Spark}
+2026-01-10 13:31:20 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3ba3f40d{/executors/json,null,AVAILABLE,@Spark}
+2026-01-10 13:31:20 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@46ab4efc{/executors/threadDump,null,AVAILABLE,@Spark}
+2026-01-10 13:31:20 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@b5312df{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2026-01-10 13:31:20 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5f409872{/executors/heapHistogram,null,AVAILABLE,@Spark}
+2026-01-10 13:31:20 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@472c9f88{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+2026-01-10 13:31:20 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5822ecda{/static,null,AVAILABLE,@Spark}
+2026-01-10 13:31:20 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7e050be1{/,null,AVAILABLE,@Spark}
+2026-01-10 13:31:20 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@506aa618{/api,null,AVAILABLE,@Spark}
+2026-01-10 13:31:20 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@8432469{/metrics,null,AVAILABLE,@Spark}
+2026-01-10 13:31:20 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@1a17dd6f{/jobs/job/kill,null,AVAILABLE,@Spark}
+2026-01-10 13:31:20 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@60c96eb4{/stages/stage/kill,null,AVAILABLE,@Spark}
+2026-01-10 13:31:20 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@6aad919c{/metrics/json,null,AVAILABLE,@Spark}
+2026-01-10 13:31:20 INFO  SparkConfig:27 - SparkSession успешно создан!
+2026-01-10 13:31:20 INFO  SparkConfig:28 - Имя приложения: SpaceX-Spark-App
+2026-01-10 13:31:20 INFO  SparkConfig:29 - Режим выполнения (master): local[*]
+2026-01-10 13:31:20 INFO  SparkConfig:30 - Версия Spark: 4.0.1
+2026-01-10 13:31:20 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@4ab455e2{/SQL,null,AVAILABLE,@Spark}
+2026-01-10 13:31:20 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7ac685ef{/SQL/json,null,AVAILABLE,@Spark}
+2026-01-10 13:31:20 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@cf9bd1e{/SQL/execution,null,AVAILABLE,@Spark}
+2026-01-10 13:31:20 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@51813065{/SQL/execution/json,null,AVAILABLE,@Spark}
+2026-01-10 13:31:20 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3a72e2e8{/static/sql,null,AVAILABLE,@Spark}
+2026-01-10 13:31:21 INFO  LaunchRepository:26 - LaunchRepository инициализирован. Пустой Dataset создан.
+2026-01-10 13:31:28 INFO  Server:479 - Stopped Server@5287ba5f{STOPPING}[11.0.24,sto=30000]
+2026-01-10 13:31:28 INFO  Server:135 - Shutdown Server@5287ba5f{STOPPING}[11.0.24,sto=30000]
+2026-01-10 13:31:28 INFO  AbstractConnector:431 - Stopped Spark@3c6d2938{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2026-01-10 13:31:28 INFO  SparkConfig:41 - SparkSession остановлен.
+2026-01-10 12:32:40 INFO  SparkConfig:17 - Инициализация SparkSession...
+2026-01-10 12:32:41 WARN  Shell:746 - Did not find winutils.exe: java.io.FileNotFoundException: Hadoop bin directory does not exist: D:\SpaceXSpark\bin -see https://cwiki.apache.org/confluence/display/HADOOP2/WindowsProblems
+2026-01-10 12:32:41 WARN  NativeCodeLoader:60 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-01-10 12:32:42 INFO  Server:384 - jetty-11.0.24; built: 2024-08-26T18:11:22.448Z; git: 5dfc59a691b748796f922208956bd1f2794bcd16; jvm 21.0.6+7-LTS
+2026-01-10 12:32:42 INFO  Server:439 - Started Server@6897a4a{STARTING}[11.0.24,sto=30000] @2928ms
+2026-01-10 12:32:42 INFO  AbstractConnector:376 - Started ServerConnector@5d0d88b1{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2026-01-10 12:32:42 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@539c4830{/,null,AVAILABLE,@Spark}
+2026-01-10 12:32:43 INFO  ContextHandler:1123 - Stopped o.s.j.s.ServletContextHandler@539c4830{/,null,STOPPED,@Spark}
+2026-01-10 12:32:43 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@32dcfeea{/jobs,null,AVAILABLE,@Spark}
+2026-01-10 12:32:43 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@2565a7d0{/jobs/json,null,AVAILABLE,@Spark}
+2026-01-10 12:32:43 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5103eea2{/jobs/job,null,AVAILABLE,@Spark}
+2026-01-10 12:32:43 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7e77678c{/jobs/job/json,null,AVAILABLE,@Spark}
+2026-01-10 12:32:43 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5f0677f3{/stages,null,AVAILABLE,@Spark}
+2026-01-10 12:32:43 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@4cd7d5e1{/stages/json,null,AVAILABLE,@Spark}
+2026-01-10 12:32:43 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@46b6701e{/stages/stage,null,AVAILABLE,@Spark}
+2026-01-10 12:32:43 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@71e2c6d8{/stages/stage/json,null,AVAILABLE,@Spark}
+2026-01-10 12:32:43 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@376b5cb2{/stages/pool,null,AVAILABLE,@Spark}
+2026-01-10 12:32:43 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@106cd9c8{/stages/pool/json,null,AVAILABLE,@Spark}
+2026-01-10 12:32:43 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@78318ac2{/stages/taskThreadDump,null,AVAILABLE,@Spark}
+2026-01-10 12:32:43 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@11abd6c{/stages/taskThreadDump/json,null,AVAILABLE,@Spark}
+2026-01-10 12:32:43 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7608a838{/storage,null,AVAILABLE,@Spark}
+2026-01-10 12:32:43 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@21a6a494{/storage/json,null,AVAILABLE,@Spark}
+2026-01-10 12:32:43 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@4ab66127{/storage/rdd,null,AVAILABLE,@Spark}
+2026-01-10 12:32:43 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@37fef327{/storage/rdd/json,null,AVAILABLE,@Spark}
+2026-01-10 12:32:43 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@55951fcd{/environment,null,AVAILABLE,@Spark}
+2026-01-10 12:32:43 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7534785a{/environment/json,null,AVAILABLE,@Spark}
+2026-01-10 12:32:43 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@3ba3f40d{/executors,null,AVAILABLE,@Spark}
+2026-01-10 12:32:43 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@46ab4efc{/executors/json,null,AVAILABLE,@Spark}
+2026-01-10 12:32:43 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@b5312df{/executors/threadDump,null,AVAILABLE,@Spark}
+2026-01-10 12:32:43 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5f409872{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2026-01-10 12:32:43 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@472c9f88{/executors/heapHistogram,null,AVAILABLE,@Spark}
+2026-01-10 12:32:43 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5822ecda{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+2026-01-10 12:32:43 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7afbf2a0{/static,null,AVAILABLE,@Spark}
+2026-01-10 12:32:43 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@506aa618{/,null,AVAILABLE,@Spark}
+2026-01-10 12:32:43 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@1d6713dd{/api,null,AVAILABLE,@Spark}
+2026-01-10 12:32:43 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@15c16f19{/metrics,null,AVAILABLE,@Spark}
+2026-01-10 12:32:43 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@60c96eb4{/jobs/job/kill,null,AVAILABLE,@Spark}
+2026-01-10 12:32:43 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@5ab63a04{/stages/stage/kill,null,AVAILABLE,@Spark}
+2026-01-10 12:32:43 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@211a9647{/metrics/json,null,AVAILABLE,@Spark}
+2026-01-10 12:32:43 INFO  SparkConfig:27 - SparkSession успешно создан!
+2026-01-10 12:32:43 INFO  SparkConfig:28 - Имя приложения: SpaceX-Spark-App
+2026-01-10 12:32:43 INFO  SparkConfig:29 - Режим выполнения (master): local[*]
+2026-01-10 12:32:43 INFO  SparkConfig:30 - Версия Spark: 4.0.1
+2026-01-10 12:32:43 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@7ac685ef{/SQL,null,AVAILABLE,@Spark}
+2026-01-10 12:32:43 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@4a4ff5ed{/SQL/json,null,AVAILABLE,@Spark}
+2026-01-10 12:32:43 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@51813065{/SQL/execution,null,AVAILABLE,@Spark}
+2026-01-10 12:32:43 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@e0847a9{/SQL/execution/json,null,AVAILABLE,@Spark}
+2026-01-10 12:32:43 INFO  ContextHandler:907 - Started o.s.j.s.ServletContextHandler@f1d1463{/static/sql,null,AVAILABLE,@Spark}
+2026-01-10 12:32:45 INFO  LaunchRepository:26 - LaunchRepository инициализирован. Пустой Dataset создан.
+2026-01-10 12:32:48 INFO  Server:479 - Stopped Server@6897a4a{STOPPING}[11.0.24,sto=30000]
+2026-01-10 12:32:48 INFO  Server:135 - Shutdown Server@6897a4a{STOPPING}[11.0.24,sto=30000]
+2026-01-10 12:32:48 INFO  AbstractConnector:431 - Stopped Spark@5d0d88b1{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2026-01-10 12:32:48 INFO  SparkConfig:41 - SparkSession остановлен.
