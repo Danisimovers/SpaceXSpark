@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   spacex-spark:
-    build: .
+    build: src/main/java/sfedu/danil/DOC
     container_name: spacex-spark
     ports:
       - "4040:4040"   # Spark UI

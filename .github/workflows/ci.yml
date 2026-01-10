@@ -44,7 +44,7 @@ jobs:
         run: |
           echo "➡ Стартуем контейнер…"
           docker run -d --name spacex_container spacex-spark:latest
-          
+
           echo "➡ Ждём 5 секунд..."
           sleep 5
 
