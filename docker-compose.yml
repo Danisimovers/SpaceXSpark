@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   spacex-spark:
-    build: DockerFile
+    build: Dockerfile
     container_name: spacex-spark
     ports:
       - "4040:4040"   # Spark UI
