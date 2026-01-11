@@ -5,8 +5,6 @@ on:
     workflows: ["CI Pipeline"]  # Указываем имя CI pipeline, который нужно дождаться
     types:
       - completed  # Запускаем CD только после завершения CI
-    branches:
-      - master  # Указываем, что это относится к ветке master
 
 jobs:
   deploy:
@@ -17,18 +15,53 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # 2. Логинимся в Docker Hub
+      # 2. Проверяем наличие файла target/SpaceXSpark-fat.jar
+      - name: Check if fat JAR exists
+        id: check_jar
+        run: |
+          if [ ! -f "target/SpaceXSpark-fat.jar" ]; then
+            echo "File target/SpaceXSpark-fat.jar not found. Building the project."
+            echo "needs_build=true" >> $GITHUB_ENV
+          else
+            echo "File target/SpaceXSpark-fat.jar found. Skipping build."
+            echo "needs_build=false" >> $GITHUB_ENV
+          fi
+
+      # 3. Если файл не найден, собираем проект и JDK
+      - name: Set up JDK 21
+        if: env.needs_build == 'true'
+        uses: actions/setup-java@v3
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+
+      # 4. Скачиваем зависимости Maven (если нужно)
+      - name: Cache Maven
+        if: env.needs_build == 'true'
+        uses: actions/cache@v3
+        with:
+          path: ~/.m2/repository
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          restore-keys: |
+            ${{ runner.os }}-maven-
+
+      # 5. Собираем fat JAR с помощью Maven (если нужно)
+      - name: Maven package (fat JAR)
+        if: env.needs_build == 'true'
+        run: mvn -B clean package -DskipTests
+
+      # 6. Логинимся в Docker Hub
       - name: Login to Docker Hub
         uses: docker/login-action@v2
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      # 3. Собираем Docker образ
+      # 7. Собираем Docker образ
       - name: Build Docker image
         run: docker build -t spacex-spark:latest .
 
-      # 4. Пушим Docker образ в Docker Hub
+      # 8. Пушим Docker образ в Docker Hub
       - name: Push Docker image to Docker Hub
         run: |
           docker tag spacex-spark:latest danisimover/spacex-spark:latest
