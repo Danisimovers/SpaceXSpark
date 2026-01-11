@@ -64,5 +64,5 @@ jobs:
       # 8. Пушим Docker образ в Docker Hub
       - name: Push Docker image to Docker Hub
         run: |
-          docker tag spacex-spark:latest danisimover/spacex-spark:latest
-          docker push danisimover/spacex-spark:latest
+          docker tag spacex-spark:latest danisimovers/spacex-spark:latest
+          docker push danisimovers/spacex-spark:latest
