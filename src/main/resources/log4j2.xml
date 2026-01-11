@@ -39,7 +39,7 @@
             <AppenderRef ref="File"/>
         </Logger>
 
-        <!-- Твои собственные классы оставляем на INFO -->
+        
         <Logger name="sfedu.danil" level="info" additivity="false">
             <AppenderRef ref="Console"/>
             <AppenderRef ref="File"/>
