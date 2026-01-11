@@ -2,9 +2,11 @@ name: CD Pipeline
 
 on:
   workflow_run:
-    workflows: ["ci"]  # Здесь указываем имя CI пайплайна, который нужно дождаться
+    workflows: ["CI Pipeline"]  # Указываем имя CI pipeline, который нужно дождаться
     types:
       - completed  # Запускаем CD только после завершения CI
+    branches:
+      - master  # Указываем, что это относится к ветке master
 
 jobs:
   deploy:
