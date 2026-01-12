@@ -45,7 +45,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-maven-
 
-      # 5. Собираем fat JAR с помощью Maven (если нужно)
       - name: Maven package (fat JAR)
         if: env.needs_build == 'true'
         run: mvn -B clean package -DskipTests

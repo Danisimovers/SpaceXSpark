@@ -31,15 +31,19 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-maven-
 
-      # 4. Собираем fat JAR (важно: должен собираться shade!)
-      - name: Maven package (fat JAR)
-        run: mvn -B clean package -DskipTests
+      # 4. Явный запуск JUnit тестов
+      - name: Run JUnit tests
+        run: mvn -B test
 
-      # 5. Билдим Docker image
+      # 5. Сборка fat JAR (тесты уже прошли)
+      - name: Build fat JAR
+        run: mvn -B package
+
+      # 6. Билдим Docker image
       - name: Build Docker image
         run: docker build -t spacex-spark:latest .
 
-      # 6. Запуск контейнера + проверка, что он стартует
+      # 7. Запуск контейнера + проверка, что он стартует
       - name: Run container and validate startup
         run: |
           echo "➡ Стартуем контейнер…"
@@ -54,7 +58,7 @@ jobs:
           echo "➡ Проверяем что контейнер не упал..."
           docker ps -a
 
-      # 7. Остановка и удаление контейнера
+      # 8. Остановка и удаление контейнера
       - name: Cleanup container
         if: always()
         run: |
